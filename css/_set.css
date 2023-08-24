@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A';
+  font-weight: 300;
+  src: url('../assets/fonts/Euclid Circular A/EuclidCircularA-Light.eot') format('eot'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Light.woff') format('woff'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Euclid Circular A';
+  font-weight: 400;
+  src: url('../assets/fonts/Euclid Circular A/EuclidCircularA-Regular.eot') format('eot'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Regular.woff') format('woff'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Euclid Circular A';
+  font-weight: 500;
+  src: url('../assets/fonts/Euclid Circular A/EuclidCircularA-Medium.eot') format('eot'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Medium.woff') format('woff'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Euclid Circular A';
+  font-weight: 600;
+  src: url('../assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.eot') format('eot'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.woff') format('woff'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Euclid Circular A';
+  font-weight: 700;
+  src: url('../assets/fonts/Euclid Circular A/EuclidCircularA-Bold.eot') format('eot'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Bold.woff') format('woff'),
+    url('../assets/fonts/Euclid Circular A/EuclidCircularA-Bold.ttf') format('truetype');
+  /* url('../assets/fonts/Myriad Pro/MyriadPro-Light.svg#svgFontName') format('svg'); */
+}
+html {
+  font-family: 'Euclid Circular A';
+  font-size: 0.5208335vw;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: #262525;
+  background: #fff;
+}
+
+input,
+textarea {
+  -webkit-animation: bugfix infinite 1s;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+a {
+  color: unset;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+button:active,
+input:active,
+a:active,
+textarea:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 156rem;
+  margin: 0 auto;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+section {
+  margin-bottom: 18rem;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 5px;
+    font-size: 1.5625vw;
+    font-size: 1.3333333333vw;
+    -webkit-text-size-adjust: none;
+  }
+  body {
+    -webkit-text-size-adjust: none;
+  }
+  section {
+    margin-bottom: 24rem;
+  }
+  .container {
+    padding: 0 3rem;
+    width: 100%;
+  }
+}
