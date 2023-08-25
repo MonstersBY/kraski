@@ -163,6 +163,13 @@
 .swiper-slide {
   cursor: pointer;
 }
+.swiper-button-disabled {
+  opacity: 0;
+}
+.repair__nav-prev.swiper-button-disabled,
+.repair__nav-next.swiper-button-disabled {
+  opacity: 1;
+}
 .categories {
   display: flex;
   gap: 1.5rem;

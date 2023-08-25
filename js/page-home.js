@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let swiper4 = new Swiper('.repair__list', {
     slidesPerView: 1,
     spaceBetween: `${remToPx(2)}rem`,
+    loop: true,
     navigation: {
       prevEl: '.repair__nav-prev',
       nextEl: '.repair__nav-next',
