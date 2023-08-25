@@ -87,6 +87,27 @@
 //   align-items: center;
 //   gap: 2rem;
 // }
+#map {
+  width: 90.2rem;
+  height: 62.9rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+.ymaps-2-1-79-copyrights-pane {
+  display: none;
+}
+.ymaps-2-1-79-controls-pane {
+  display: none;
+}
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+.ymaps-2-1-79-ground-pane {
+  /* filter: hue-rotate(257deg) grayscale(1) invert(100%); */
+  // -webkit-filter: hue-rotate(257deg) grayscale(100%) invert(100%) contrast(0.7) brightness(130%);
+  // filter: hue-rotate(257deg) grayscale(100%) invert(100%) contrast(0.7) brightness(130%);
+  filter: grayscale(0.5);
+}
 .btn-cart {
   position: relative;
   display: flex;
@@ -126,13 +147,28 @@
     height: 2.4rem;
   }
 }
+.scrollable-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.popular__categories {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+.swiper-slide {
+  cursor: pointer;
+}
 .categories {
   display: flex;
   gap: 1.5rem;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.4;
-  overflow-x: auto;
   &-icon {
     width: 2.4rem;
     height: 2.4rem;
@@ -148,6 +184,11 @@
     padding: 1.3rem 2.4rem;
     border-radius: 1.5rem;
     background: #f4f6f8;
+    cursor: pointer;
+    &-active {
+      color: #fff;
+      background-color: #e50e78;
+    }
     &--icon {
       width: 2.4rem;
       height: 2.4rem;
@@ -342,6 +383,28 @@
   align-items: center;
   margin-bottom: 6rem;
 }
+
+// ::-webkit-scrollbar {
+//   height: 0.8rem; /* Высота полосы прокрутки */
+//   width: 0.8rem;
+//   border-radius: 2px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1; /* Цвет фона полосы прокрутки */
+//   border-radius: 2px;
+//   width: 0.8rem;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #4067f0; /* Цвет полосы прокрутки */
+//   border-radius: 2px;
+//   width: 0.8rem;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #555; /* Цвет полосы прокрутки при наведении */
+// }
 
 @media (max-width: 48em) {
   .no-scroll {

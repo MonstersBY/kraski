@@ -1,0 +1,162 @@
+.footer {
+  &_container {
+    padding: 6rem 6rem 2rem 6rem;
+    border-radius: 5rem;
+    background: #f4f6f8;
+  }
+  &__content {
+    display: flex;
+    padding-bottom: 5rem;
+    gap: 13.6rem;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-logo {
+      position: relative;
+      width: 13.1rem;
+      height: 12.4rem;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-btn {
+      padding: 1.9rem 3rem;
+      border-radius: 1.5rem;
+      border: 1px solid #9293b0;
+      box-shadow: 1rem 1.5rem 5rem 0px rgba(173, 178, 201, 0.2);
+      color: #3b3c40;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+    &-payment {
+      display: flex;
+      gap: 1rem;
+      &--system {
+        &.maestrocard svg {
+          width: 3.2rem;
+          height: 2rem;
+        }
+        &.visa svg {
+          width: 5rem;
+          height: 1.6rem;
+        }
+        &.mir svg {
+          width: 5.8rem;
+          height: 1.7rem;
+        }
+      }
+    }
+    &-wrapper {
+      display: flex;
+      gap: 13rem;
+    }
+    &-bottom {
+      margin-right: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    &-item {
+      color: #9293b0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+    &-name {
+      color: var(--black, #3b3c40);
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2; /* 24px */
+    }
+  }
+  &__links {
+    height: 48.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &_catalog {
+      height: 38.7rem;
+      max-width: 30.9rem;
+      &-list {
+        max-width: 30.9rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+        &_1 {
+          width: 27.1rem;
+        }
+        &_2 {
+          margin-top: 4rem;
+        }
+      }
+    }
+    &_list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      column-gap: 3rem;
+
+      height: 38.7rem;
+
+      &-about {
+        margin-right: 12.2rem;
+      }
+      &-link {
+        color: #9293b0;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.4; /* 22.4px */
+        cursor: pointer;
+      }
+    }
+    &-title {
+      margin-bottom: 0.3rem;
+      color: #3b3c40;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2; /* 24px */
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  &__copyright {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d9;
+    &-info {
+      color: #9293b0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+    &-company {
+      position: relative;
+      width: 14.4rem;
+      height: 3.2rem;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

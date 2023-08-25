@@ -643,3 +643,320 @@
     }
   }
 }
+.consultation {
+  &_container {
+    position: relative;
+    padding: 6rem 12.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5rem;
+    background: #f3efff;
+  }
+  &__img {
+    position: relative;
+    width: 52.5rem;
+    height: 31.7rem;
+    border-radius: 1rem 18rem 18rem 1rem;
+    overflow: hidden;
+    z-index: 2;
+
+    img {
+      height: 100%;
+    }
+  }
+  &__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 79.7rem;
+    height: 49.7rem;
+    z-index: 1;
+    img {
+      height: 100%;
+    }
+  }
+  &__wrapper {
+    &-title {
+      margin-bottom: 2rem;
+      color: #3b3c40;
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 51.3rem;
+
+    &-subscription {
+      display: inline-block;
+      margin-bottom: 4rem;
+      color: #9293b0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+    &-container {
+      position: relative;
+      display: flex;
+    }
+    &-icon {
+      position: absolute;
+      left: 2.5rem;
+      top: 1.8rem;
+      width: 2.4rem;
+      height: 2.4rem;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &-personal {
+      width: 26.7rem;
+      color: #9293b0;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.4; /* 19.6px */
+    }
+    &--bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-inp {
+      width: 100%;
+      height: 6rem;
+      padding: 1.8rem 5.5rem;
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4;
+      border-radius: 1.5rem;
+      border: 1px solid #e50e78;
+      &::placeholder {
+        color: #9293b0;
+      }
+    }
+  }
+}
+.shops {
+  &_container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 56.8rem;
+
+    &-title {
+      margin-bottom: 2rem;
+      color: #3b3c40;
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-subscription {
+      margin-bottom: 5.8rem;
+      color: #9293b0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 130%; /* 23.4px */
+    }
+  }
+  &__card {
+    position: relative;
+    padding: 2.5rem;
+    width: 56.8rem;
+    height: 52.9rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem;
+    box-shadow: 0.5rem 1.5rem 7rem 0px rgba(173, 178, 201, 0.35);
+    &-title {
+      color: #3b3c40;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-img {
+      width: 51.8rem;
+      height: 23.9rem;
+      margin-bottom: 2rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__main {
+    margin-bottom: 3rem;
+  }
+  &__address {
+    margin-bottom: 5rem;
+    color: #3b3c40;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3; /* 23.4px */
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    &-title {
+      color: #3b3c40;
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    &-chapter {
+      color: #9293b0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: end;
+    gap: 1.5rem;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 0.2rem;
+    }
+    &-number {
+      color: #e50e78;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.3; /* 23.4px */
+    }
+    &-additional {
+      color: #9293b0;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.4; /* 22.4px */
+    }
+    &-icon {
+      position: relative;
+      width: 5rem;
+      height: 5rem;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__time {
+    padding: 0.8rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    background-color: #3b3c40;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.3; /* 23.4px */
+    &-icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__weekend {
+    color: #9293b0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4; /* 22.4px */
+  }
+  &__categories {
+    margin-bottom: 3rem;
+  }
+  &__our {
+    position: relative;
+    width: 90.2rem;
+  }
+}
+.info {
+  &_container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 9.2rem 8rem 8rem 9.2rem;
+    border-radius: 5rem;
+    border: 2px solid #f3efff;
+    background: #f3efff;
+  }
+  &__blur {
+    top: 3.5rem;
+    left: 38.3rem;
+    position: absolute;
+    width: 80.3rem;
+    height: 33.4rem;
+    z-index: 1;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__main {
+    position: relative;
+    width: 55.6rem;
+    z-index: 2;
+    &-title {
+      margin-bottom: 2rem;
+      color: #3b3c40;
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-shop {
+      display: inline-block;
+      margin-bottom: 4.5rem;
+      color: #9293b0;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2; /* 24px */
+    }
+    &-description {
+      color: #9293b0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 130%; /* 23.4px */
+    }
+  }
+  &__about {
+    position: relative;
+    width: 70.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    z-index: 2;
+    &-title {
+      color: #3b3c40;
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-subscription {
+      color: #9293b0;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.3; /* 23.4px */
+    }
+  }
+}

@@ -159,6 +159,31 @@
             transform: translateY(-50rem);
   }
 }
+#map {
+  width: 90.2rem;
+  height: 62.9rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.ymaps-2-1-79-copyrights-pane {
+  display: none;
+}
+
+.ymaps-2-1-79-controls-pane {
+  display: none;
+}
+
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none;
+}
+
+.ymaps-2-1-79-ground-pane {
+  /* filter: hue-rotate(257deg) grayscale(1) invert(100%); */
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+}
+
 .btn-cart {
   position: relative;
   display: -webkit-box;
@@ -219,6 +244,31 @@
   height: 2.4rem;
 }
 
+.scrollable-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.popular__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
 .categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,7 +277,6 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.4;
-  overflow-x: auto;
 }
 .categories-icon {
   width: 2.4rem;
@@ -252,6 +301,11 @@
   padding: 1.3rem 2.4rem;
   border-radius: 1.5rem;
   background: #f4f6f8;
+  cursor: pointer;
+}
+.categories-link-active {
+  color: #fff;
+  background-color: #e50e78;
 }
 .categories-link--icon {
   width: 2.4rem;

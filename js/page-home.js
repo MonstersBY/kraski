@@ -39,24 +39,24 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
-      prevEl: '.popular__nav-prev',
-      nextEl: '.popular__nav-next',
+      prevEl: '.hits__nav-prev',
+      nextEl: '.hits__nav-next',
     },
   });
   let swiper6 = new Swiper('.discont__slider', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
-      prevEl: '.popular__nav-prev',
-      nextEl: '.popular__nav-next',
+      prevEl: '.discont__slider-prev',
+      nextEl: '.discont__slider-next',
     },
   });
   let swiper7 = new Swiper('.novelties__slider', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
-      prevEl: '.popular__nav-prev',
-      nextEl: '.popular__nav-next',
+      prevEl: '.novelties__slider-prev',
+      nextEl: '.novelties__slider-next',
     },
   });
   function remToPx(remValue) {
