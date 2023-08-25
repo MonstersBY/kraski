@@ -77,6 +77,7 @@
 }
 .banner {
   margin-top: 6rem;
+  margin-bottom: 8rem;
 }
 .banner_container {
   display: -webkit-box;
@@ -213,12 +214,12 @@
   overflow: hidden;
 }
 .banner__slider-next {
-  right: -2rem;
+  right: 0rem;
   top: 43%;
 }
 .banner__slider-prev {
   top: 43%;
-  left: -2rem;
+  left: 0rem;
 }
 .advantages__list {
   display: -webkit-box;

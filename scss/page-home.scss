@@ -37,6 +37,7 @@
 
 .banner {
   margin-top: 6rem;
+  margin-bottom: 8rem;
   &_container {
     display: flex;
     border-radius: 5rem;
@@ -153,12 +154,12 @@
     overflow: hidden;
 
     &-next {
-      right: -2rem;
+      right: 0rem;
       top: 43%;
     }
     &-prev {
       top: 43%;
-      left: -2rem;
+      left: 0rem;
     }
   }
   &__card {
