@@ -75,6 +75,13 @@
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+        &::before {
+          content: '%';
+          position: absolute;
+          top: 1rem;
+          right: 5rem;
+          font-size: 6.5rem;
+        }
         &::after {
           content: '';
           position: absolute;
@@ -97,6 +104,9 @@
       left: 0;
       width: 100%;
       height: 100%;
+      &--mob {
+        display: none;
+      }
       img {
         height: 100%;
       }
@@ -272,6 +282,7 @@
     padding: 1.5rem;
     display: flex;
     align-items: end;
+
     &-img {
       position: absolute;
       top: 0;
@@ -283,6 +294,9 @@
         width: 100%;
         height: 100%;
       }
+    }
+    &-pagination--mob {
+      display: none;
     }
     &-wrapper {
       position: relative;
@@ -304,7 +318,7 @@
       line-height: 1.2; /* 24px */
     }
     &-count {
-      color: #3b3c40;
+      color: #3b3c409c;
       font-size: 1.6rem;
       font-style: normal;
       font-weight: 500;
@@ -908,6 +922,9 @@
     width: 80.3rem;
     height: 33.4rem;
     z-index: 1;
+    &--mob {
+      display: none;
+    }
     svg {
       width: 100%;
       height: 100%;
@@ -924,6 +941,7 @@
       font-size: 5rem;
       font-weight: 500;
       line-height: normal;
+      text-transform: uppercase;
     }
     &-shop {
       display: inline-block;
@@ -932,6 +950,7 @@
       font-size: 2rem;
       font-weight: 500;
       line-height: 1.2; /* 24px */
+      text-transform: uppercase;
     }
     &-description {
       color: #9293b0;
@@ -958,6 +977,361 @@
       font-size: 1.8rem;
       font-weight: 500;
       line-height: 1.3; /* 23.4px */
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .banner {
+    overflow: hidden;
+    &_container {
+      padding: 2rem;
+      flex-direction: column;
+    }
+    &__advertisement {
+      width: 100%;
+      height: 59rem;
+      &-container {
+        gap: 0;
+        justify-content: space-between;
+      }
+      &-product {
+        width: 28.4rem;
+        height: 33rem;
+      }
+      &-link {
+        width: 8rem;
+        height: 8rem;
+        svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+      &-img {
+        display: none;
+
+        &--mob {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-discont {
+        // justify-content: end;
+        width: 30rem;
+        margin-left: 4rem;
+        &--before {
+          top: 23.2rem;
+          left: -0.7rem;
+          font-size: 4.8rem;
+          text-transform: lowercase;
+        }
+        &--number {
+          font-size: 14rem;
+          &::before {
+            top: 1rem;
+            right: -1rem;
+            font-size: 9rem;
+          }
+          &::after {
+            top: 9rem;
+            left: -6.7rem;
+            width: 6rem;
+            height: 1rem;
+          }
+        }
+        &--text {
+          position: absolute;
+          width: 48.8rem;
+          bottom: 4rem;
+          font-size: 3.6rem;
+        }
+      }
+    }
+  }
+
+  .advantages {
+    &__list {
+      flex-direction: column;
+      gap: 3.2rem;
+
+      &-back {
+        width: 106%;
+      }
+      &-item {
+        width: 100%;
+        padding: 4.8rem 1rem 4.8rem 1.8rem;
+        gap: 0;
+        justify-content: space-between;
+        overflow: hidden;
+        border-radius: 4rem;
+      }
+      &-img {
+        width: 17.2rem;
+        height: 17.2rem;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    &__text {
+      width: 45.4rem;
+      gap: 1.6rem;
+      &-title {
+        font-size: 3.6rem;
+      }
+      &-description {
+        font-size: 2.4rem;
+      }
+    }
+  }
+  .brands {
+    &__top {
+      &-count {
+        left: 25rem;
+        padding: 1.2rem 2.8rem;
+        font-size: 2.8rem;
+        border-radius: 4rem;
+      }
+    }
+  }
+  .popular {
+    &__card {
+      width: 34.6rem;
+      height: 52rem;
+      &-title {
+        font-size: 3rem;
+      }
+      &-wrapper {
+        flex-direction: column;
+        align-items: start;
+        gap: 0.4rem;
+      }
+      &-count {
+        font-size: 2.8rem;
+      }
+    }
+    &-pagination--mob {
+      display: flex;
+      justify-content: center;
+      margin-top: 6rem;
+    }
+  }
+  .repair {
+    &__card {
+      height: 100%;
+      padding: 4rem;
+      gap: 5.6rem;
+      flex-direction: column;
+    }
+    &__content {
+      gap: 3.2rem;
+      &-title {
+        font-size: 6.4rem;
+      }
+      &-text {
+        font-size: 3rem;
+      }
+    }
+    &__img {
+      width: 63rem;
+      height: 31.2rem;
+    }
+  }
+  .promotion {
+    &_container {
+      flex-direction: column;
+    }
+    &__column {
+      gap: 2.4rem;
+    }
+    &__content {
+      flex-direction: column;
+      gap: 2.4rem;
+      &-card {
+        width: 100%;
+        gap: 1rem;
+      }
+      &-img {
+        width: 33rem;
+        height: 18.6rem;
+      }
+      &-title {
+        margin-top: 1.4rem;
+        font-size: 3.4rem;
+      }
+      &-chapter {
+        font-size: 2.4rem;
+      }
+    }
+    &__first {
+      &-card {
+        padding: 4rem;
+        width: 100%;
+        height: 26.2rem;
+      }
+      &-wrapper {
+        width: 42rem;
+        gap: 3rem;
+      }
+      &-text {
+        font-size: 2.8rem;
+      }
+      &-date {
+        font-size: 2.8rem;
+        svg {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+    &__second {
+      &-card {
+        padding: 4rem;
+        width: 100%;
+        height: 26.2rem;
+      }
+      &-wrapper {
+        width: 42rem;
+        gap: 1.6rem;
+      }
+      &-text {
+        font-size: 2.8rem;
+      }
+      &-date {
+        font-size: 2.8rem;
+        svg {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+    &__info {
+      width: 100%;
+      gap: 6rem;
+      margin-bottom: 4rem;
+      &-description {
+        font-size: 3rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .consultation {
+    padding: 0rem 2rem;
+    &_container {
+      padding: 9.8rem 4rem;
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+    &__back {
+      display: none;
+    }
+    &__wrapper {
+      &-title {
+        margin-bottom: 4rem;
+        font-size: 6.4rem;
+      }
+    }
+    &__form {
+      width: 100%;
+      &-subscription {
+        margin-bottom: 6rem;
+        font-size: 3rem;
+      }
+      &-container {
+        &:nth-of-type(2) {
+          .consultation__form-inp {
+            margin-bottom: 0;
+          }
+        }
+      }
+      &-icon {
+        left: 4rem;
+        width: 4rem;
+        height: 4rem;
+      }
+      &-inp {
+        padding-left: 9.2rem;
+        width: 100%;
+        height: 8.4rem;
+        margin-bottom: 2rem;
+        font-size: 2.8rem;
+      }
+      &-personal {
+        width: 100%;
+        font-size: 2.4rem;
+      }
+      &--bottom {
+        flex-direction: column-reverse;
+        gap: 4rem;
+      }
+      &-btn_submit {
+        margin-left: 0;
+      }
+    }
+  }
+  .shops {
+    &__our {
+      display: none;
+    }
+  }
+  .info {
+    &_container {
+      flex-direction: column;
+      padding: 10rem 4rem;
+      gap: 4rem;
+    }
+    &__main {
+      width: 100%;
+      &-title {
+        font-size: 5.2rem;
+      }
+      &-shop {
+        display: block;
+        font-size: 3.4rem;
+        margin-bottom: 6rem;
+      }
+      &-description {
+        display: none;
+        &--mob {
+          width: 95%;
+          display: block;
+          color: #3b3c40;
+          font-size: 3.4rem;
+          font-weight: 500;
+          line-height: 1.4; /* 23.8px */
+        }
+      }
+    }
+    &__blur {
+      display: none;
+      &--mob {
+        position: absolute;
+        top: 21.8rem;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 84.6rem;
+      }
+    }
+    &__about {
+      display: none;
+      &--mob {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+      }
+      &-subscription {
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.4; /* 21px */
+      }
     }
   }
 }

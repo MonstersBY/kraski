@@ -22,6 +22,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer__main--mob {
+  display: none;
+}
 .footer__main-logo {
   position: relative;
   width: 13.1rem;
@@ -32,7 +35,8 @@
   height: 100%;
 }
 .footer__main-btn {
-  padding: 1.9rem 3rem;
+  height: 5rem;
+  padding: 1.4rem 2.6rem;
   border-radius: 1.5rem;
   border: 1px solid #9293b0;
   -webkit-box-shadow: 1rem 1.5rem 5rem 0px rgba(173, 178, 201, 0.2);
@@ -40,6 +44,7 @@
   color: #3b3c40;
   font-size: 1.6rem;
   font-weight: 500;
+  text-align: center;
   line-height: 1.4; /* 22.4px */
 }
 .footer__main-payment {
@@ -66,6 +71,9 @@
   display: flex;
   gap: 13rem;
 }
+.footer__main-wrapper--mob {
+  display: none;
+}
 .footer__main-bottom {
   margin-right: 2rem;
   display: -webkit-box;
@@ -77,6 +85,34 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 3rem;
+}
+.footer__main-bottom--mob {
+  display: none;
+}
+.footer__main-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.6rem;
+  width: 100%;
+  color: #3b3c40;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2; /* 24px */
+}
+.footer__main-stars--icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer__main-stars--icon svg {
+  width: 100%;
+  height: 100%;
 }
 .footer__info {
   display: -webkit-box;
@@ -111,7 +147,7 @@
   line-height: 1.2; /* 24px */
 }
 .footer__links {
-  height: 48.8rem;
+  height: 38.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,6 +207,15 @@
   line-height: 1.4; /* 22.4px */
   cursor: pointer;
 }
+.footer__links_list-link--contacts {
+  display: none;
+}
+.footer__links_list-link--faq {
+  display: none;
+}
+.footer__links_list-link--help {
+  display: block;
+}
 .footer__links-title {
   margin-bottom: 0.3rem;
   color: #3b3c40;
@@ -186,6 +231,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.footer__social-link {
+  width: 3rem;
+  height: 3rem;
+}
+.footer__social-link svg {
+  width: 100%;
+  height: 100%;
 }
 .footer__copyright {
   padding-top: 2.5rem;
@@ -211,4 +264,150 @@
 .footer__copyright-company svg {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 48em) {
+  .footer_container {
+    padding: 4rem 2rem 6rem 2rem;
+  }
+  .footer__links_list {
+    height: auto;
+    gap: 0;
+  }
+  .footer__links_list-about {
+    margin-right: 0;
+  }
+  .footer__links_list-catalog {
+    display: none;
+  }
+  .footer__links_list-link {
+    padding: 1.2rem 0rem;
+    font-size: 3rem;
+  }
+  .footer__links_list-link--contacts {
+    display: block;
+  }
+  .footer__links_list-link--faq {
+    display: block;
+  }
+  .footer__links_list-link--help {
+    display: none;
+  }
+  .footer__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 6.4rem;
+  }
+  .footer__links {
+    height: auto;
+    gap: 2.4rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__links-title {
+    margin-bottom: 1.8rem;
+    font-size: 3.4rem;
+  }
+  .footer__info {
+    gap: 4.8rem;
+  }
+  .footer__info-list {
+    gap: 2.4rem;
+  }
+  .footer__info-name {
+    font-size: 3.4rem;
+  }
+  .footer__info-item {
+    font-size: 3rem;
+  }
+  .footer__main-bottom {
+    display: none;
+  }
+  .footer__main-bottom--mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__main-stars {
+    margin-top: 2.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.2rem;
+    width: 100%;
+    color: #3b3c40;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2; /* 24px */
+  }
+  .footer__main-stars--icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .footer__main-wrapper {
+    display: none;
+  }
+  .footer__main-wrapper--mob {
+    display: block;
+    width: 12.4rem;
+    height: 11.6rem;
+  }
+  .footer__main-payment {
+    gap: 2.4rem;
+  }
+  .footer__main-payment--system.maestrocard svg {
+    width: 5rem;
+    height: 3.2rem;
+  }
+  .footer__main-payment--system.visa svg {
+    width: 9rem;
+    height: 2.8rem;
+  }
+  .footer__main-payment--system.mir svg {
+    width: 9rem;
+    height: 2.4rem;
+  }
+  .footer__main-btn {
+    height: 8.4rem;
+    padding: 2.2rem 3rem;
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .footer__social-link {
+    width: 6rem;
+    height: 6rem;
+  }
+  .footer__copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__copyright-info {
+    padding: 5.6rem 0rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .footer__copyright-company {
+    width: 23rem;
+    height: 5.8rem;
+  }
 }

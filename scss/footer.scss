@@ -13,6 +13,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &--mob {
+      display: none;
+    }
     &-logo {
       position: relative;
       width: 13.1rem;
@@ -23,13 +26,15 @@
       }
     }
     &-btn {
-      padding: 1.9rem 3rem;
+      height: 5rem;
+      padding: 1.4rem 2.6rem;
       border-radius: 1.5rem;
       border: 1px solid #9293b0;
       box-shadow: 1rem 1.5rem 5rem 0px rgba(173, 178, 201, 0.2);
       color: #3b3c40;
       font-size: 1.6rem;
       font-weight: 500;
+      text-align: center;
       line-height: 1.4; /* 22.4px */
     }
     &-payment {
@@ -53,12 +58,39 @@
     &-wrapper {
       display: flex;
       gap: 13rem;
+      &--mob {
+        display: none;
+      }
     }
+
     &-bottom {
       margin-right: 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 3rem;
+      &--mob {
+        display: none;
+      }
+    }
+    &-stars {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      width: 100%;
+      color: #3b3c40;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.2; /* 24px */
+      &--icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
   }
   &__info {
@@ -84,7 +116,7 @@
     }
   }
   &__links {
-    height: 48.8rem;
+    height: 38.8rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -123,6 +155,15 @@
         font-weight: 500;
         line-height: 1.4; /* 22.4px */
         cursor: pointer;
+        &--contacts {
+          display: none;
+        }
+        &--faq {
+          display: none;
+        }
+        &--help {
+          display: block;
+        }
       }
     }
     &-title {
@@ -137,6 +178,14 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
+    &-link {
+      width: 3rem;
+      height: 3rem;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   &__copyright {
     padding-top: 2.5rem;
@@ -156,6 +205,142 @@
       svg {
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    &_container {
+      padding: 4rem 2rem 6rem 2rem;
+    }
+    &__links {
+      &_list {
+        height: auto;
+        gap: 0;
+        &-about {
+          margin-right: 0;
+        }
+        &-catalog {
+          display: none;
+        }
+        &-link {
+          padding: 1.2rem 0rem;
+          font-size: 3rem;
+          &--contacts {
+            display: block;
+          }
+          &--faq {
+            display: block;
+          }
+          &--help {
+            display: none;
+          }
+        }
+      }
+    }
+    &__content {
+      flex-direction: column;
+      gap: 6.4rem;
+    }
+    &__links {
+      height: auto;
+      gap: 2.4rem;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      &-title {
+        margin-bottom: 1.8rem;
+        font-size: 3.4rem;
+      }
+    }
+    &__info {
+      gap: 4.8rem;
+      &-list {
+        gap: 2.4rem;
+      }
+      &-name {
+        font-size: 3.4rem;
+      }
+      &-item {
+        font-size: 3rem;
+      }
+    }
+    &__main {
+      &-bottom {
+        display: none;
+        &--mob {
+          display: flex;
+          flex-direction: column;
+          // gap: 4.8rem;
+          justify-content: space-between;
+        }
+      }
+      &-stars {
+        margin-top: 2.2rem;
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+        width: 100%;
+        color: #3b3c40;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1.2; /* 24px */
+        &--icon {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+      }
+
+      &-wrapper {
+        display: none;
+        &--mob {
+          display: block;
+          width: 12.4rem;
+          height: 11.6rem;
+        }
+      }
+      &-payment {
+        gap: 2.4rem;
+        &--system {
+          &.maestrocard svg {
+            width: 5rem;
+            height: 3.2rem;
+          }
+          &.visa svg {
+            width: 9rem;
+            height: 2.8rem;
+          }
+          &.mir svg {
+            width: 9rem;
+            height: 2.4rem;
+          }
+        }
+      }
+      &-btn {
+        height: 8.4rem;
+        padding: 2.2rem 3rem;
+        font-size: 2.8rem;
+        text-align: center;
+      }
+    }
+    &__social {
+      &-link {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+    &__copyright {
+      flex-direction: column;
+      align-items: center;
+      &-info {
+        padding: 5.6rem 0rem;
+        font-size: 2.4rem;
+        text-align: center;
+      }
+      &-company {
+        width: 23rem;
+        height: 5.8rem;
       }
     }
   }

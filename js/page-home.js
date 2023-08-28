@@ -14,13 +14,59 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.banner__slider-prev',
       nextEl: '.banner__slider-next',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 3,
+        spaceBetween: `${remToPx(2)}rem`,
+        grid: {
+          rows: 2,
+          fill: 'rows',
+        },
+        pagination: {
+          el: '.popular-pagination--mob',
+          clickable: true,
+        },
+      },
+      // Медиа-запрос для ширины больше 768px
+      769: {
+        slidesPerView: 'auto',
+        grid: {
+          rows: 1,
+          fill: 'columns',
+        },
+      },
+    },
   });
+  console.log(swiper2);
   let swiper3 = new Swiper('.popular__list', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
       prevEl: '.popular__nav-prev',
       nextEl: '.popular__nav-next',
+    },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: `${remToPx(2)}rem`,
+        grid: {
+          rows: 2,
+          fill: 'rows',
+        },
+        pagination: {
+          el: '.popular-pagination--mob',
+          clickable: true,
+        },
+      },
+      // Медиа-запрос для ширины больше 768px
+      769: {
+        slidesPerView: 4,
+        grid: {
+          rows: 1,
+          fill: 'columns',
+        },
+      },
     },
   });
 
@@ -43,7 +89,31 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.hits__nav-prev',
       nextEl: '.hits__nav-next',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: `${remToPx(2)}rem`,
+        grid: {
+          rows: 2,
+          fill: 'rows',
+        },
+        pagination: {
+          el: '.popular-pagination--mob',
+          clickable: true,
+        },
+      },
+      // Медиа-запрос для ширины больше 768px
+      769: {
+        slidesPerView: 4,
+        grid: {
+          rows: 1,
+          fill: 'columns',
+        },
+      },
+    },
   });
+
+  console.log(swiper5);
   let swiper6 = new Swiper('.discont__slider', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
@@ -51,13 +121,57 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.discont__slider-prev',
       nextEl: '.discont__slider-next',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: `${remToPx(2)}rem`,
+        grid: {
+          rows: 2,
+          fill: 'rows',
+        },
+        pagination: {
+          el: '.popular-pagination--mob',
+          clickable: true,
+        },
+      },
+      // Медиа-запрос для ширины больше 768px
+      769: {
+        slidesPerView: 4,
+        grid: {
+          rows: 1,
+          fill: 'columns',
+        },
+      },
+    },
   });
   let swiper7 = new Swiper('.novelties__slider', {
-    slidesPerView: 'auto',
+    slidesPerView: 4,
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
       prevEl: '.novelties__slider-prev',
       nextEl: '.novelties__slider-next',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: `${remToPx(2)}rem`,
+        grid: {
+          rows: 2,
+          fill: 'rows',
+        },
+        pagination: {
+          el: '.popular-pagination--mob',
+          clickable: true,
+        },
+      },
+      // Медиа-запрос для ширины больше 768px
+      769: {
+        slidesPerView: 4,
+        grid: {
+          rows: 1,
+          fill: 'columns',
+        },
+      },
     },
   });
   function remToPx(remValue) {

@@ -343,5 +343,12 @@
         transition: transform 0.5s ease-in-out;
       }
     }
+    &__phone {
+      display: none;
+    }
+    &_container,
+    &__top_container {
+      padding: 0rem 2rem;
+    }
   }
 }
