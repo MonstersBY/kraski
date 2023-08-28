@@ -497,6 +497,9 @@
   -webkit-clip-path: polygon(100% 0, 100% 80%, 25% 100%, 0 100%, 0 0);
           clip-path: polygon(100% 0, 100% 80%, 25% 100%, 0 100%, 0 0);
 }
+.material__img--mob {
+  display: none;
+}
 .material__gradient {
   position: absolute;
   width: 100%;
@@ -1355,6 +1358,46 @@
   .repair__img {
     width: 63rem;
     height: 31.2rem;
+  }
+  .material_container {
+    padding: 0;
+    width: 71rem;
+    margin: 0 auto;
+  }
+  .material__card {
+    padding: 4rem;
+    height: 62.8rem;
+  }
+  .material__content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 3.2rem;
+  }
+  .material__content-title {
+    width: 90%;
+    font-size: 6.4rem;
+  }
+  .material__content-text {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .material__gradient {
+    display: none;
+  }
+  .material__img {
+    display: none;
+  }
+  .material__img--mob {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36.2rem;
+  }
+  .material__img--mob img {
+    height: 100%;
   }
   .promotion_container {
     -webkit-box-orient: vertical;
