@@ -1,0 +1,86 @@
+.form {
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        &-title {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            padding-left: 2.5rem;
+            color: #3B3C40;
+        }
+        &-inner {
+            display: flex;
+            gap: 0.6rem;
+            padding: 1.7rem 2.4rem;
+            border-radius: 15px;
+            border: 1px solid #E50E78;
+
+            input {
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                color: #3B3C40;
+                width: 100%;
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #9293B0;
+                    opacity: 1; /* Firefox */
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #9293B0;
+                }
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: #9293B0;
+                }
+            }
+            span {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+            svg {
+                width: 2.4rem;
+                height: 2.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .form {
+        &__item {
+            gap: 1.2rem;
+    
+            &-title {
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                padding-left: 4rem;
+            }
+            &-inner {
+                display: flex;
+                gap: 1.2rem;
+                padding: 2.2rem 4rem;
+                border-radius: 10px;
+                border: 1px solid #E50E78;
+    
+                input {
+                    font-size: 2.8rem;
+                    line-height: 130%; 
+                }
+                span {
+                    width: 4rem;
+                    height: 4rem;
+                }
+                svg {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}

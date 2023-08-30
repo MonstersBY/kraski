@@ -16,7 +16,7 @@
   }
   &__menu {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
@@ -56,12 +56,6 @@
     svg {
       width: 2.4rem;
       height: 2.4rem;
-    }
-  }
-  &__top {
-    display: none;
-    &--mob {
-      display: block;
     }
   }
   &__logo {
@@ -215,7 +209,14 @@
       height: 2.4rem;
     }
   }
+  &__overlay {
+    display: none;
+  }
+  & + * {
+    margin-top: 6rem;
+  }
 }
+
 .btn-menu {
   display: none;
   align-items: center;
@@ -350,6 +351,7 @@
       }
     }
     &__top {
+      display: none;
       &--mob {
         padding: 1.6rem 2rem 1.6rem 1.6rem;
         display: flex;
@@ -487,6 +489,9 @@
     &_container,
     &__top_container {
       padding: 0rem 2rem;
+    }
+    & + * {
+      margin-top: 6rem;
     }
   }
 }
