@@ -710,7 +710,7 @@
         </a>
       </div>
     </section>
-    <section class="popular">
+    <section class="popular switcher">
       <div class="popular_container container">
         <div class="popular__top section__top">
           <h2 class="popular__top-title title">Популярные категории</h2>
@@ -770,332 +770,2367 @@
         </div>
         <div class="popular__wrapper">
           <div class="scrollable-list">
-            <ul class="popular__categories categories">
-              <li class="popular__categories-link categories-link">
+            <ul class="popular__categories categories switcher__control">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--icon categories-icon">
                   <img src="./assets/images/promotion.svg" alt="Акции" />
                 </div>
                 <div class="popular__categories-link--text categories-text">Акции</div>
               </li>
-              <li class="popular__categories-link categories-link categories-link-active">
+              <li class="popular__categories-link categories-link switcher__btn active">
                 <div class="popular__categories-link--text categories-text">
                   Для внутренних работ
                 </div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">Для наружных работ</div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">Универсальные</div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">
                   Специального назначения
                 </div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">Грунтовки</div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">
                   Специального назначения
                 </div>
               </li>
-              <li class="popular__categories-link categories-link">
+              <li class="popular__categories-link categories-link switcher__btn">
                 <div class="popular__categories-link--text categories-text">
                   Специального назначения
                 </div>
               </li>
             </ul>
           </div>
-          <div class="popular__list">
-            <div class="popular__list-wrapper swiper-wrapper">
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_1.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для стен</div>
-                    <div class="popular__card-count">500+ товаров</div>
+          <div class="switcher__container">
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_2.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для потолка</div>
-                    <div class="popular__card-count">500+ товаров</div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_3.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для кухни и ванной</div>
-                    <div class="popular__card-count">500+ товаров</div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_4.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для пола</div>
-                    <div class="popular__card-count">500+ товаров</div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_4.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для пола</div>
-                    <div class="popular__card-count">500+ товаров</div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="popular__card swiper-slide">
-                <div class="popular__card-img">
-                  <img src="./assets/images/home/popular_4.png" alt="" />
-                </div>
-                <div class="popular__card-wrapper">
-                  <div class="popular__card-text">
-                    <div class="popular__card-title">Краски для пола</div>
-                    <div class="popular__card-count">500+ товаров</div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
-                  <a href="#" class="popular__card-link">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                      <path
-                        d="M3.5 12H20.33"
-                        stroke="#3B3C40"
-                        stroke-width="2"
-                        stroke-miterlimit="10"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </a>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
               </div>
             </div>
-            <div class="popular__nav-prev nav-prev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="25"
-                height="24"
-                viewBox="0 0 25 24"
-                fill="none"
-              >
-                <path
-                  d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
-                  stroke="url(#paint0_linear_219_17884)"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_219_17884"
-                    x1="16.0881"
-                    y1="4.08008"
-                    x2="8.16742"
-                    y2="4.44531"
-                    gradientUnits="userSpaceOnUse"
+            <div class="switcher__content active">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
                   >
-                    <stop stop-color="#DD3197" />
-                    <stop offset="1" stop-color="#822FAF" />
-                  </linearGradient>
-                </defs>
-              </svg>
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
             </div>
-            <div class="popular__nav-next nav-next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
-                  stroke="url(#paint0_linear_203_21065)"
-                  stroke-width="2"
-                  stroke-miterlimit="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <defs>
-                  <linearGradient
-                    id="paint0_linear_203_21065"
-                    x1="8.91003"
-                    y1="19.9199"
-                    x2="16.8307"
-                    y2="19.5547"
-                    gradientUnits="userSpaceOnUse"
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
                   >
-                    <stop stop-color="#DD3197" />
-                    <stop offset="1" stop-color="#822FAF" />
-                  </linearGradient>
-                </defs>
-              </svg>
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="switcher__content">
+              <div class="popular__list">
+                <div class="popular__list-wrapper swiper-wrapper">
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_1.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для стен</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_2.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для потолка</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_3.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для кухни и ванной</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="popular__card swiper-slide">
+                    <div class="popular__card-img">
+                      <img src="./assets/images/home/popular_4.png" alt="" />
+                    </div>
+                    <div class="popular__card-wrapper">
+                      <div class="popular__card-text">
+                        <div class="popular__card-title">Краски для пола</div>
+                        <div class="popular__card-count">500+ товаров</div>
+                      </div>
+                      <a href="#" class="popular__card-link">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M14.43 5.93018L20.5 12.0002L14.43 18.0702"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M3.5 12H20.33"
+                            stroke="#3B3C40"
+                            stroke-width="2"
+                            stroke-miterlimit="10"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__nav-prev nav-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+                      stroke="url(#paint0_linear_219_17884)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_219_17884"
+                        x1="16.0881"
+                        y1="4.08008"
+                        x2="8.16742"
+                        y2="4.44531"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="popular__nav-next nav-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+                      stroke="url(#paint0_linear_203_21065)"
+                      stroke-width="2"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_203_21065"
+                        x1="8.91003"
+                        y1="19.9199"
+                        x2="16.8307"
+                        y2="19.5547"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#DD3197" />
+                        <stop offset="1" stop-color="#822FAF" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
         <div class="popular-pagination--mob"></div>
         <a href="#" class="btn-categories-link--mob">
@@ -3105,7 +5140,7 @@
         </div>
       </div>
     </section>
-    <section class="shops">
+    <section class="shops switcher">
       <div class="shops_container container">
         <div class="shops__info">
           <h2 class="shops__info-title">Наши магазины</h2>
@@ -3172,24 +5207,24 @@
           </div>
         </div>
         <div class="shops__our">
-          <div class="scrollable-list">
+          <div class="scrollable-list switcher__control">
             <ul class="shops__categories categories">
-              <li class="shops__categories-link categories-link">
+              <li class="shops__categories-link categories-link switcher__btn">
                 <div class="shops__categories-link--text categories-text">Славянский мир</div>
               </li>
-              <li class="shops__categories-link categories-link categories-link-active">
+              <li class="shops__categories-link categories-link switcher__btn active">
                 <div class="shops__categories-link--text categories-text">БП “Румянцево”</div>
               </li>
-              <li class="shops__categories-link categories-link">
+              <li class="shops__categories-link categories-link switcher__btn">
                 <div class="shops__categories-link--text categories-text">ТЦ Каширский двор</div>
               </li>
-              <li class="shops__categories-link categories-link">
+              <li class="shops__categories-link categories-link switcher__btn">
                 <div class="shops__categories-link--text categories-text">БП “Румянцево 2”</div>
               </li>
-              <li class="shops__categories-link categories-link">
+              <li class="shops__categories-link categories-link switcher__btn">
                 <div class="shops__categories-link--text categories-text">БП “Румянцево 2”</div>
               </li>
-              <li class="shops__categories-link categories-link">
+              <li class="shops__categories-link categories-link switcher__btn">
                 <div class="shops__categories-link--text categories-text">Грунтовки</div>
               </li>
             </ul>
@@ -3713,6 +5748,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/page-home.js"></script>

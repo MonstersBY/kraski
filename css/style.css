@@ -471,7 +471,7 @@
   background: #f4f6f8;
   cursor: pointer;
 }
-.categories-link-active {
+.categories-link.active {
   color: #fff;
   background-color: #e50e78;
 }
@@ -748,6 +748,14 @@
   background: #9293B0;
   right: 0.5rem;
   top: 50%;
+}
+
+.switcher .switcher__container .switcher__content {
+  display: none;
+}
+
+.switcher .switcher__container .switcher__content.active {
+  display: block;
 }
 
 @media (max-width: 48em) {
@@ -3536,6 +3544,9 @@ section {
   font-weight: 500;
   line-height: 130%; /* 23.4px */
 }
+.info__main-description--mob {
+  display: none;
+}
 .info__about {
   position: relative;
   width: 70.1rem;
@@ -3560,6 +3571,9 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.3; /* 23.4px */
+}
+.info__about--mob {
+  display: none;
 }
 
 @media (max-width: 48em) {

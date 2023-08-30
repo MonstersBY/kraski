@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
-  console.log(swiper2);
   let swiper3 = new Swiper('.popular__list', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
@@ -113,7 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  console.log(swiper5);
   let swiper6 = new Swiper('.discont__slider', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,

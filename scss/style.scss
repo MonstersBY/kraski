@@ -317,7 +317,7 @@
     border-radius: 1.5rem;
     background: #f4f6f8;
     cursor: pointer;
-    &-active {
+    &.active {
       color: #fff;
       background-color: #e50e78;
     }
@@ -564,6 +564,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+}
+.switcher .switcher__container .switcher__content {
+  display: none;
+}
+.switcher .switcher__container .switcher__content.active {
+  display: block;
 }
 
 @media (max-width: 48em) {
