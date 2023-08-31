@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Вход</title>
+    <title>Подбор по параметрам</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -277,103 +277,475 @@
       </div>
     </header>
 
-    <section class="registration login">
-      <div class="registration_container container">
-        <div class="title-h3">Вход</div>
-        <div class="registration-bottom">
-          <div class="registration__filling">
-            <form class="form login-form">
-              <div class="login-form-top">
-                <label class="form__item">
-                  <div class="form__item-title">Телефон</div>
-                  <div class="form__item-inner">
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M21.7388 17.1636C21.5716 18.4339 20.9477 19.6 19.9837 20.4439C19.0196 21.2879 17.7813 21.7521 16.5 21.7498C9.05626 21.7498 3.00001 15.6936 3.00001 8.24981C2.99771 6.96852 3.4619 5.73021 4.30588 4.76615C5.14986 3.80209 6.31592 3.17822 7.58626 3.01106C7.9075 2.97184 8.2328 3.03756 8.51362 3.19841C8.79444 3.35926 9.0157 3.60662 9.14438 3.90356L11.1244 8.32387V8.33512C11.2229 8.56242 11.2636 8.81059 11.2428 9.05744C11.222 9.3043 11.1404 9.54217 11.0053 9.74981C10.9884 9.77512 10.9706 9.79856 10.9519 9.822L9.00001 12.1357C9.7022 13.5626 11.1947 15.042 12.6403 15.7461L14.9222 13.8045C14.9446 13.7857 14.9681 13.7681 14.9925 13.752C15.2 13.6136 15.4387 13.5292 15.687 13.5062C15.9353 13.4833 16.1854 13.5227 16.4147 13.6207L16.4269 13.6264L20.8434 15.6054C21.1409 15.7337 21.3889 15.9547 21.5503 16.2356C21.7116 16.5164 21.7778 16.842 21.7388 17.1636Z" fill="#3B3C40"/>
-                      </svg>
-                    </span>
-                    <input type="tel" placeholder="Номер телефона">
-                  </div>
-                </label>
-                <div class="login-form-info">На ваш телефон будет отправлено <br>сообщение с временным паролем</div>
-              </div>
-              <div class="login-form-bottom">
-                <div class="login-form-btns">
-                  <button class="btn">
-                    <span class="btn--text">Отправить</span>
-                    <div class="btn--icon">
-                      <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699"
-                          stroke="url(#paint0_linear_203_2652)"
-                          stroke-width="2"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <path
-                          d="M3.5 12H20.33"
-                          stroke="url(#paint1_linear_203_2652)"
-                          stroke-width="2"
-                          stroke-miterlimit="10"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                        <defs>
-                          <linearGradient
-                            id="paint0_linear_203_2652"
-                            x1="14.4301"
-                            y1="5.92993"
-                            x2="21.2005"
-                            y2="6.27831"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stop-color="#DD3197" />
-                            <stop offset="1" stop-color="#822FAF" />
-                          </linearGradient>
-                          <linearGradient
-                            id="paint1_linear_203_2652"
-                            x1="3.5"
-                            y1="12"
-                            x2="8.20568"
-                            y2="20.1502"
-                            gradientUnits="userSpaceOnUse"
-                          >
-                            <stop stop-color="#DD3197" />
-                            <stop offset="1" stop-color="#822FAF" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                    </div>
-                  </button>
-                  <a class="btn-empty">
-                    <span class="btn-empty--text">Отправить на почту</span>
-                  </a>
-                </div>
-              </div>
-            </form>
+    <section class="selection-bp">
+      <div class="container">
+        <div class="title-h2">Подбор по параметрам<span>633</span></div>
+        <div class="selection-bp__progress">
+          <div class="selection-bp__progress-line">
+            <div class="selection-bp__progress-line-pink"></div>
           </div>
-          <div class="registration__box">
-            <div class="title-h3">Нет аккаунта?</div>
-            <div class="btn-reverse">
-              <span class="btn-reverse--text">Зарегистрироваться</span>
-              <div class="btn-reverse--icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g id="arrow-right">
-                  <path id="Vector" d="M14.4302 5.93005L20.5002 12.0001L14.4302 18.0701" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path id="Vector_2" d="M3.5 12H20.33" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                  </g>
+          <div class="selection-bp__progress-steps">
+            <div class="selection-bp__progress-step">
+              <div class="selection-bp__progress-step--number">1</div>
+              <div class="selection-bp__progress-step--ok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="12" fill="#E50E78"/>
+                  <path d="M9.96635 14.5813L16.3226 8.225C16.4726 8.075 16.6508 8 16.8573 8C17.0638 8 17.2418 8.075 17.3913 8.225C17.5413 8.375 17.6163 8.55325 17.6163 8.75975C17.6163 8.96625 17.5413 9.14425 17.3913 9.29375L10.4913 16.1938C10.3413 16.3438 10.1663 16.4188 9.96635 16.4188C9.76635 16.4188 9.59135 16.3438 9.44135 16.1938L6.21635 12.9688C6.06635 12.8188 5.99435 12.6405 6.00035 12.434C6.00635 12.2275 6.0846 12.0495 6.2351 11.9C6.3851 11.75 6.56335 11.675 6.76985 11.675C6.97635 11.675 7.15435 11.75 7.30385 11.9L9.96635 14.5813Z" fill="white"/>
                 </svg>
               </div>
+              <div class="selection-bp__progress-step--text">Тип объекта</div>
+            </div>
+            <div class="selection-bp__progress-step">
+              <div class="selection-bp__progress-step--number">2</div>
+              <div class="selection-bp__progress-step--ok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="12" fill="#E50E78"/>
+                  <path d="M9.96635 14.5813L16.3226 8.225C16.4726 8.075 16.6508 8 16.8573 8C17.0638 8 17.2418 8.075 17.3913 8.225C17.5413 8.375 17.6163 8.55325 17.6163 8.75975C17.6163 8.96625 17.5413 9.14425 17.3913 9.29375L10.4913 16.1938C10.3413 16.3438 10.1663 16.4188 9.96635 16.4188C9.76635 16.4188 9.59135 16.3438 9.44135 16.1938L6.21635 12.9688C6.06635 12.8188 5.99435 12.6405 6.00035 12.434C6.00635 12.2275 6.0846 12.0495 6.2351 11.9C6.3851 11.75 6.56335 11.675 6.76985 11.675C6.97635 11.675 7.15435 11.75 7.30385 11.9L9.96635 14.5813Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="selection-bp__progress-step--text">Материал рабочей поверхности</div>
+            </div>
+            <div class="selection-bp__progress-step">
+              <div class="selection-bp__progress-step--number">3</div>
+              <div class="selection-bp__progress-step--ok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="12" fill="#E50E78"/>
+                  <path d="M9.96635 14.5813L16.3226 8.225C16.4726 8.075 16.6508 8 16.8573 8C17.0638 8 17.2418 8.075 17.3913 8.225C17.5413 8.375 17.6163 8.55325 17.6163 8.75975C17.6163 8.96625 17.5413 9.14425 17.3913 9.29375L10.4913 16.1938C10.3413 16.3438 10.1663 16.4188 9.96635 16.4188C9.76635 16.4188 9.59135 16.3438 9.44135 16.1938L6.21635 12.9688C6.06635 12.8188 5.99435 12.6405 6.00035 12.434C6.00635 12.2275 6.0846 12.0495 6.2351 11.9C6.3851 11.75 6.56335 11.675 6.76985 11.675C6.97635 11.675 7.15435 11.75 7.30385 11.9L9.96635 14.5813Z" fill="white"/>
+                </svg>
+              </div>
+              <div class="selection-bp__progress-step--text">Тип ЛКМ и разбавитель</div>
             </div>
           </div>
         </div>
+        <div class="title-h3">Тип объекта</div>
+        <form class="form selection-bp-form selection-bp-form--first">
+          <div class="selection-bp-form-items">
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Бани, сауны, парные (внутреняя обработка)</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Влажные помещения (кухня, ванная, душевная, сан-узел)</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Деревянные изделия</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Деревянный дом, забор, беседка, сруб</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Крыши</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Металлические изделия</p>
+            </label>
+            <label class="selection-bp-form-item deactive">
+              <input type="checkbox" disabled="disabled" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Минеральные поверхности (фасад, цоколь, забор, прочие постройки)</p>
+            </label>
+            <label class="selection-bp-form-item deactive">
+              <input type="checkbox" disabled="disabled" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Окна и двери</p>
+            </label>
+            <label class="selection-bp-form-item deactive">
+              <input type="checkbox" disabled="disabled" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Открытые веранды, террасы</p>
+            </label>
+            <label class="selection-bp-form-item deactive">
+              <input type="checkbox" disabled="disabled" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Паркет</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Перила, лестницы</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Печи, камины, дымоходы</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Пол</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Помещения высокой экспл. нагрузкой (офис, кафе, ресторан, гостиница)</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Потолок</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Радиаторы отопления</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Стены (сухие помещения)</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Технические помещения (гараж, склад, мойка, мастерская)</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Эмалированые ванны/раковины</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Мебель</p>
+            </label>
+          </div>
+          <div class="selection-bp-form-container">
+            <div class="selection-bp-form-container-box">
+              <button class="btn-color">Далее</button>
+            </div>
+          </div>
+        </form>
+        <form class="form selection-bp-form selection-bp-form--second">
+          <div class="selection-bp-form-items">
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>OSB</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Бетон</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Гипсокартон</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Дерево</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Дерево (ДВП, ДСП, МДФ)</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>ДСП</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Камень</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Керамика</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Кирпич</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Ламинат</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Линолеум</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Металл</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Металл оцинкованый</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Мрамор</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Обои</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Паркет</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Пластик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>ПФХ</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Старое покрытие на масляной, алкидной основах</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Стекло</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Черепица</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Шифер</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Штукатурка</p>
+            </label>
+          </div>
+          <div class="selection-bp-form-container">
+            <div class="selection-bp-form-container-box">
+              <button class="btn-color">Далее</button>
+            </div>
+          </div>
+        </form>
+        <form class="form selection-bp-form selection-bp-form--third">
+          <div class="selection-bp-form-items">
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик / лазурь</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Воск</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Герметик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Гидроизоляция</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Грунтовка</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Декоративная штукатурка</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Затирка</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Защитный состав</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Клей</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Краска</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Краска / эмаль</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Лазурь</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Лак</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик / лазурь</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Воск</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Герметик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Гидроизоляция</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Грунтовка</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Декоративная штукатурка</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Затирка</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Защитный состав</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Клей</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Краска</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Краска / эмаль</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Лазурь</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Лак</p>
+            </label>
+
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Антисептик / лазурь</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Воск</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Герметик</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Гидроизоляция</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Грунтовка</p>
+            </label>
+            <label class="selection-bp-form-item">
+              <input type="checkbox" name="selection-bp1"/>
+              <span class="custom-checkbox"></span>
+              <p>Декоративная штукатурка</p>
+            </label>
+          </div>
+          <div class="selection-bp-form-container">
+            <div class="selection-bp-form-container-box">
+              <button class="btn-color">Показать результат</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -797,6 +1169,7 @@
         </div>
       </div>
     </footer>
+    
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/scroll.js"></script>
     <script src="./js/header.js"></script>

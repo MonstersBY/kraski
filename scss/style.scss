@@ -5,6 +5,23 @@
   font-weight: 500;
   line-height: normal;
 }
+.title-h2 {
+  color: #3b3c40;
+  font-family: 'Euclid Circular A';
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  span {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    color: #9293B0;
+    margin-left: 1.5rem;
+  }
+}
 .title-h3 {
   color: #3b3c40;
   font-family: 'Euclid Circular A';
@@ -22,6 +39,7 @@
     margin-left: 1.5rem;
   }
 }
+
 @keyframes appearence_1 {
   0% {
     opacity: 0;
@@ -93,6 +111,17 @@
   100% {
     opacity: 0;
     transform: translateY(-50rem);
+  }
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
 // .title_navigation {
@@ -238,6 +267,18 @@
       height: 2.4rem;
     }
   }
+}
+.btn-color {
+  padding: 1.9rem 3rem;
+  height: 6rem;
+  display: block;
+  width: fit-content;
+  background: linear-gradient(96deg, #DD3197 0%, #822FAF 101.4%);
+  font-size: 1.8rem;
+  font-weight: 500;
+  box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
+  color: #FFF;
+  border-radius: 15px;
 }
 .btn-empty {
   padding: 1.9rem 3rem;
@@ -571,6 +612,53 @@
 .switcher .switcher__container .switcher__content.active {
   display: block;
 }
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  text-align: center;
+  color: #3B3C40;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0 auto;
+  width: fit-content;
+
+  &-left {
+    width: 2rem;
+    height: 2rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &-right {    
+    width: 2rem;
+    height: 2rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &-numbers {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+
+    a.active {
+      width: 4rem;
+      height: 4rem;
+      margin-right: -1.5rem;
+      background: #F4F6F8;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  }
+}
 
 @media (max-width: 48em) {
   .no-scroll {
@@ -583,6 +671,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
+  }
+  .title-h2 {
+    font-size: 6.4rem;
+    line-height: 110%;
+  
+    span {
+      font-size: 2.4rem;
+      line-height: 140%;
+      margin-left: 2rem;
+    }
   }
   .title-h3 {
     font-size: 4rem;
@@ -600,6 +698,56 @@
   .nav-next,
   .nav-prev {
     display: none;
+  }
+
+  .bc {
+    margin-bottom: 6rem;
+    a {
+      padding-right: 4.8rem;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3.6rem;
+        height: 1px;
+        right: 0.8rem;
+        top: 50%;
+      }
+    }
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .pagination {
+    gap: 4rem;
+    font-size: 2.4rem;
+  
+    &-left {
+      width: 3rem;
+      height: 3rem;
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    &-right {
+      width: 3rem;
+      height: 3rem;
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+    &-numbers {
+      gap: 6rem;
+  
+      a.active {
+        width: 6rem;
+        height: 6rem;
+        margin-right: -2.4rem;
+        border-radius: 7px;
+      }
+    }
   }
 }
 @media (max-width: 48em) {
@@ -782,6 +930,15 @@
       }
     }
   }
+  .btn-color {
+    padding: 2.2rem 4rem;
+    height: 8.4rem;
+    display: block;
+    width: fit-content;
+    background: linear-gradient(96deg, #DD3197 0%, #822FAF 101.4%);
+    font-size: 3rem;
+    border-radius: 10px;
+  }
   .btn-empty {
     padding: 2.2rem 4rem;
     height: 8.4rem;
@@ -824,3 +981,5 @@
 @import "page-home";
 @import "registration";
 @import "promotion";
+@import "brands";
+@import "selection-by-parameters";

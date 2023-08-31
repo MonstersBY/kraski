@@ -51,17 +51,21 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin-bottom: 5rem;
     }
     &__item {
         position: relative;
         padding: 6rem;
         height: 25.3rem;
+        display: flex;
+        align-items: center;
 
         &-info {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
             color: #FFF;
+            width: 55.8rem;
 
             &--title {
                 font-size: 3.8rem;
@@ -81,11 +85,11 @@
             position: absolute;
             right: 0;
             top: 0;
+            width: 41.5rem;
             height: 25.4rem;
             clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
 
             img {
-                width: auto;
                 height: 100%;
                 object-fit: cover;
                 border-top-right-radius: 40px;
@@ -104,7 +108,56 @@
                 width: 100%;
                 height: 25.4rem;
             }
+            &--mob {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -5;
+                width: 71rem;
+                height: 35rem;
+            }
         }
+        &--button {
+            position: absolute;
+            width: 6rem;
+            height: 6rem;
+            background: #3B3C40;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+
+            svg {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+        }
+        &-date {
+            display: none;
+        }
+        &--border {
+            position: absolute;
+            display: block;
+            width: 11.7rem;
+            height: 11.7rem;
+            right: -0.5rem;
+            bottom: -0.5rem;
+            svg {
+                width: 11.7rem;
+                height: 11.7rem;
+            }
+        }
+
+    }
+    .btn-empty {
+        margin: 0 auto;
+        width: 30.5rem;
+        text-align: center;
+        margin-bottom: 6rem;
     }
 }
 .form-consultation {
@@ -114,5 +167,170 @@
     }
     .btn {
         margin-top: 4rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .promotion-page {
+        .title-h3 {
+            margin-bottom: 4rem;
+        }
+        &_container {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 16rem;
+        }
+        &__consultation {
+            width: 100%;
+            padding: 10rem 2rem;
+            border-radius: 20px;
+    
+            &--title {
+                font-size: 6.4rem;
+                line-height: 110%;
+                margin-bottom: 4rem;
+            }
+            &--text {
+                font-size: 3rem;
+                width: auto;
+                margin-bottom: 6rem;
+            }
+            &--info {
+                font-size: 2.4rem;
+            }
+        }
+        &__list {
+            flex: 1;
+        }
+        &__items {
+            gap: 3.2rem;
+            margin-bottom: 6rem;
+        }
+        &__item {
+            position: relative;
+            padding: 4rem;
+            height: 35rem;
+    
+            &-info {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+                color: #FFF;
+                width: auto;
+    
+                &--title {
+                    width: 36rem;
+                    font-size: 3.8rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                &--text {
+                    width: 34.6rem;
+                    font-size: 3rem;
+                }
+            }
+    
+            &--img {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 32.2rem;
+                height: 35rem;
+                clip-path: polygon(23% 0, 100% 0, 100% 100%, 0 100%);
+    
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-top-right-radius: 20px;
+                }
+            }
+    
+            &--back {
+                display: none;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -5;
+                width: 103.3rem;
+                height: 25.3rem;
+    
+                svg {
+                    width: 100%;
+                    height: 35rem;
+                }
+                &--mob {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -5;
+                    width: 71rem;
+                    height: 35rem;
+                }
+            }
+            &--button {
+                position: absolute;
+                width: 6.8rem;
+                height: 6.8rem;
+                background: #3B3C40;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 0;
+                bottom: 0;
+    
+                svg {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+            &-date {
+                position: absolute;
+                top: 3rem;
+                right: 3rem;
+    
+                &--text {
+                    color: #FFF;
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    margin-bottom: 0.6rem;
+                }
+                &--bar {
+                    width: 100%;
+                    height: 4px;
+                    background: #ffffff3f;
+                    border-radius: 72px;
+                    position: relative;
+    
+                    &-progress {
+                        position: absolute;
+                        border-radius: 72px;
+                        left: 0;
+                        height: 4px;
+                        background: #FFF;
+                    }
+                }
+            }
+        }
+        .btn-empty {
+            margin: 0 auto;
+            width: 30.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+    .form-consultation {
+        margin-bottom: 4rem;
+        .form__item {
+            margin-bottom: 2rem;
+        }
+        .btn {
+            margin-top: 6rem;
+        }
     }
 }
