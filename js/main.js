@@ -186,7 +186,7 @@ if($('.catalog__sidebar').length) {
 }
 if($('.catalog__sort').length) {
     $('.catalog__sort-container--text').on('click', function(){
-        $(this).parents('.catalog__sort-container').addClass('active')
+        $(this).parents('.catalog__sort-container').toggleClass('active')
     })
     $(document).mouseup(function (e) {
         var container = $('.catalog__sort-container');
@@ -194,8 +194,23 @@ if($('.catalog__sort').length) {
             container.removeClass('active')
         }
     });
+    $('.catalog__sort-container-list-modal').on('click', function(){
+        $(this).parents('.catalog__sort-container').removeClass('active')
+    })
     $('.catalog__sort-container-item-radio').on('click', function(){
         $('.catalog__sort-container--text').text($(this).find('p').text())
+    })
+
+    $('.catalog__sort-filter').on('click', function(){
+        $('.catalog__sidebar').addClass('active')
+        $('body').addClass('modal')
+    })
+    $('.catalog__sidebar-form-exit').on('click', function(){
+        $('.catalog__sidebar').removeClass('active')
+        $('body').removeClass('modal')
+    })
+    $('.dropdown-btn').on('click', function(){
+        $(this).parents('.dropdown').toggleClass('active')
     })
 }
 

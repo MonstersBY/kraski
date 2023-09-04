@@ -288,6 +288,18 @@
     <section class="catalog">
       <div class="container">
         <div class="title-h2">Краски для внутренних работ<span>633</span></div>
+        <div class="catalog__main-head mobile">
+          <div class="catalog__main-head-info">
+            <div class="catalog__main-head-info--title">Новый бренд <br>на “Краски Здесь”</div>
+            <div class="catalog__main-head-info--text">Расширяем ассортимент</div>
+          </div>
+          <div class="catalog__main-head-img">
+            <img src="./assets/images/catalog/main-head.jpg" alt="">
+          </div>
+          <div class="catalog__main-head-logo">
+            <img src="./assets/images/catalog/main-head-logo.png" alt="">
+          </div>
+        </div>
         <div class="catalog-small-swiper-box">
           <div class="catalog-small-swiper">
             <div class="swiper-wrapper">
@@ -373,18 +385,34 @@
         <div class="catalog-container">
           <div class="catalog__sidebar">
             <form class="form catalog__sidebar-form">
+              <div class="catalog__sidebar-form-exit mobile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M17.7147 17.7157L6.28613 6.28711M17.7147 6.28711L6.28613 17.7157" stroke="#9293B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
               <div class="catalog__sidebar-form-items">
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Цена</div>
-                  <div class="catalog__sidebar-form-item-inputs">
-                    <input type="text" step="1" placeholder="От" id="cost-range-from" class="from">
-                    <input type="text" step="1" placeholder="До" id="cost-range-to" class="to">
+                <div class="catalog__sidebar-form-item mobile">
+                  <div class="catalog__sidebar-form-item--title catalog__sidebar-form-item--title-big">Фильтры</div>
+                  <div class="search-box">
+                    <input class="search" type="text" placeholder="Поиск по фильтрам" />
+                    <div class="search-box-icon">
+                      <img src="./assets/images/home/search.svg" alt="" />
+                    </div>
                   </div>
-                  <div id="cost-range" class="catalog__sidebar-form-item--range"></div>
                 </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Тип работ</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Цена</div>
+                  <div class="catalog__sidebar-form-item-range dropdown-content">
+                    <div class="catalog__sidebar-form-item-inputs">
+                      <input type="text" step="1" placeholder="От" id="cost-range-from" class="from">
+                      <input type="text" step="1" placeholder="До" id="cost-range-to" class="to">
+                    </div>
+                    <div id="cost-range" class="catalog__sidebar-form-item--range"></div>
+                  </div>
+                </div>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Тип работ</div>
+                  <div class="catalog__sidebar-form-item-checkboxs dropdown-content">
                     <label class="catalog__sidebar-form-item-checkbox label-checkbox">
                       <input type="checkbox" name="type-work"/>
                       <span class="custom-checkbox"></span>
@@ -397,270 +425,361 @@
                     </label>
                   </div>
                 </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Тип объекта</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Влажные помещения (кухня, ванная, душевная, сан-узел)</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Деревянные изделия</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Деревянный дом, забор, беседка, сруб</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Мебель</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Металлические изделия</p>
-                    </label>
-                  </div>
-                  <div class="catalog__sidebar-form-item--show">Показать еще</div>
-                  <div class="catalog__sidebar-form-item-checkboxs hidden">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Влажные помещения (кухня, ванная, душевная, сан-узел)</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Деревянные изделия</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Деревянный дом, забор, беседка, сруб</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Мебель</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Металлические изделия</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Материал рабочей поверхности</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Бетон</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Гипсокартон</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Дерево</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Дерево (ДВП, ДСП, МДФ)</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>ДСП</p>
-                    </label>
-                  </div>
-                  <div class="catalog__sidebar-form-item--show">Показать еще</div>
-                  <div class="catalog__sidebar-form-item-checkboxs hidden">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Бетон</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Гипсокартон</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Дерево</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Дерево (ДВП, ДСП, МДФ)</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>ДСП</p>
-                    </label>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Тип объекта</div>
+                  <div class="dropdown-content">
+                    <div class="catalog__sidebar-form-item-checkboxs">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Влажные помещения (кухня, ванная, душевная, сан-узел)</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Деревянные изделия</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Деревянный дом, забор, беседка, сруб</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Мебель</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Металлические изделия</p>
+                      </label>
+                    </div>
+                    <div class="catalog__sidebar-form-item--show">Показать еще</div>
+                    <div class="catalog__sidebar-form-item-checkboxs hidden">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Влажные помещения (кухня, ванная, душевная, сан-узел)</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Деревянные изделия</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Деревянный дом, забор, беседка, сруб</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Мебель</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Металлические изделия</p>
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Объем</div>
-                  <div class="catalog__sidebar-form-item-inputs">
-                    <input type="text" step="1" placeholder="От" id="volume-range-from">
-                    <input type="text" step="1" placeholder="До" id="volume-range-to">
-                  </div>
-                  <div id="volume-range" class="catalog__sidebar-form-item--range"></div>
-                </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Тип ЛКМ</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Грунтовка</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Краска</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лазурь</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лак</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Очиститель</p>
-                    </label>
-                  </div>
-                  <div class="catalog__sidebar-form-item--show">Показать еще</div>
-                  <div class="catalog__sidebar-form-item-checkboxs hidden">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Грунтовка</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Краска</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лазурь</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лак</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Очиститель</p>
-                    </label>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Материал рабочей поверхности</div>
+                  <div class="dropdown-content">
+                    <div class="catalog__sidebar-form-item-checkboxs">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Бетон</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Гипсокартон</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Дерево</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Дерево (ДВП, ДСП, МДФ)</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>ДСП</p>
+                      </label>
+                    </div>
+                    <div class="catalog__sidebar-form-item--show">Показать еще</div>
+                    <div class="catalog__sidebar-form-item-checkboxs hidden">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Бетон</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Гипсокартон</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Дерево</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Дерево (ДВП, ДСП, МДФ)</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>ДСП</p>
+                      </label>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Разбавитель</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Вода</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Уайт-спирит</p>
-                    </label>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Объем</div>
+                  <div class="catalog__sidebar-form-item-range dropdown-content">
+                    <div class="catalog__sidebar-form-item-inputs">
+                      <input type="text" step="1" placeholder="От" id="volume-range-from">
+                      <input type="text" step="1" placeholder="До" id="volume-range-to">
+                    </div>
+                    <div id="volume-range" class="catalog__sidebar-form-item--range"></div>
                   </div>
                 </div>
-                <div class="catalog__sidebar-form-item">
-                  <div class="catalog__sidebar-form-item--title">Степень блеска</div>
-                  <div class="catalog__sidebar-form-item-checkboxs">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Глубокоматовый</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Глянцевый</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Матовый</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лак</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Очиститель</p>
-                    </label>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Тип ЛКМ</div>
+                  <div class="dropdown-content">
+                    <div class="catalog__sidebar-form-item-checkboxs">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Грунтовка</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Краска</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лазурь</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лак</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Очиститель</p>
+                      </label>
+                    </div>
+                    <div class="catalog__sidebar-form-item--show">Показать еще</div>
+                    <div class="catalog__sidebar-form-item-checkboxs hidden">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Грунтовка</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Краска</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лазурь</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лак</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Очиститель</p>
+                      </label>
+                    </div>
                   </div>
-                  <div class="catalog__sidebar-form-item--show">Показать еще</div>
-                  <div class="catalog__sidebar-form-item-checkboxs hidden">
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Грунтовка</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Краска</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лазурь</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Лак</p>
-                    </label>
-                    <label class="catalog__sidebar-form-item-checkbox label-checkbox">
-                      <input type="checkbox" name=""/>
-                      <span class="custom-checkbox"></span>
-                      <p>Очиститель</p>
-                    </label>
+                </div>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Разбавитель</div>
+                  <div class="dropdown-content">
+                    <div class="catalog__sidebar-form-item-checkboxs">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Вода</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Уайт-спирит</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__sidebar-form-item dropdown">
+                  <div class="catalog__sidebar-form-item--title dropdown-btn">Степень блеска</div>
+                  <div class="dropdown-content">
+                    <div class="catalog__sidebar-form-item-checkboxs">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Глубокоматовый</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Глянцевый</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Матовый</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лак</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Очиститель</p>
+                      </label>
+                    </div>
+                    <div class="catalog__sidebar-form-item--show">Показать еще</div>
+                    <div class="catalog__sidebar-form-item-checkboxs hidden">
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Грунтовка</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Краска</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лазурь</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Лак</p>
+                      </label>
+                      <label class="catalog__sidebar-form-item-checkbox label-checkbox">
+                        <input type="checkbox" name=""/>
+                        <span class="custom-checkbox"></span>
+                        <p>Очиститель</p>
+                      </label>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="catalog__sidebar-form-bottom">
-                <button class="btn-color">Показать все фильтры</button>
+                <div class="catalog__sidebar-form-bottom-choose mobile">
+                  <div class="catalog__sidebar-form-bottom-choose--item">
+                    <span>Тип ЛКМ: Мебель</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M17.7147 18.2157L6.28613 6.78711M17.7147 6.78711L6.28613 18.2157" stroke="#3B3C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="catalog__sidebar-form-bottom-choose--item">
+                    <span>Бренд: Olsta</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M17.7147 18.2157L6.28613 6.78711M17.7147 6.78711L6.28613 18.2157" stroke="#3B3C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="catalog__sidebar-form-bottom-choose--item">
+                    <span>Тип ЛКМ: Мебель</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M17.7147 18.2157L6.28613 6.78711M17.7147 6.78711L6.28613 18.2157" stroke="#3B3C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="catalog__sidebar-form-bottom-choose--item">
+                    <span>Бренд: Olsta</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                      <path d="M17.7147 18.2157L6.28613 6.78711M17.7147 6.78711L6.28613 18.2157" stroke="#3B3C40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+                <button class="btn-color desktop">Показать все фильтры</button>
+                <button class="btn">
+                  <span class="btn--text">Показать 681 товар</span>
+                  <div class="btn--icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699"
+                        stroke="url(#paint0_linear_203_2652)"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M3.5 12H20.33"
+                        stroke="url(#paint1_linear_203_2652)"
+                        stroke-width="2"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_203_2652"
+                          x1="14.4301"
+                          y1="5.92993"
+                          x2="21.2005"
+                          y2="6.27831"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#DD3197" />
+                          <stop offset="1" stop-color="#822FAF" />
+                        </linearGradient>
+                        <linearGradient
+                          id="paint1_linear_203_2652"
+                          x1="3.5"
+                          y1="12"
+                          x2="8.20568"
+                          y2="20.1502"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#DD3197" />
+                          <stop offset="1" stop-color="#822FAF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </button>
                 <button class="btn-empty"><span class="btn-empty--text">Очистить</span></button>
               </div>
             </form>
           </div>
           <div class="catalog__main">
-            <div class="catalog__main-head">
+            <div class="catalog__main-head desktop">
               <div class="catalog__main-head-info">
                 <div class="catalog__main-head-info--title">Новый бренд <br>на “Краски Здесь”</div>
                 <div class="catalog__main-head-info--text">Расширяем ассортимент</div>
@@ -675,6 +794,7 @@
             <div class="catalog__sort">
               <div class="catalog__sort-container">
                 <div class="catalog__sort-container--text">Популярное</div>
+                <div class="catalog__sort-container-list-modal"></div>
                 <div class="catalog__sort-container-list">
                   <label class="catalog__sort-container-item-radio label-radio">
                     <input type="radio" name="sort" checked/>
@@ -712,6 +832,11 @@
                     </g>
                   </svg>
                 </div>
+              </div>
+              <div class="catalog__sort-filter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.85714 4.5C3.38376 4.5 3 4.87052 3 5.32759V7.81034C3 8.04871 3.10645 8.2755 3.29209 8.43264L8.17924 12.5695C8.61954 12.9422 8.87747 13.4869 8.88681 14.0637L9.0001 21.0647C9.00471 21.3491 9.16035 21.6114 9.41223 21.7591C9.6641 21.9068 9.97689 21.9192 10.2405 21.7919L13.669 20.1368C13.9594 19.9966 14.1429 19.71 14.1429 19.3966V14.0974C14.1429 13.5015 14.4086 12.9366 14.8677 12.5566L19.8435 8.43869C20.0335 8.28147 20.1429 8.05194 20.1429 7.81034V5.32759C20.1429 4.87052 19.7591 4.5 19.2857 4.5H3.85714Z" fill="#3B3C40"/>
+                </svg>
               </div>
             </div>
             <div class="catalog__brand">
@@ -794,9 +919,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -828,9 +956,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -862,9 +993,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -896,9 +1030,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -930,9 +1067,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-advertising catalog__list-advertising--one">
@@ -987,9 +1127,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -1021,9 +1164,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -1055,9 +1201,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-item">
@@ -1089,9 +1238,12 @@
                     <path d="M3.5 5.59023C3.5 5.07806 3.91205 4.66602 4.42422 4.66602H6.17638C7.02358 4.66602 7.77451 5.15893 8.12495 5.89831H23.9522C24.965 5.89831 25.7044 6.86104 25.4386 7.83917L23.8598 13.7041C23.5324 14.9133 22.4349 15.7566 21.1834 15.7566H10.0735L10.2815 16.8542C10.3662 17.2893 10.7474 17.6051 11.1903 17.6051H22.2925C22.8046 17.6051 23.2167 18.0171 23.2167 18.5293C23.2167 19.0415 22.8046 19.4535 22.2925 19.4535H11.1903C9.85786 19.4535 8.71414 18.5062 8.46768 17.2007L6.48061 6.76476C6.45365 6.61843 6.32657 6.51445 6.17638 6.51445H4.42422C3.91205 6.51445 3.5 6.10241 3.5 5.59023ZM8.42917 22.5342C8.42917 22.2915 8.47698 22.0511 8.56987 21.8269C8.66276 21.6026 8.79892 21.3988 8.97056 21.2272C9.14221 21.0556 9.34598 20.9194 9.57024 20.8265C9.7945 20.7336 10.0349 20.6858 10.2776 20.6858C10.5203 20.6858 10.7607 20.7336 10.985 20.8265C11.2092 20.9194 11.413 21.0556 11.5846 21.2272C11.7563 21.3988 11.8924 21.6026 11.9853 21.8269C12.0782 22.0511 12.126 22.2915 12.126 22.5342C12.126 22.777 12.0782 23.0173 11.9853 23.2416C11.8924 23.4659 11.7563 23.6696 11.5846 23.8413C11.413 24.0129 11.2092 24.1491 10.985 24.242C10.7607 24.3349 10.5203 24.3827 10.2776 24.3827C10.0349 24.3827 9.7945 24.3349 9.57024 24.242C9.34598 24.1491 9.14221 24.0129 8.97056 23.8413C8.79892 23.6696 8.66276 23.4659 8.56987 23.2416C8.47698 23.0173 8.42917 22.777 8.42917 22.5342ZM21.3682 20.6858C21.8585 20.6858 22.3286 20.8806 22.6753 21.2272C23.0219 21.5739 23.2167 22.044 23.2167 22.5342C23.2167 23.0245 23.0219 23.4946 22.6753 23.8413C22.3286 24.1879 21.8585 24.3827 21.3682 24.3827C20.878 24.3827 20.4078 24.1879 20.0612 23.8413C19.7145 23.4946 19.5198 23.0245 19.5198 22.5342C19.5198 22.044 19.7145 21.5739 20.0612 21.2272C20.4078 20.8806 20.878 20.6858 21.3682 20.6858Z" fill="white"/>
                   </svg>
                 </a>
-                <div class="catalog__list-item--back">
+                <div class="catalog__list-item--back desktop">
                   <img class="no-hover" src="./assets/images/catalog/catalog-block-back.svg" alt="">
                   <img class="hover" src="./assets/images/catalog/catalog-block-open-back.svg" alt="">
+                </div>
+                <div class="catalog__list-item--back mobile">
+                  <img src="./assets/images/catalog/catalog-block-back-mobile.svg" alt="">
                 </div>
               </div>
               <div class="catalog__list-advertising catalog__list-advertising--two">
