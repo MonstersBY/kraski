@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
       prevEl: '.banner__slider-prev',
       nextEl: '.banner__slider-next',
     },
+    pagination: {
+      el: '.brands__slider-pagination',
+    },
     breakpoints: {
       320: {
         slidesPerView: 3,
@@ -21,10 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         grid: {
           rows: 2,
           fill: 'rows',
-        },
-        pagination: {
-          el: '.popular-pagination--mob',
-          clickable: true,
         },
       },
       // Медиа-запрос для ширины больше 768px

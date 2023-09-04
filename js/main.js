@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+
+if($('.consultation__form').length) {
+    $('.consultation__form').on( "submit", function(e) {
+        e.preventDefault();
+        $('body').addClass('modalac')
+        $('.consultation-modal').addClass('active')
+    });
+    $('.consultation-modal-screen, .consultation-modal-container--exit').on( "click", function(e) {
+        $('body').removeClass('modalac')
+        $('.consultation-modal').removeClass('active')
+    });
+}
+
 $('.switcher__btn').on('click', function(evt){
     evt.preventDefault();
     let $this = $(this);
@@ -57,7 +70,6 @@ if($('.catalog__sidebar').length) {
     $('.catalog__sidebar-form-item--show').on('click', function(){
         $(this).siblings('.hidden').removeClass('hidden')
         $(this).css('display', 'none')
-        console.log($(this).siblings('.hidden'));
     })
 
     // ЦЕНА
@@ -203,11 +215,11 @@ if($('.catalog__sort').length) {
 
     $('.catalog__sort-filter').on('click', function(){
         $('.catalog__sidebar').addClass('active')
-        $('body').addClass('modal')
+        $('body').addClass('modalac')
     })
     $('.catalog__sidebar-form-exit').on('click', function(){
         $('.catalog__sidebar').removeClass('active')
-        $('body').removeClass('modal')
+        $('body').removeClass('modalac')
     })
     $('.dropdown-btn').on('click', function(){
         $(this).parents('.dropdown').toggleClass('active')

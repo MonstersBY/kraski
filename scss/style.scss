@@ -481,7 +481,9 @@
 }
 .cards__slider {
   overflow: hidden;
-  filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
+  filter: drop-shadow(5px 10px 20px rgba(173, 178, 201, 0.35));
+  padding-right: 1rem;
+  margin-right: -1rem;
 }
 .advertisement {
   &__card {
@@ -1162,6 +1164,7 @@
 @import "header";
 @import "footer";
 @import 'form';
+@import 'modal';
 
 @import "page-home";
 @import "registration";

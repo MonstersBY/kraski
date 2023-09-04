@@ -9,6 +9,8 @@
 
 .header {
   background: #fff;
+  position: relative;
+  z-index: 4;
   &_container,
   &__top_container {
     width: 100%;
@@ -214,6 +216,17 @@
   }
   & + * {
     margin-top: 6rem;
+  }
+
+  &-fixed.active {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 10px 20px 70px 0px rgba(173, 178, 201, 0.35);
   }
 }
 
@@ -492,6 +505,55 @@
     }
     & + * {
       margin-top: 6rem;
+    }
+
+    &-bottom-fixed {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      width: 71rem;
+      border-radius: 15px;
+      background: #FFF;
+      box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+      display: flex  !important;
+      padding: 2.8rem 2rem;
+      justify-content: space-between;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+
+        &:hover{
+          .header-bottom-fixed-item--icon {
+            svg {
+              path {
+                fill: #E50E78;
+              }
+            }
+          }
+          .header-bottom-fixed-item--text {
+            color: #E50E78;
+          }
+        }
+
+        &--icon {
+          width: 4rem;
+          height: 4rem;
+
+          svg {
+            width: 4rem;
+            height: 4rem;
+          }
+        }
+        &--text {
+          font-size: 2.4rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+      }
     }
   }
 }

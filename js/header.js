@@ -38,4 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.remove('opened', 'active');
     }, 490);
   });
+
+  $(window).scroll(function () {
+    var scrollPosition = $(window).scrollTop()
+    if(scrollPosition>0) {
+      $('.header-fixed').addClass('active')
+      $('.header-fixed').parents('.header').children('.header_container').css('margin-top', $('.header-fixed').height())
+    } else {
+      $('.header-fixed').removeClass('active')
+      $('.header-fixed').parents('.header').children('.header_container').css('margin-top', 0)
+    }
+  })
 });
