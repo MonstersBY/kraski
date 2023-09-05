@@ -49,4 +49,24 @@ document.addEventListener('DOMContentLoaded', () => {
       $('.header-fixed').parents('.header').children('.header_container').css('margin-top', 0)
     }
   })
+
+  $('.header__search .search').on('input', function(){
+    if($(this).val()) {
+      $('.header-fixed').addClass('searching')
+      if (screen.width < 769) {
+        $('body').addClass('modalac')
+      }
+    } else {
+      $('.header-fixed').removeClass('searching')
+      if (screen.width < 769) {
+        $('body').removeClass('modalac')
+      }
+    }
+
+  })
+  $('.btn-search-back').on('click', function(){
+    $('.header__search .search').val('')
+    $('.header-fixed').removeClass('searching')
+    $('body').removeClass('modalac')
+  })
 });

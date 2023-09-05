@@ -1,5 +1,22 @@
 $(document).ready(function() {
 
+$('.write-director').on( "click", function(e) {
+    e.preventDefault();
+    $('body').addClass('modalac')
+    $('.write-director-modal').addClass('active')
+});
+$('.write-director-form').on( "submit", function(e) {
+    e.preventDefault();
+    $('.write-director-modal-container--first').css('display', 'none')
+    $('.write-director-modal-container--second').css('display', 'block')
+});
+$('.modal-screen, .modal-container--exit, .modal-container-btn--exit').on( "click", function(e) {
+    $('body').removeClass('modalac')
+    $('.write-director-modal').removeClass('active')
+    $('.write-director-modal-container--first').css('display', 'block')
+    $('.write-director-modal-container--second').css('display', 'none')
+});
+
 
 if($('.consultation__form').length) {
     $('.consultation__form').on( "submit", function(e) {

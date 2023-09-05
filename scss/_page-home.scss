@@ -187,7 +187,7 @@
         background: #9293B0;
         width: 0.5rem;
         height: 0.5rem;
-        top: 1rem;
+        top: 0.8rem;
         border-radius: 50%;
       }
       &:last-child::after {
@@ -307,6 +307,9 @@
   }
   &__categories {
     margin-bottom: 3rem;
+  }
+  &__slider-pagination {
+    display: none;
   }
 }
 .popular {
@@ -525,7 +528,7 @@
       background: #9293B0;
       width: 0.5rem;
       height: 0.5rem;
-      top: 1rem;
+      top: 0.8rem;
       border-radius: 50%;
     }
     &:last-child::after {
@@ -546,7 +549,28 @@
       background: #9293B0;
       width: 0.5rem;
       height: 0.5rem;
-      top: 1rem;
+      top: 0.8rem;
+      border-radius: 50%;
+    }
+    &:last-child::after {
+      content: unset;
+    }
+  }
+}
+.novelties {
+  &__card-info--text {
+    position: relative;
+    padding-right: 1.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0rem;
+      background: #9293B0;
+      width: 0.5rem;
+      height: 0.5rem;
+      top: 0.8rem;
       border-radius: 50%;
     }
     &:last-child::after {
@@ -1363,6 +1387,7 @@
   }
   .brands {
     &__slider-pagination {
+      display: flex;
       width: fit-content !important;
       margin: 6rem auto;
       .swiper-pagination-bullet-active {

@@ -37,6 +37,26 @@
                     color: #9293B0;
                 }
             }
+            textarea {
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+                color: #3B3C40;
+                width: 100%;
+                resize: none;
+                height: 8rem;
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: #9293B0;
+                    opacity: 1; /* Firefox */
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #9293B0;
+                }
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: #9293B0;
+                }
+            }
             span {
                 width: 2.4rem;
                 height: 2.4rem;
@@ -69,6 +89,10 @@
                 border: 1px solid #E50E78;
     
                 input {
+                    font-size: 2.8rem;
+                    line-height: 130%; 
+                }
+                textarea {
                     font-size: 2.8rem;
                     line-height: 130%; 
                 }
