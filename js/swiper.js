@@ -118,4 +118,18 @@ $(document).ready(function() {
           },
         },
     });
+
+    const fast_photo_bottom1 = new Swiper('.fast_photo_bottom1', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
+      spaceBetween: `${remToPx(2)}rem`,
+    });
+
+    const fast_photo1 = new Swiper('.fast_photo1', {
+      spaceBetween: `${remToPx(2)}rem`,
+      thumbs: {
+          swiper: fast_photo_bottom1,
+      },
+    });
 })

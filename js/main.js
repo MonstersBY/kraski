@@ -17,6 +17,21 @@ $('.modal-screen, .modal-container--exit, .modal-container-btn--exit').on( "clic
     $('.write-director-modal-container--second').css('display', 'none')
 });
 
+$('.all-filter').on( "click", function(e) {
+    e.preventDefault();
+    $('body').addClass('modalac')
+    $('.filter-modal').addClass('active')
+});
+$('.modal-container--exit, .modal-screen').on( "click", function(e) {
+    $('body').removeClass('modalac')
+    $(this).parents('.modal').removeClass('active')
+})
+
+$('.catalog__list-item-visual--open').on( "click", function(e) {
+    e.preventDefault();
+    $('body').addClass('modalac')
+    $('.fast-modal').addClass('active')
+});
 
 if($('.consultation__form').length) {
     $('.consultation__form').on( "submit", function(e) {
@@ -212,6 +227,70 @@ if($('.catalog__sidebar').length) {
         volumeRange.noUiSlider.set([null, value]);
     });
 
+
+    // ЦЕНА в большом фильтре
+    var costRangeAll = document.getElementById('cost-range-all');
+    noUiSlider.create(costRangeAll, {
+        start: [arrCost.min, arrCost.max],
+        connect: true,
+        step: 1,
+        range: {
+            'min': [arrCost.min],
+            'max': [arrCost.max]
+        }
+    });
+
+    var costRangeAllFrom = document.getElementById('cost-range-from-all');
+    var costRangeAllTo = document.getElementById('cost-range-to-all');
+
+    costRangeAll.noUiSlider.on('update', function (values, handle) {
+
+        var value = values[handle].slice(0, -3);
+
+        if (handle) {
+            if (arrCost.max == Number(value)) {
+                costRangeAllTo.value = '';
+            } else {
+                value = value.split('').join('').replace(/\B(?=(\d{3})+(?!\d))/g, " ").split('').join('').trim();
+                costRangeAllTo.value = value;
+            }
+        } else {
+            if (arrCost.min == Number(value)) {
+                costRangeAllFrom.value = '';
+            } else {
+                value = value.split('').join('').replace(/\B(?=(\d{3})+(?!\d))/g, " ").split('').join('').trim();
+                costRangeAllFrom.value = value;
+            }
+        }
+    });
+
+    costRangeAllFrom.addEventListener('keydown', function (e) {
+        if ((e.key.length === 1 && /^[^\d\s]+$/.test(e.key))) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    costRangeAllFrom.addEventListener('keyup', function (e) {
+        let value = this.value.replace(/\s+/g, '');
+        costRangeAll.noUiSlider.set([value, null]);
+    });
+
+    costRangeAllTo.addEventListener('keydown', function (e) {
+        if ((e.key.length === 1 && /^[^\d\s]+$/.test(e.key))) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    costRangeAllTo.addEventListener('keyup', function (e) {
+        let value = this.value.replace(/\s+/g, '');
+        costRangeAll.noUiSlider.set([null, value]);
+    });
+
+    $('.fast-modal-item-btn').on( "click", function(e) {
+        e.preventDefault();
+        $(this).parents('.fast-modal-item-btns').find('.fast-modal-item-btn').removeClass('active')
+        $(this).addClass('active')
+    });
 }
 if($('.catalog__sort').length) {
     $('.catalog__sort-container--text').on('click', function(){
