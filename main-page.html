@@ -6938,94 +6938,63 @@
     <script src="./js/scroll.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/page-home.js"></script>
-    <script>
-    //   const  mapInfo = [
-    //   {
-    //     name: 'Славянский мир',
-    //     coordinate: [55.612019, 37.487137]
-    //   },
-    //   {
-    //     name: 'БП “Румянцево”',
-    //     coordinate: [55.633683, 37.442818]
-    //   },
-    //   {
-    //     name: 'ТЦ Каширский двор',
-    //     coordinate: [55.664654, 37.632608]
-    //   },
-    //   {
-    //     name: 'БП “Румянцево 2”',
-    //     coordinate: [55.647938, 37.480811]
-    //   },
-    // ]
-    // var myMap
-    // function createMap(mapInfo) {
-    //   ymaps.ready(function () {
-    //     myMap = new ymaps.Map('map',
-    //       {
-    //         center: [55.751574, 37.573856],
-    //         zoom: 10,
-    //       },
-    //       {
-    //         yandexMapDisablePoiInteractivity: true
-    //       },
-    //     )
-    
-    //     for (let i = 0; i < mapInfo.length; i++) {
-    //       myPlacemark = new ymaps.Placemark(mapInfo[i].coordinate, {}, {
-    //           iconLayout: 'default#image',
-    //           iconImageHref: './assets/images/map_icon.svg',
-    //           iconImageSize: [30, 42],
-    //           iconImageOffset: [-5, -38],
-    //         },
-    //       );
-    //       myMap.geoObjects.add(myPlacemark);
-    //     }
-    //   });
-    // }
-    // createMap(mapInfo)
-
-    // $('.shops__categories-link').on('click', function(){
-    //   for (let i = 0; i < mapInfo.length; i++) {
-    //     if($(this).find('.categories-text').html() == mapInfo[i].name) {
-    //       myMap.destroy()
-    //       createMap([mapInfo[i]])
-    //     }
-    //   }
-    // })
-    function init(){
-        // Создание карты.
-        var map = new ymaps.Map("map", {
-            center: [55.797286, 37.655436],
-            zoom: 15,
-        },{
-            yandexMapDisablePoiInteractivity: true
-        });
-
-        let placemark = new ymaps.Placemark([55.797286, 37.655436], {}, {
-            iconLayout: 'default#image',
-            iconImageHref: './assets/images/map_icon.svg',
-            iconImageSize: [32, 32],
-            iconImageOffset: [-16,-32],
-        })
-
-        map.controls.remove('geolocationControl');
-        map.controls.remove('searchControl');
-        map.controls.remove('trafficControl');
-        map.controls.remove('typeSelector');
-        map.controls.remove('fullscreenControl');
-        map.controls.remove('zoomControl');
-        map.controls.remove('rulerControl');
-        map.controls.remove('scrollZoom');
-        map.controls.remove('drag');
-        map.behaviors.disable('drag')
-        map.behaviors.disable(['scrollZoom']);
-        map.behaviors.disable('multiTouch')
-
-        map.geoObjects.add(placemark)
-    }
-    ymaps.ready(init);
-    </script>
     <script src="./js/main.js"></script>
+    <script>
+      const  mapInfo = [
+      {
+        name: 'Славянский мир',
+        coordinate: [55.612019, 37.487137]
+      },
+      {
+        name: 'БП “Румянцево”',
+        coordinate: [55.633683, 37.442818]
+      },
+      {
+        name: 'ТЦ Каширский двор',
+        coordinate: [55.664654, 37.632608]
+      },
+      {
+        name: 'БП “Румянцево 2”',
+        coordinate: [55.647938, 37.480811]
+      },
+    ]
+    var myMap
+    function createMap(mapInfo) {
+      ymaps.ready(function () {
+        myMap = new ymaps.Map('map',
+          {
+            center: [55.751574, 37.573856],
+            zoom: 10,
+          },
+          {
+            yandexMapDisablePoiInteractivity: true
+          },
+        )
+    
+        for (let i = 0; i < mapInfo.length; i++) {
+          myPlacemark = new ymaps.Placemark(mapInfo[i].coordinate, {}, {
+              iconLayout: 'default#image',
+              iconImageHref: './assets/images/map_icon.svg',
+              iconImageSize: [30, 42],
+              iconImageOffset: [-5, -38],
+            },
+          );
+          myMap.geoObjects.add(myPlacemark);
+        }
+      });
+    }
+    createMap(mapInfo)
+
+    $('.shops__categories-link').on('click', function(){
+      for (let i = 0; i < mapInfo.length; i++) {
+        if($(this).find('.categories-text').html() == mapInfo[i].name) {
+          myMap.destroy()
+          createMap([mapInfo[i]])
+        }
+      }
+    })
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
