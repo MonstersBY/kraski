@@ -1,10 +1,31 @@
 if($('.shops__map').length){
-  ymaps.ready(function () {
-    var myMap = new ymaps.Map(
+
+  const  mapInfo = [
+    {
+      name: 'Славянский мир',
+      coordinate: [55.612019, 37.487137]
+    },
+    {
+      name: 'БП “Румянцево”',
+      coordinate: [55.633683, 37.442818]
+    },
+    {
+      name: 'ТЦ Каширский двор',
+      coordinate: [55.664654, 37.632608]
+    },
+    {
+      name: 'БП “Румянцево 2”',
+      coordinate: [55.647938, 37.480811]
+    },
+  ]
+  var myMap
+  function createMap(mapInfo) {
+    ymaps.ready(function () {
+      myMap = new ymaps.Map(
         'map',
         {
           center: [55.751574, 37.573856],
-          zoom: 9,
+          zoom: 10,
         },
         {
           searchControlProvider: 'yandex#search',
@@ -13,51 +34,31 @@ if($('.shops__map').length){
       // Создаём макет содержимого.
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>',
-      ),
-      myPlacemark = new ymaps.Placemark(
-        myMap.getCenter(),
-        {
-          hintContent: 'Собственный значок метки',
-          balloonContent: 'Это красивая метка',
-        },
-        {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: '../assets/images/map_icon.svg',
-          // Размеры метки.
-          iconImageSize: [30, 42],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38],
-        },
-      );
-    // myPlacemarkWithContent = new ymaps.Placemark(
-    //   [55.661574, 37.573856],
-    //   {
-    //     hintContent: 'Собственный значок метки с контентом',
-    //     balloonContent: 'А эта — новогодняя',
-    //     iconContent: '12',
-    //   },
-    //   {
-    //     // Опции.
-    //     // Необходимо указать данный тип макета.
-    //     iconLayout: 'default#imageWithContent',
-    //     // Своё изображение иконки метки.
-    //     iconImageHref: 'images/ball.png',
-    //     // Размеры метки.
-    //     iconImageSize: [48, 48],
-    //     // Смещение левого верхнего угла иконки относительно
-    //     // её "ножки" (точки привязки).
-    //     iconImageOffset: [-24, -24],
-    //     // Смещение слоя с содержимым относительно слоя с картинкой.
-    //     iconContentOffset: [15, 15],
-    //     // Макет содержимого.
-    //     iconContentLayout: MyIconContentLayout,
-    //   },
-    // );
+      )
   
-    myMap.geoObjects.add(myPlacemark);
-  });
+      for (let i = 0; i < mapInfo.length; i++) {
+        myPlacemark = new ymaps.Placemark(mapInfo[i].coordinate,
+          {},
+          {
+            iconLayout: 'default#image',
+            iconImageHref: '../assets/images/map_icon.svg',
+            iconImageSize: [30, 42],
+            iconImageOffset: [-5, -38],
+          },
+        );
+        myMap.geoObjects.add(myPlacemark);
+      }
+    });
+  }
+  createMap(mapInfo)
+
+  $('.shops__categories-link').on('click', function(){
+    for (let i = 0; i < mapInfo.length; i++) {
+      if($(this).find('.categories-text').html() == mapInfo[i].name) {
+        myMap.destroy()
+        console.log(mapInfo[i]);
+        createMap([mapInfo[i]])
+      }
+    }
+  })
 }
