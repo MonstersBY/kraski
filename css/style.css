@@ -9398,6 +9398,213 @@ section {
     height: 2.8rem;
   }
 }
+.repair-page .title-h2 {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(146, 147, 176, 0.5);
+  margin-bottom: 4rem;
+}
+.repair-page-boxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6rem;
+  margin-bottom: 4rem;
+  padding-bottom: 15rem;
+  border-bottom: 1px solid rgba(146, 147, 176, 0.5);
+}
+.repair-page-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+.repair-page-box p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  width: 97.3rem;
+  color: #3B3C40;
+}
+.repair-page-box p a {
+  color: #E50E78;
+}
+.repair-page-box-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.repair-page-box-item {
+  width: 37.5rem;
+  height: 32rem;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  padding: 1.24rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.repair-page-box-item--img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.repair-page-box-item--img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.repair-page-box-item--text {
+  border-radius: 20px;
+  border: 1px solid var(--white, #FFF);
+  background: rgba(244, 246, 248, 0.6);
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 0.577rem 2rem;
+  width: 100%;
+  margin-top: auto;
+  color: #3B3C40;
+}
+.repair-page-box-item--text strong {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.repair-page-box-item--text span {
+  opacity: 0.6;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.repair-page-box-item--text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../assets/images/icon/arrow-right-black1.svg) no-repeat;
+  background-size: contain;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1.7rem;
+}
+.repair-page-info {
+  width: 90.3rem;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@media (max-width: 48em) {
+  .repair-page .title-h2 {
+    padding-bottom: 6rem;
+    margin-bottom: 6rem;
+  }
+  .repair-page-boxs {
+    gap: 8rem;
+    margin-bottom: 6rem;
+    padding-bottom: 16rem;
+  }
+  .repair-page-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4.8rem;
+  }
+  .repair-page-box p {
+    font-size: 2.8rem;
+    line-height: 130%;
+    width: auto;
+  }
+  .repair-page-box-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .repair-page-box-item {
+    width: 34.4rem;
+    height: 52rem;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  .repair-page-box-item--img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .repair-page-box-item--img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .repair-page-box-item--text {
+    border-radius: 10px;
+    padding: 2rem 2rem 6rem;
+  }
+  .repair-page-box-item--text strong {
+    font-size: 3rem;
+    line-height: 140%;
+  }
+  .repair-page-box-item--text span {
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .repair-page-box-item--text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../assets/images/icon/arrow-right-black1.svg) no-repeat;
+    background-size: contain;
+    width: 4rem;
+    height: 4rem;
+    top: auto;
+    right: auto;
+    bottom: 2rem;
+    left: 2rem;
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  .repair-page-info {
+    width: auto;
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+}
 .mobile {
   display: none;
 }
