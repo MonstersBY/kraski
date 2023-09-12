@@ -6967,20 +6967,14 @@
             zoom: 10,
           },
           {
-            searchControlProvider: 'yandex#search',
+            yandexMapDisablePoiInteractivity: true
           },
-        ),
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>',
         )
     
         for (let i = 0; i < mapInfo.length; i++) {
-          myPlacemark = new ymaps.Placemark(mapInfo[i].coordinate,
-            {},
-            {
+          myPlacemark = new ymaps.Placemark(mapInfo[i].coordinate, {}, {
               iconLayout: 'default#image',
-              iconImageHref: './assets/images/map_icon.svg',
+              iconImageHref: '/assets/images/map_icon.svg',
               iconImageSize: [30, 42],
               iconImageOffset: [-5, -38],
             },
