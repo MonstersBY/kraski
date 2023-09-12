@@ -171,6 +171,16 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+  let swiper8 = new Swiper('.shops-swiper', {
+    slidesPerView: 1,
+    spaceBetween: `${remToPx(1)}rem`,
+    breakpoints: {
+      769: {
+        slidesPerView: 4,
+        spaceBetween: `${remToPx(2)}rem`,
+      },
+    },
+  });
   function remToPx(remValue) {
     // Получаем текущий базовый размер шрифта (font-size) из элемента <html>
     var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);

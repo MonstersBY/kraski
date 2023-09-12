@@ -56,14 +56,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (screen.width < 769) {
         $('body').addClass('modalac')
       }
-    } else {
-      $('.header-fixed').removeClass('searching')
-      if (screen.width < 769) {
-        $('body').removeClass('modalac')
+    }
+  })
+  $('.header__search .search').on( "focus", function() {
+    $('.header-fixed').addClass('searching')
+    if (screen.width < 769) {
+      $('body').addClass('modalac')
+    }
+  });
+  $(document).mouseup(function (e) {
+    if (screen.width > 769) {
+      var container = $('.header__search');
+      var box = $('.header_search');
+      if (container.has(e.target).length === 0 && box.has(e.target).length === 0){
+        $('.header-fixed').removeClass('searching')
       }
     }
-
-  })
+  });
   $('.btn-search-back').on('click', function(){
     $('.header__search .search').val('')
     $('.header-fixed').removeClass('searching')
