@@ -209,6 +209,10 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 .btn-reverse {
   padding: 0.5rem 0.5rem 0.5rem 3rem;
@@ -221,21 +225,9 @@
   background: #FFF;
   font-size: 1.8rem;
   box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
-  $border: 2px;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
-  border-radius: 15px;
+  border: 2px solid #DD3197;
+  border-radius: 1.5rem;
   position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
-    background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
-  }
 
   &--text {
     background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
@@ -267,7 +259,7 @@
   font-weight: 500;
   box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
   color: #FFF;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 .btn-empty {
   padding: 1.9rem 3rem;
@@ -278,21 +270,10 @@
   font-size: 1.8rem;
   font-weight: 500;
   box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
-  $border: 0.2rem;
-  background-clip: padding-box; /* !importanté */
-  border: solid $border transparent; /* !importanté */
-  border-radius: 15px;
+  background-clip: padding-box;
+  border: 2px solid #DD3197;
+  border-radius: 1.5rem;
   position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
-    background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
-  }
 
   &--text {
     background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
@@ -1056,6 +1037,10 @@
         path {
         }
       }
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
   .btn {
@@ -1071,6 +1056,10 @@
     background: linear-gradient(139deg, #dd3197 0%, #822faf 100%);
     color: #fff;
     font-size: 3rem;
+
+    &.mobile {
+      display: flex;
+    }
 
     &--icon {
       display: flex;
@@ -1140,21 +1129,17 @@
     background: #FFF;
     font-size: 3rem;
     box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
-    $border: 0.2rem;
-    background-clip: padding-box; /* !importanté */
-    border: solid $border transparent; /* !importanté */
     border-radius: 10px;
-    position: relative;
   
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -$border; /* !importanté */
-      border-radius: inherit; /* !importanté */
-      background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
-    }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0; right: 0; bottom: 0; left: 0;
+    //   z-index: -1;
+    //   margin: -$border; /* !importanté */
+    //   border-radius: inherit; /* !importanté */
+    //   background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
+    // }
   
     &--text {
       background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
