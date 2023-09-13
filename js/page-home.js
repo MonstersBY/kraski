@@ -191,4 +191,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Округляем значение до целых пикселей (по желанию)
     return Math.round(pxValue) + 'px';
   }
+
+  function stepAnimateText(element, animation, delay){
+    $(element).each(function() {
+      var text = $(this).text();
+      var curr = '';
+  
+      for (var i=0; i < text.length; i++){
+        var character = text.charAt(i);
+        $(this).html(curr+'<span class="'+animation+'" style="-webkit-animation-delay: '+i*delay+'s; animation-delay: '+i*delay+'s">'+character +"</span>");
+        curr = $(this).html();
+      }
+    });
+    setTimeout(() => {
+      stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
+    }, 16000);
+  }
+  stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
 });

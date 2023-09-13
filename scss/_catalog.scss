@@ -43,13 +43,13 @@
         &-item {
             width: 25.8rem;
             height: 14rem;
-            border-radius: 20px;
+            border-radius: 2rem;
             position: relative;
             padding: 1rem;
             display: flex;
 
             &--img {
-                border-radius: 20px;
+                border-radius: 2rem;
                 width: 25.8rem;
                 height: 14rem;
                 position: absolute;
@@ -57,7 +57,7 @@
                 left: 0;
 
                 img {
-                    border-radius: 20px;
+                    border-radius: 2rem;
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
@@ -73,7 +73,7 @@
                 backdrop-filter: blur(6px);
                 width: 23.8rem;
                 border: 1px solid #FFF;
-                border-radius: 15px;
+                border-radius: 1.5rem;
                 background: rgba(244, 246, 248, 0.5);
                 padding: 0.9rem 2rem;
                 margin: auto auto 0;
@@ -128,7 +128,7 @@
                         width: 14.3rem;
                         padding: 0.9rem 1.5rem;
                         border: 1px solid #E50E78;
-                        border-radius: 15px;
+                        border-radius: 1.5rem;
                         font-size: 1.6rem;
                         font-style: normal;
                         font-weight: 500;
@@ -136,7 +136,7 @@
                     }
                 }
                 &--range {
-                    border-radius: 10px;
+                    border-radius: 1rem;
                     background: rgba(59, 60, 64, 0.20);
                     border: unset;
                     box-shadow: unset;
@@ -210,7 +210,7 @@
         flex: 1;
 
         &-head {
-            border-radius: 40px;
+            border-radius: 4rem;
             background: linear-gradient(345deg, #7D68FB 21.47%, #AFA2FB 102.96%);
             height: 25.3rem;
             position: relative;
@@ -304,7 +304,7 @@
                 color: #3B3C40;
                 padding: 1.4rem 4.9rem 1.4rem 2.4rem;
                 background: #F4F6F8;
-                border-radius: 15px;
+                border-radius: 1.5rem;
                 width: fit-content;
                 position: relative;
                 cursor: pointer;
@@ -328,7 +328,7 @@
                 display: none;
                 flex-direction: column;
                 padding: 2.5rem;
-                border-radius: 30px;
+                border-radius: 3rem;
                 background: #FFF;
                 box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
                 width: fit-content;
@@ -342,7 +342,7 @@
                 display: flex;
                 gap: 1rem;
                 padding: 1.5rem;
-                border-radius: 10px;
+                border-radius: 1rem;
                 width: 30rem;
 
                 &:hover {
@@ -353,7 +353,7 @@
         &-view {
             display: flex;
             background: #F4F6F8;
-            border-radius: 15px;
+            border-radius: 1.5rem;
             padding: 0.5rem;
 
             &-icon {
@@ -370,7 +370,7 @@
 
                 &.active {
                     background: #FFF;
-                    border-radius: 10px;
+                    border-radius: 1rem;
 
                     svg {
                         opacity: 1;
@@ -400,7 +400,7 @@
             width: fit-content;
             padding: 0.9rem 2.4rem;
             background: #F4F6F8;
-            border-radius: 15px;
+            border-radius: 1.5rem;
             font-size: 1.6rem;
             font-style: normal;
             font-weight: 500;
@@ -552,7 +552,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 30px;
+                border-radius: 3rem;
                 border: 2px solid #F4F6F8;
                 width: 32.5rem;
                 height: 21.4rem;
@@ -564,7 +564,7 @@
                     top: 1.5rem;
                     left: 1.5rem;
                     padding: 0.6rem 1.4rem;
-                    border-radius: 15px;
+                    border-radius: 1.5rem;
                     background: #E50E78;
                     font-size: 1.6rem;
                     font-style: normal;
@@ -596,7 +596,7 @@
                     width: 32.5rem;
                     height: 5rem;
                     text-align: center;
-                    border-radius: 0px 0px 30px 30px;
+                    border-radius: 0px 0px 3rem 3rem;
                     background: rgba(227, 19, 122, 0.20);
                     // backdrop-filter: blur(6px);
                     font-size: 1.6rem;
@@ -730,7 +730,7 @@
             height: 42.2rem;
             &--one {
                 filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
-                border-radius: 20px;
+                border-radius: 2rem;
                 background: linear-gradient(147deg, #8176E8 0%, #D7D9FA 100%);
                 display: flex;
                 flex-direction: column;
@@ -739,7 +739,7 @@
 
                 .catalog__list-advertising-container {
                     width: 100%;
-                    border-radius: 10px;
+                    border-radius: 1rem;
                     background: #FFF;
                     position: relative;
                     padding: 0.8rem 2rem 1.2rem 8.2rem;
@@ -812,7 +812,7 @@
             }
             &--two {
                 filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
-                border-radius: 20px;
+                border-radius: 2rem;
                 display: flex;
                 flex-direction: column;
                 position: relative;
@@ -850,14 +850,14 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    border-radius: 20px;
+                    border-radius: 2rem;
                     z-index: -1;
 
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        border-radius: 20px;
+                        border-radius: 2rem;
                     }
                 }
                 .catalog__list-advertising-bottom {
@@ -866,8 +866,8 @@
                     align-items: center;
                     padding: 1.5rem 1.5rem;
                     background: #FFF;
-                    border-bottom-left-radius: 20px;
-                    border-bottom-right-radius: 20px;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
 
                     &--text {
                         font-size: 1.8rem;
@@ -899,7 +899,7 @@
 .filter-modal {
     &-container {
         width: 130rem;
-        border-radius: 30px;
+        border-radius: 3rem;
         background: #FFF;
         box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
         padding: 6rem;
@@ -925,7 +925,7 @@
             color: #3B3C40;
             display: flex;
             align-items: end;
-            border-radius: 15px;
+            border-radius: 1.5rem;
             background: #F4F6F8;
             padding: 0.9rem 1.5rem 0.9rem 2rem;
 
@@ -970,7 +970,7 @@
             gap: 1rem;
         }
         &--range {
-            border-radius: 10px;
+            border-radius: 1rem;
             background: rgba(59, 60, 64, 0.20);
             border: unset;
             box-shadow: unset;
@@ -1016,7 +1016,7 @@
                 width: 100%;
                 padding: 0.9rem 1.5rem;
                 border: 1px solid #E50E78;
-                border-radius: 15px;
+                border-radius: 1.5rem;
                 font-size: 1.6rem;
                 font-style: normal;
                 font-weight: 500;
@@ -1061,7 +1061,7 @@
     &-container {
         width: 122.3rem;
         height: auto;
-        border-radius: 30px;
+        border-radius: 3rem;
         background: #FFF;
         box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
         display: flex;
@@ -1132,7 +1132,7 @@
             .swiper-slide {
                 width: 11.2rem;
                 height: 11.2rem;
-                border-radius: 20px;
+                border-radius: 2rem;
                 background: linear-gradient(0deg, rgba(246, 245, 250, 0.63) 0%, #F6F5FA 100%), #F4F6F8;
                 position: relative;
 
@@ -1272,7 +1272,7 @@
         &-btn {
             padding: 1.2rem 2rem;
             background: #FFF;
-            border-radius: 15px;
+            border-radius: 1.5rem;
             border: 1px solid #FFF;
             box-shadow: 5px 7px 14px 0px rgba(173, 178, 201, 0.15);
             cursor: pointer;
@@ -1316,7 +1316,7 @@
         flex-direction: column;
         gap: 3rem;
         box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
-        border-radius: 30px;
+        border-radius: 3rem;
 
         &-info {
             display: flex;
