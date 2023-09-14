@@ -1708,6 +1708,9 @@
         }
       }
     }
+    &-swiper-right, &-swiper-left {
+      display: none;
+    }
   }
   .repair {
     padding: 0 2rem;
@@ -2119,6 +2122,9 @@
 
       &::before, &::after {
         content: unset;
+      }
+      &-scrollable-prev, &-scrollable-next {
+        display: none;
       }
     }
     &-other {

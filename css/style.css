@@ -6034,6 +6034,9 @@ section {
     height: 1rem;
     margin: 0;
   }
+  .popular-swiper-right, .popular-swiper-left {
+    display: none;
+  }
   .repair {
     padding: 0 2rem;
   }
@@ -6422,6 +6425,9 @@ section {
   }
   .shops__our::before, .shops__our::after {
     content: unset;
+  }
+  .shops__our-scrollable-prev, .shops__our-scrollable-next {
+    display: none;
   }
   .shops-other.shops .shops__info-title, .shops-other.shops .shops__info-subscription {
     padding: 0 2rem;
