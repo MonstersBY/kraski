@@ -6416,7 +6416,6 @@ section {
           box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.25);
   padding: 4rem;
   width: 90.2rem;
-  height: 43.6rem;
   z-index: 0;
 }
 .registration__box {
@@ -6471,6 +6470,10 @@ section {
       flex-wrap: wrap;
   height: 100%;
   gap: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3rem 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .registration-form .btn {
   gap: 7rem;
