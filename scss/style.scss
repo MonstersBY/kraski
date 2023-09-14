@@ -306,8 +306,6 @@
   opacity: 1;
 }
 .categories {
-  display: flex;
-  gap: 1.5rem;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.4;
@@ -328,6 +326,7 @@
     border-radius: 1.5rem;
     background: #f4f6f8;
     cursor: pointer;
+    width: fit-content;
     &.active {
       color: #fff;
       background-color: #e50e78;
@@ -994,6 +993,7 @@
       align-items: center;
       padding: 1.6rem 2.4rem;
       line-height: 1;
+      height: 7.4rem;
     }
     &-text {
       font-size: 3rem;

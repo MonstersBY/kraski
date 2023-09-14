@@ -61,8 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
   //   }, 490);
   // });
 
+  let lastScroll = 0;
   $(window).scroll(function () {
     var scrollPosition = $(window).scrollTop()
+
     if(scrollPosition>0) {
       $('.header-fixed').addClass('active')
       $('.header-fixed').parents('.header').children('.header_container').css('margin-top', $('.header-fixed').height())
@@ -70,6 +72,22 @@ document.addEventListener('DOMContentLoaded', () => {
       $('.header-fixed').removeClass('active')
       $('.header-fixed').parents('.header').children('.header_container').css('margin-top', 0)
     }
+
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+      $('body').removeClass('scrollUp');
+      return;
+    }
+    if (currentScroll > lastScroll && !$('body').hasClass('scrollDown')) {
+      // down
+      $('body').removeClass('scrollUp');
+      $('body').addClass('scrollDown');
+    } else if (currentScroll < lastScroll && $('body').hasClass('scrollDown')) {
+      // up
+      $('body').removeClass('scrollDown');
+      $('body').addClass('scrollUp');
+    }
+    lastScroll = currentScroll;
   })
 
   $('.header__search .search').on('input', function(){
@@ -116,9 +134,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let hBtn = $('.header__catalog')
       let hBox = $('.header_catalog')
-      console.log(hBtn.has(e.target).length);
-      console.log(hBox.has(e.target).length);
-      console.log(hBtn.has(e.target).length === 0);
       if(hBtn.has(e.target).length === 0) {
         $('.header__catalog').removeClass('active')
         $('.header_catalog').removeClass('active')

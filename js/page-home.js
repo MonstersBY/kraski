@@ -67,6 +67,28 @@ document.addEventListener('DOMContentLoaded', () => {
       },
     },
   });
+  let swiper31 = new Swiper('.popular-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: `${remToPx(1.5)}rem`,
+    navigation: {
+      prevEl: '.popular-swiper-left',
+      nextEl: '.popular-swiper-right',
+    },
+
+    breakpoints: {
+      769: {
+        spaceBetween: `${remToPx(1.2)}rem`,
+      },
+    },
+  });
+  $(window).resize(function(){
+    resizeBrands ()
+  });
+
+  function resizeBrands () {
+    $('.brands__content-slide').height($('.brands__content-slide').width())
+  }
+  resizeBrands ()
 
   let swiper4 = new Swiper('.repair__list', {
     slidesPerView: 1,
@@ -78,14 +100,15 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     pagination: {
       el: '.repair__list-pagination',
+      clickable: true,
     },
   });
   let swiper5 = new Swiper('.hits__slider', {
     slidesPerView: 'auto',
     spaceBetween: `${remToPx(2)}rem`,
     navigation: {
-      prevEl: '.hits__nav-prev',
-      nextEl: '.hits__nav-next',
+      prevEl: '.hits__slider-prev',
+      nextEl: '.hits__slider-next',
     },
     breakpoints: {
       320: {
@@ -95,10 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
           rows: 2,
           fill: 'rows',
         },
-        pagination: {
-          el: '.popular-pagination--mob',
-          clickable: true,
-        },
+        // pagination: {
+        //   el: '.popular-pagination--mob',
+        //   clickable: true,
+        // },
       },
       // Медиа-запрос для ширины больше 768px
       769: {
@@ -126,10 +149,10 @@ document.addEventListener('DOMContentLoaded', () => {
           rows: 2,
           fill: 'rows',
         },
-        pagination: {
-          el: '.popular-pagination--mob',
-          clickable: true,
-        },
+        // pagination: {
+        //   el: '.popular-pagination--mob',
+        //   clickable: true,
+        // },
       },
       // Медиа-запрос для ширины больше 768px
       769: {
@@ -156,10 +179,10 @@ document.addEventListener('DOMContentLoaded', () => {
           rows: 2,
           fill: 'rows',
         },
-        pagination: {
-          el: '.popular-pagination--mob',
-          clickable: true,
-        },
+        // pagination: {
+        //   el: '.popular-pagination--mob',
+        //   clickable: true,
+        // },
       },
       // Медиа-запрос для ширины больше 768px
       769: {
@@ -178,6 +201,20 @@ document.addEventListener('DOMContentLoaded', () => {
       769: {
         slidesPerView: 4,
         spaceBetween: `${remToPx(2)}rem`,
+      },
+    },
+  });
+  let swiper81 = new Swiper('.shops__our-scrollable', {
+    slidesPerView: 'auto',
+    spaceBetween: `${remToPx(1.5)}rem`,
+    navigation: {
+      prevEl: '.shops__our-scrollable-left',
+      nextEl: '.shops__our-scrollable-right',
+    },
+
+    breakpoints: {
+      769: {
+        spaceBetween: `${remToPx(1.2)}rem`,
       },
     },
   });
@@ -208,4 +245,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 16000);
   }
   stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
+
+  $('.tel').mask('+7(999) 999-99-99');
 });
