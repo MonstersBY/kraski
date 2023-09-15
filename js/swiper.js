@@ -132,4 +132,18 @@ $(document).ready(function() {
           swiper: fast_photo_bottom1,
       },
     });
+
+    const productPBottom = new Swiper('.product_pictures-bottom-swiper', {
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesProgress: true,
+      spaceBetween: `${remToPx(2)}rem`,
+    });
+
+    const productP = new Swiper('.product_pictures-swiper', {
+      spaceBetween: `${remToPx(2)}rem`,
+      thumbs: {
+          swiper: productPBottom,
+      },
+    });
 })

@@ -67,6 +67,54 @@
             }
         }
     }
+    &__download {
+        &--title {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 0.4rem;
+        }
+        &--subtitle {
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            color: #9293B0;
+            margin-bottom: 1rem;
+        }
+        &-block {
+            border-radius: 1.5rem;
+            border: 1px solid #E50E78;
+            height: 12rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &--icon {
+                width: 2.4rem;
+                height: 2.4rem;
+                margin-right: 0.6rem;
+
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &--text {
+                color: #9293B0;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%;
+
+                span {
+                    color: #E50E78;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 48em) {

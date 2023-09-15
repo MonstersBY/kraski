@@ -246,5 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
 
-  $('.tel').mask('+7(999) 999-99-99');
+  if($('.tel').length){
+    $('.tel').mask('+7(999) 999-99-99');
+  }
 });

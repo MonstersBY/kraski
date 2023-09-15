@@ -322,4 +322,66 @@ if($('.catalog__sort').length) {
     })
 }
 
+// Карточка товара
+if($('.product').length) {
+    $('.product_info-item-btn').on( "click", function(e) {
+        e.preventDefault();
+        $(this).parents('.product_info-item-btns').find('.product_info-item-btn').removeClass('active')
+        $(this).addClass('active')
+    });
+    let priceDisOrigin = parseInt($('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+    let priceOrigin = parseInt($('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+
+    $('.calc .plus').on( "click", function(e) {
+        e.preventDefault();
+        let count = parseInt($(this).parents('.calc').find('.number').html())
+        $(this).parents('.calc').find('.number').html(count + 1)
+        $(this).parents('.calc').find('.minus').removeClass('not-active')
+
+        if($(this).parents('product_purchase-calc')) {
+            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+            $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
+    
+            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html().split(' ')[0])
+            $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
+        }
+
+        
+    });
+
+    $('.calc .minus').on( "click", function(e) {
+        if(!$(this).hasClass('not-active')) {
+            e.preventDefault();
+            let count = parseInt($(this).parents('.calc').find('.number').html())
+            $(this).parents('.calc').find('.number').html(count - 1)
+            if (count == 2) {
+                $(this).parents('.calc').find('.minus').addClass('not-active')
+            }
+
+            if($(this).parents('product_purchase-calc')) {
+                let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+                $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis - priceDisOrigin +' ₽')
+        
+                let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html().split(' ')[0])
+                $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price - priceOrigin +' ₽')
+            }
+        }
+    });
+    $('.product-info_left-all').on( "click", function(e) {
+        $(this).css('display', 'none')
+        $(this).siblings('.not-show').removeClass('not-show')
+    });
+    $('.product-info_left-review--open').on( "click", function(e) {
+        $(this).siblings('.product-info_left-review--text').toggleClass('open')
+        $(this).html() == 'Скрыть' ? $(this).html('Читать полностью') : $(this).html('Скрыть')
+    });
+
+    $('.product-variation-item-btn').on( "click", function(e) {
+        e.preventDefault();
+        $(this).parents('.product-variation-item').find('.product-variation-item-btn').removeClass('active')
+        $(this).addClass('active')
+    });
+
+}
+
 })

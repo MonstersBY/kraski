@@ -181,6 +181,10 @@
     width: 2.4rem;
     height: 2.4rem;
   }
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
 .btn-categories-link {
   padding: 0.5rem 0.5rem 0.5rem 3rem;
@@ -244,6 +248,10 @@
     border-radius: 1rem;
     background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
     svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+    img {
       width: 2.4rem;
       height: 2.4rem;
     }
@@ -1075,6 +1083,10 @@
         width: 4rem;
         height: 4rem;
       }
+      img {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
   .btn-reverse {
@@ -1107,6 +1119,10 @@
       z-index: 1;
       background: linear-gradient(139deg, #DD3197 0%, #822FAF 100%);
       svg {
+        width: 4rem;
+        height: 4rem;
+      }
+      img {
         width: 4rem;
         height: 4rem;
       }
@@ -1164,6 +1180,7 @@
 @import "selection-by-parameters";
 @import "catalog";
 @import "repair";
+@import "product";
 
 
 
