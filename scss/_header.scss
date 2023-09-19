@@ -10,7 +10,7 @@
 .header {
   background: #fff;
   position: relative;
-  z-index: 4;
+  z-index: 20;
 
   &_catalog {
     display: none;
@@ -797,12 +797,12 @@
   }
 
 }
-.header-fixed.active .header__top_container .header__menu-phone {
-  display: flex;
-}
-.header-fixed.active .header__top_container .header__menu {
-  display: none;
-}
+// .header-fixed.active .header__top_container .header__menu-phone {
+//   display: flex;
+// }
+// .header-fixed.active .header__top_container .header__menu {
+//   display: none;
+// }
 
 @media (max-width: 48em) {
   @keyframes headerAnim {

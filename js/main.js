@@ -382,6 +382,40 @@ if($('.product').length) {
         $(this).addClass('active')
     });
 
+    $('.product-calc-item-choice--box').on( "click", function(e) {
+        e.preventDefault();
+        $(this).parents('.product-calc-item-choice-container').find('.product-calc-item-choice--box').removeClass('active')
+        $(this).addClass('active')
+    });
+
+    $("#calc1").roundSlider({
+        radius: 105,
+        startAngle: 90,
+        width: 22,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
+    $("#calc2").roundSlider({
+        radius: 105,
+        startAngle: 90,
+        width: 22,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
+    function tooltipVal2(args) {
+        return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
+    }
+
 }
 
 })

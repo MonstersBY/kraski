@@ -50,6 +50,7 @@ html {
   line-height: 1.2;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -156,7 +157,7 @@ input[type='number'] {
 }
 
 section {
-  margin-bottom: 18rem;
+  margin-bottom: 15rem;
 }
 
 @media (max-width: 48em) {
