@@ -828,8 +828,15 @@
 
   .bc {
     margin-bottom: 6rem;
+    .container {
+      display: flex;
+      overflow: auto;
+      padding-bottom: 3rem;
+      margin-bottom: -3rem;
+    }
     a {
       padding-right: 4.8rem;
+      flex: none;
 
       &::after {
         content: '';
@@ -840,6 +847,9 @@
         right: 0.5rem;
         top: 50%;
       }
+    }
+    span {
+      flex: none;
     }
     font-size: 2.8rem;
     line-height: 130%;
@@ -1100,15 +1110,10 @@
     background: #FFF;
     font-size: 3rem;
     box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
-    $border: 2px;
-    background-clip: padding-box; /* !importanté */
-    border: solid $border transparent; /* !importanté */
-    border-radius: 10px;
+    border: 1.5px solid #DD3197; /* !importanté */
+    border-radius: 2rem;
     position: relative;
-  
-    &:before {
-      margin: -$border;
-    }
+    
     &--icon {
       display: flex;
       align-items: center;

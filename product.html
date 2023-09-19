@@ -1589,9 +1589,12 @@
 
     <section id="product" class="product">
       <div class="container product-container">
+        <div class="product_pictures--title mobile">Flugger Dekso 25 Краска полуматовая с очень высокой прочностью для внутренних работ</div>
+        <div class="product_pictures--dis mobile"><span>-50%</span> на второй товар Flugger</div>
         <div class="product_pictures">
           <div class="product_pictures--back">
-            <img src="./assets/images/product/img-back.svg" alt="">
+            <img class="desktop" src="./assets/images/product/img-back.svg" alt="">
+            <img class="mobile" src="./assets/images/product/img-back-mob.svg" alt="">
           </div>
           <div class="product_pictures--like">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1752,27 +1755,32 @@
             </div>
           </div>
           <div class="product_purchase-box">
-            <div class="product_purchase--price">
-              <strong>3300 ₽</strong>
-              <span>3850 ₽</span>
-            </div>
-            <div class="product_purchase-calc calc">
-              <div class="product_purchase-calc--minus minus not-active">-</div>
-              <div class="product_purchase-calc--number number">1</div>
-              <div class="product_purchase-calc--plus plus">+</div>
-            </div>
-            <button class="btn">
-              <span class="btn--text">Купить в 1 клик</span>
-              <div class="btn--icon">
-                <img src="./assets/images/icon/arrow-right-colorfull.svg" alt="">
+            <div class="product_purchase-box--top">
+              <div class="product_purchase--price">
+                <strong>3300 ₽</strong>
+                <span>3850 ₽</span>
               </div>
-            </button>
-            <button class="btn-reverse">
-              <span class="btn-reverse--text">Добавить в корзину</span>
-              <div class="btn-reverse--icon">
-                <img src="./assets/images/icon/product-cart.svg" alt="">
+              <div class="product_purchase-calc calc">
+                <div class="product_purchase-calc--minus minus not-active">-</div>
+                <div class="product_purchase-calc--number number">1</div>
+                <div class="product_purchase-calc--plus plus">+</div>
               </div>
-            </button>
+            </div>
+            <div class="product_purchase-box--btns">
+              <button class="btn">
+                <span class="btn--text">Купить в 1 клик</span>
+                <div class="btn--icon">
+                  <img src="./assets/images/icon/arrow-right-colorfull.svg" alt="">
+                </div>
+              </button>
+              <button class="btn-reverse">
+                <span class="btn-reverse--text"><span class="desktop">Добавить</span> в корзину</span>
+                <div class="btn-reverse--icon">
+                  <img src="./assets/images/icon/product-cart.svg" alt="">
+                </div>
+              </button>
+            </div>
+
             <div class="product_purchase--line"></div>
             <div class="product_purchase-list">
               <div class="product_purchase-info">
@@ -1970,6 +1978,12 @@
               </div>
             </div>
             <div class="switcher__content">
+              <button class="btn start-write-review">
+                <span class="btn--text">Оставить отзыв</span>
+                <div class="btn--icon">
+                  <img src="./assets/images/icon/arrow-right-colorfull.svg" alt="">
+                </div>
+              </button>
               <div class="product-info_left-review">
                 <div class="product-info_left-review-top">
                   <span class="product-info_left-review--title">Нина Ю.</span>
@@ -2027,6 +2041,11 @@
                 </div>
               </div>
               <div class="product-info_left-write">
+                <div class="product-info_left-write--exit mobile">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M17.7137 17.7157L6.28516 6.28711M17.7137 6.28711L6.28516 17.7157" stroke="#9293B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
                 <div class="product-info_left-write--title">Мой отзыв</div>
                 <div class="product-info_left-write--grade">Оценка</div>
                 <form class="form product-info_left-write-form">
@@ -2060,10 +2079,10 @@
                       <div class="form__item-inner">
                         <span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M21.7388 17.1636C21.5716 18.4339 20.9477 19.6 19.9837 20.4439C19.0196 21.2879 17.7813 21.7521 16.5 21.7498C9.05626 21.7498 3.00001 15.6936 3.00001 8.24981C2.99771 6.96852 3.4619 5.73021 4.30588 4.76615C5.14986 3.80209 6.31592 3.17822 7.58626 3.01106C7.9075 2.97184 8.2328 3.03756 8.51362 3.19841C8.79444 3.35926 9.0157 3.60662 9.14438 3.90356L11.1244 8.32387V8.33512C11.2229 8.56242 11.2636 8.81059 11.2428 9.05744C11.222 9.3043 11.1404 9.54217 11.0053 9.74981C10.9884 9.77512 10.9706 9.79856 10.9519 9.822L9.00001 12.1357C9.7022 13.5626 11.1947 15.042 12.6403 15.7461L14.9222 13.8045C14.9446 13.7857 14.9681 13.7681 14.9925 13.752C15.2 13.6136 15.4387 13.5292 15.687 13.5062C15.9353 13.4833 16.1854 13.5227 16.4147 13.6207L16.4269 13.6264L20.8434 15.6054C21.1409 15.7337 21.3889 15.9547 21.5503 16.2356C21.7116 16.5164 21.7778 16.842 21.7388 17.1636Z" fill="#3B3C40"/>
+                            <path d="M20 8L12 13L4 8V6L12 11L20 6M20 4H4C2.89 4 2 4.89 2 6V18C2 18.5304 2.21071 19.0391 2.58579 19.4142C2.96086 19.7893 3.46957 20 4 20H20C20.5304 20 21.0391 19.7893 21.4142 19.4142C21.7893 19.0391 22 18.5304 22 18V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4Z" fill="#3B3C40"/>
                           </svg>
                         </span>
-                        <input class="tel" type="text" placeholder="Номер телефона">
+                        <input type="email" placeholder="Ваша почта">
                       </div>
                     </label>
                   </div>
@@ -2077,16 +2096,19 @@
                       <textarea placeholder="Ваш отзыв"></textarea>
                     </div>
                   </label>
-                  <label class="form__item form__download">
+                  <div class="form__item form__download">
                     <div class="form__download--title">Добавьте фотографии</div>
                     <div class="form__download--subtitle">Размер изображения не менее 800х600 пикселей, вес не более 10 Мб</div>
-                    <div class="form__download-block">
-                      <div class="form__download-block--icon">
-                        <img src="./assets/images/icon/add-photo.svg" alt="">
+                    <div class="form__download--working">
+                      <div class="form__download-block">
+                        <div class="form__download-block--icon">
+                          <img src="./assets/images/icon/add-photo.svg" alt="">
+                        </div>
+                        <div class="form__download-block--text"><span>Выберите фотографии</span> или перетащите их сюда</div>
+                        <input class="form__download--input" type="file" multiple>
                       </div>
-                      <div class="form__download-block--text"><span>Выберите фотографии</span> или перетащите их сюда</div>
                     </div>
-                  </label>
+                  </div>
                   <button class="btn">
                     <span class="btn--text">Оставить отзыв</span>
                     <div class="btn--icon">
@@ -2150,38 +2172,64 @@
             <div class="product-variation__quantity">Кол-во</div>
           </div>
           <div class="product-variation-item">
+            <div class="product-variation-item--back mobile">
+            </div>
             <div class="product-variation__packing">
-              <div class="product-variation__packing--img">
-                <img src="./assets/images/catalog/item2.png" alt="">
+              <div class="product-variation__m--title mobile">Фасовка</div>
+              <div class="product-variation--box">
+                <div class="product-variation__packing--img">
+                  <img class="desktop" src="./assets/images/catalog/item2.png" alt="">
+                  <img class="mobile" src="./assets/images/icon/color-buck.svg" alt="">
+                </div>
+                <span>0.75 л</span>
               </div>
-              <span>0.75 л</span>
+
             </div>
-            <div class="product-variation__shine">Полуматовый</div>
-            <div class="product-variation__color">
-              <div class="product-variation-item-btn active">
-                <img src="./assets/images/icon/color-white.svg" alt="">
-                <span>Белая краска</span>
+            <div class="product-variation__shine">
+              <div class="product-variation__m--title mobile">Степень блеска</div>
+              <div class="product-variation--box">Полуматовый</div>
+            </div>
+            <div class="product-variation__coltin">
+              <div class="product-variation__m--title mobile">Цвет/Колеровка
+                <img src="./assets/images/icon/colerovka-color.svg" alt="">
               </div>
-            </div>
-            <div class="product-variation__tinting">
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-pastel.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Пастельная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
+              <div class="product-variation--box">
+                
+                <div class="product-variation__color desktop">
+                  <div class="product-variation-item-btn active">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая краска</span>
+                  </div>
+                </div>
+                <div class="product-variation__tinting">
+                  <div class="product-variation-item-btn active mobile">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая</span>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-pastel.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Пастельная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-saturated.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Насыщенная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-saturated.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Насыщенная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
-                </div>
-              </div>
+
             </div>
-            <div class="product-variation__price">509 ₽</div>
+            <div class="product-variation__price">
+              <div class="product-variation__m--title mobile">Цена</div>
+              <div class="product-variation--box">509 ₽</div>
+            </div>
             <div class="product-variation__quantity">
               <div class="product-variation-item-calc calc">
                 <div class="product-variation-item-calc--minus minus not-active">-</div>
@@ -2199,38 +2247,64 @@
             </div>
           </div>
           <div class="product-variation-item">
+            <div class="product-variation-item--back mobile">
+            </div>
             <div class="product-variation__packing">
-              <div class="product-variation__packing--img">
-                <img src="./assets/images/catalog/item2.png" alt="">
+              <div class="product-variation__m--title mobile">Фасовка</div>
+              <div class="product-variation--box">
+                <div class="product-variation__packing--img">
+                  <img class="desktop" src="./assets/images/catalog/item2.png" alt="">
+                  <img class="mobile" src="./assets/images/icon/color-buck.svg" alt="">
+                </div>
+                <span>0.75 л</span>
               </div>
-              <span>2.8 л</span>
+
             </div>
-            <div class="product-variation__shine">Полуматовый</div>
-            <div class="product-variation__color">
-              <div class="product-variation-item-btn active">
-                <img src="./assets/images/icon/color-white.svg" alt="">
-                <span>Белая краска</span>
+            <div class="product-variation__shine">
+              <div class="product-variation__m--title mobile">Степень блеска</div>
+              <div class="product-variation--box">Полуматовый</div>
+            </div>
+            <div class="product-variation__coltin">
+              <div class="product-variation__m--title mobile">Цвет/Колеровка
+                <img src="./assets/images/icon/colerovka-color.svg" alt="">
               </div>
-            </div>
-            <div class="product-variation__tinting">
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-pastel.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Пастельная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
+              <div class="product-variation--box">
+                
+                <div class="product-variation__color desktop">
+                  <div class="product-variation-item-btn active">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая краска</span>
+                  </div>
+                </div>
+                <div class="product-variation__tinting">
+                  <div class="product-variation-item-btn active mobile">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая</span>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-pastel.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Пастельная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-saturated.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Насыщенная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-saturated.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Насыщенная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
-                </div>
-              </div>
+
             </div>
-            <div class="product-variation__price">509 ₽</div>
+            <div class="product-variation__price">
+              <div class="product-variation__m--title mobile">Цена</div>
+              <div class="product-variation--box">509 ₽</div>
+            </div>
             <div class="product-variation__quantity">
               <div class="product-variation-item-calc calc">
                 <div class="product-variation-item-calc--minus minus not-active">-</div>
@@ -2248,38 +2322,64 @@
             </div>
           </div>
           <div class="product-variation-item">
+            <div class="product-variation-item--back mobile">
+            </div>
             <div class="product-variation__packing">
-              <div class="product-variation__packing--img">
-                <img src="./assets/images/catalog/item2.png" alt="">
+              <div class="product-variation__m--title mobile">Фасовка</div>
+              <div class="product-variation--box">
+                <div class="product-variation__packing--img">
+                  <img class="desktop" src="./assets/images/catalog/item2.png" alt="">
+                  <img class="mobile" src="./assets/images/icon/color-buck.svg" alt="">
+                </div>
+                <span>0.75 л</span>
               </div>
-              <span>9.1 л</span>
+
             </div>
-            <div class="product-variation__shine">Полуматовый</div>
-            <div class="product-variation__color">
-              <div class="product-variation-item-btn active">
-                <img src="./assets/images/icon/color-white.svg" alt="">
-                <span>Белая краска</span>
+            <div class="product-variation__shine">
+              <div class="product-variation__m--title mobile">Степень блеска</div>
+              <div class="product-variation--box">Полуматовый</div>
+            </div>
+            <div class="product-variation__coltin">
+              <div class="product-variation__m--title mobile">Цвет/Колеровка
+                <img src="./assets/images/icon/colerovka-color.svg" alt="">
               </div>
-            </div>
-            <div class="product-variation__tinting">
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-pastel.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Пастельная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
+              <div class="product-variation--box">
+                
+                <div class="product-variation__color desktop">
+                  <div class="product-variation-item-btn active">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая краска</span>
+                  </div>
+                </div>
+                <div class="product-variation__tinting">
+                  <div class="product-variation-item-btn active mobile">
+                    <img src="./assets/images/icon/color-white.svg" alt="">
+                    <span>Белая</span>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-pastel.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Пастельная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
+                  <div class="product-variation-item-btn">
+                    <img src="./assets/images/icon/color-saturated.svg" alt="">
+                    <div class="product-variation-item-text">
+                      <span class="normal">Насыщенная</span>
+                      <span class="added">Flugger 900 FL 1358</span>
+                      <strong class="added">Изменить</strong>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="product-variation-item-btn">
-                <img src="./assets/images/icon/color-saturated.svg" alt="">
-                <div class="product-variation-item-text">
-                  <span class="normal">Насыщенная</span>
-                  <span class="added">Flugger 900 FL 1358</span>
-                  <strong class="added">Изменить</strong>
-                </div>
-              </div>
+
             </div>
-            <div class="product-variation__price">1549 ₽</div>
+            <div class="product-variation__price">
+              <div class="product-variation__m--title mobile">Цена</div>
+              <div class="product-variation--box">509 ₽</div>
+            </div>
             <div class="product-variation__quantity">
               <div class="product-variation-item-calc calc">
                 <div class="product-variation-item-calc--minus minus not-active">-</div>
@@ -2300,7 +2400,30 @@
       </div>
     </section>
 
-    <section class="product-calc">
+    <section class="product-calc-mob mobile">
+      <div class="container">
+        <div class="product-calc-mob_box">
+          <div class="product-calc-mob_box--img">
+            <img src="./assets/images/product/coins.png" alt="">
+          </div>
+          <div class="product-calc-mob_box--back">
+            <img src="./assets/images/product/product-calc-mob.png" alt="">
+          </div>
+          <div class="product-calc-mob_box-container">
+            <div class="product-calc-mob_box--title">Калькулятор расхода краски</div>
+            <div class="product-calc-mob_box--subtitle">Рассчитайте количество краски для ваших комнат</div>
+            <button class="btn open-product-calc">
+              <span class="btn--text">Рассчитать</span>
+              <div class="btn--icon">
+                <img src="./assets/images/icon/arrow-right-colorfull.svg" alt="">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-calc desktop">
       <div class="container">
         <div class="title-h2">Калькулятор расхода краски</div>
         <div class="product-calc--container">
@@ -3482,7 +3605,8 @@
     <script src="./js/scroll.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/page-home.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper.js"></script>>
+    <script src="./js/form.js"></script>
     <script src="./js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

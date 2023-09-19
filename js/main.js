@@ -416,6 +416,18 @@ if($('.product').length) {
         return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
     }
 
+    $('.start-write-review').on( "click", function(e) {
+        e.preventDefault();
+        $('body').addClass('modalac')
+        $('.product-info_left-write').addClass('active')
+    });
+
+    $('.product-info_left-write--exit').on( "click", function(e) {
+        e.preventDefault();
+        $('body').removeClass('modalac')
+        $('.product-info_left-write').removeClass('active')
+    });
+
 }
 
 })
