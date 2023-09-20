@@ -34,15 +34,15 @@ document.querySelectorAll('.drop-zone__input').forEach((inputElement) => {
 	});
 });
 
-$('.form__download--input').each(function(inputElement) {
-    const dropZoneElement = this.closest('.form__download-block');
+$('.form__download--input').each(function (inputElement) {
+	const dropZoneElement = this.closest('.form__download-block');
 
-    dropZoneElement.addEventListener('click', (e) => {
-        console.log(e.target);
+	dropZoneElement.addEventListener('click', (e) => {
+		console.log(e.target);
 		this.click();
 	});
 
-    this.addEventListener('change', (e) => {
+	this.addEventListener('change', (e) => {
 		if (this.files.length) {
 			updateProgress(dropZoneElement, this.files);
 		}
@@ -61,7 +61,7 @@ $('.form__download--input').each(function(inputElement) {
 function updateProgress(dropZoneElement, files) {
 	let progressElements = dropZoneElement.nextElementSibling;
 
-    console.log(progressElements);
+	console.log(progressElements);
 
 	// First time - remove the prompt
 	if (progressElements) {
@@ -92,3 +92,7 @@ function updateProgress(dropZoneElement, files) {
 	});
 
 }
+
+document.querySelector('#promocode-text').addEventListener('click', () => {
+	document.querySelector('#promocode-input').classList.add('show');
+});
