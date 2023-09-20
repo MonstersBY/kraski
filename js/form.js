@@ -1,38 +1,38 @@
-document.querySelectorAll('.drop-zone__input').forEach((inputElement) => {
-	const dropZoneElement = inputElement.closest('.drop-zone');
+// document.querySelectorAll('.drop-zone__input').forEach((inputElement) => {
+// 	const dropZoneElement = inputElement.closest('.drop-zone');
 
-	dropZoneElement.addEventListener('click', (e) => {
-		inputElement.click();
-	});
+// 	dropZoneElement.addEventListener('click', (e) => {
+// 		inputElement.click();
+// 	});
 
-	inputElement.addEventListener('change', (e) => {
-		if (inputElement.files.length) {
-			updateProgress(dropZoneElement, inputElement.files);
-		}
-	});
+// 	inputElement.addEventListener('change', (e) => {
+// 		if (inputElement.files.length) {
+// 			updateProgress(dropZoneElement, inputElement.files);
+// 		}
+// 	});
 
-	dropZoneElement.addEventListener('dragover', (e) => {
-		e.preventDefault();
-		dropZoneElement.classList.add('drop-zone--over');
-	});
+// 	dropZoneElement.addEventListener('dragover', (e) => {
+// 		e.preventDefault();
+// 		dropZoneElement.classList.add('drop-zone--over');
+// 	});
 
-	['dragleave', 'dragend'].forEach((type) => {
-		dropZoneElement.addEventListener(type, (e) => {
-			dropZoneElement.classList.remove('drop-zone--over');
-		});
-	});
+// 	['dragleave', 'dragend'].forEach((type) => {
+// 		dropZoneElement.addEventListener(type, (e) => {
+// 			dropZoneElement.classList.remove('drop-zone--over');
+// 		});
+// 	});
 
-	dropZoneElement.addEventListener('drop', (e) => {
-		e.preventDefault();
+// 	dropZoneElement.addEventListener('drop', (e) => {
+// 		e.preventDefault();
 
-		if (e.dataTransfer.files.length) {
-			inputElement.files = e.dataTransfer.files;
-			updateProgress(dropZoneElement, e.dataTransfer.files);
-		}
+// 		if (e.dataTransfer.files.length) {
+// 			inputElement.files = e.dataTransfer.files;
+// 			updateProgress(dropZoneElement, e.dataTransfer.files);
+// 		}
 
-		dropZoneElement.classList.remove('drop-zone--over');
-	});
-});
+// 		dropZoneElement.classList.remove('drop-zone--over');
+// 	});
+// });
 
 $('.form__download--input').each(function(inputElement) {
     const dropZoneElement = this.closest('.form__download-block');

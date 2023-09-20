@@ -387,11 +387,12 @@ if($('.product').length) {
         $(this).parents('.product-calc-item-choice-container').find('.product-calc-item-choice--box').removeClass('active')
         $(this).addClass('active')
     });
+    var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     $("#calc1").roundSlider({
-        radius: 105,
+        radius: 10.5 * htmlFontSize,
         startAngle: 90,
-        width: 22,
+        width: 2.2 * htmlFontSize,
         value: 0,
         handleSize: "+10",
         sliderType: "min-range",
@@ -401,9 +402,9 @@ if($('.product').length) {
         tooltipFormat: tooltipVal2,
     });
     $("#calc2").roundSlider({
-        radius: 105,
+        radius: 10.5 * htmlFontSize,
         startAngle: 90,
-        width: 22,
+        width: 2.2 * htmlFontSize,
         value: 0,
         handleSize: "+10",
         sliderType: "min-range",
@@ -415,6 +416,34 @@ if($('.product').length) {
     function tooltipVal2(args) {
         return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
     }
+    changeSizeRound()
+    function changeSizeRound() {
+        htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+        if (screen.width < 769) {
+            $("#calc1").roundSlider({
+                radius: 13 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+            $("#calc2").roundSlider({
+                radius: 13 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+        } else {
+            $("#calc1").roundSlider({
+                radius: 10.5 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+            $("#calc2").roundSlider({
+                radius: 10.5 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+        }
+    }
+
+    $(window).resize(function(){
+        changeSizeRound()
+    });
+    
 
     $('.start-write-review').on( "click", function(e) {
         e.preventDefault();
@@ -428,6 +457,51 @@ if($('.product').length) {
         $('.product-info_left-write').removeClass('active')
     });
 
+    $('.open-product-calc').on( "click", function(e) {
+        e.preventDefault();
+        $('body').addClass('modalac')
+        $('.product-calc-mob_modal').addClass('active')
+    });
+    $('.product-calc-modal--exit').on( "click", function(e) {
+        e.preventDefault();
+        if ($(this).parents('.product-calc-modal_results').length) {
+            $(this).parents('.product-calc-modal_results').removeClass('active')
+            $('.product-calc-mob_modal').find('.product-calc-modal').each(function () {
+                if(!$(this).hasClass('product-calc-modal--first')) {
+                    $(this).remove()
+                }
+            })
+            $('body').removeClass('modalac')
+            $('.product-calc-mob_modal').removeClass('active')
+
+            return
+        }
+        if($(this).parents('.product-calc-modal--first').length) {
+            $('body').removeClass('modalac')
+            $('.product-calc-mob_modal').removeClass('active')
+        } else {
+            $(this).parents('.product-calc-modal').remove()
+        }
+    });
+    $('.product-calc-calculate').on( "click", function(e) {
+        e.preventDefault();
+        $('.product-calc-modal_results').addClass('active')
+    });
+    $('.product-calc-add-all').on( "click", function(e) {
+        e.preventDefault();
+        $('.product-calc-modal_results').removeClass('active')
+        $('.product-calc-mob_modal').find('.product-calc-modal').each(function () {
+            if(!$(this).hasClass('product-calc-modal--first')) {
+                $(this).remove()
+            }
+        })
+        $('body').removeClass('modalac')
+        $('.product-calc-mob_modal').removeClass('active')
+    });
+    $('.product-calc-modal--back, .repet-calc').on( "click", function(e) {
+        e.preventDefault();
+        $('.product-calc-modal_results').removeClass('active')
+    });
 }
 
 })
