@@ -123,7 +123,7 @@ $(document).ready(function () {
 		slidesPerView: 'auto',
 		orientation: 'horizontal',
 		freeMode: true,
-		spaceBetween: `${remToPx(1)}rem`,
+		spaceBetween: `${remToPx(2)}rem`,
 
 		navigation: {
 			nextEl: '.item-card-recommendation__next',
@@ -133,7 +133,15 @@ $(document).ready(function () {
 		mousewheel: {
 			sensitivity: 1,
 			eventsTarger: ".item-card-recommendation__slider"
-		}
+		},
+
+		breakpoints: {
+			769: {
+				spaceBetween: `${remToPx(1)}rem`,
+			}
+		},
+
+
 	});
 
 	const fast_photo_bottom1 = new Swiper('.fast_photo_bottom1', {
