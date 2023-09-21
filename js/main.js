@@ -405,6 +405,30 @@ $(document).ready(function () {
         max: 20,
         tooltipFormat: tooltipVal2,
     });
+    $("#calc1-modal").roundSlider({
+        radius: 10.5 * htmlFontSize,
+        startAngle: 90,
+        width: 2.2 * htmlFontSize,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
+    $("#calc2-modal").roundSlider({
+        radius: 10.5 * htmlFontSize,
+        startAngle: 90,
+        width: 2.2 * htmlFontSize,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
     function tooltipVal2(args) {
         return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
     }
@@ -417,6 +441,14 @@ $(document).ready(function () {
                 width: 2.2 * htmlFontSize,
             });
             $("#calc2").roundSlider({
+                radius: 13 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+            $("#calc1-modal").roundSlider({
+                radius: 13 * htmlFontSize,
+                width: 2.2 * htmlFontSize,
+            });
+            $("#calc2-modal").roundSlider({
                 radius: 13 * htmlFontSize,
                 width: 2.2 * htmlFontSize,
             });
@@ -535,5 +567,24 @@ $(document).ready(function () {
         e.preventDefault();
         $('.product-calc-modal_results').removeClass('active')
     });
+
+    var productBaner = new Waypoint({
+        element: document.getElementById('productBanerStart'),
+        handler: function() {
+          $('.product-baner').toggleClass('active')
+        }
+    })
+    $('.product-baner--link a').each(function (index) {
+
+        $(this).on( "click", function(e) {
+            e.preventDefault();
+            $('.product-info_left--btns').find('.product-info_left--btn')[index].click()
+
+            $("html, body").animate({
+                scrollTop: $('.product-info').position().top - $('.header-fixed').height() - 10
+            }, 1);    
+        });       
+        
+    })          
 
 })

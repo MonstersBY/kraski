@@ -1807,7 +1807,7 @@
       </div>
     </section>
 
-    <section class="product-info switcher">
+    <section id="product-info" class="product-info switcher">
       <div class="container product-info-container">
         <div class="product-info_left">
           <div class="product-info_left--btns switcher__control">
@@ -1978,7 +1978,7 @@
               </div>
             </div>
             <div class="switcher__content">
-              <button class="btn start-write-review">
+              <button class="btn start-write-review mobile">
                 <span class="btn--text">Оставить отзыв</span>
                 <div class="btn--icon">
                   <img src="./assets/images/icon/arrow-right-colorfull.svg" alt="">
@@ -2159,7 +2159,7 @@
       </div>
     </section>
     
-    <section class="product-variation">
+    <section id="productBanerStart" class="product-variation">
       <div class="container">
         <div class="product-variation--title title-h2">Вариации товара</div>
         <div class="product-variation-box">
@@ -2464,7 +2464,7 @@
                 </div>
               </div>
               <div class="product-calc-item-right">
-                <div class="product-calc-item--range" id="calc1"></div>
+                <div class="product-calc-item--range" id="calc1-modal"></div>
                 <input class="product-calc-item--number" type="number" placeholder="Площадь (м2)">
               </div>
             </div>
@@ -2523,7 +2523,7 @@
                 </div>
               </div>
               <div class="product-calc-item-right">
-                <div class="product-calc-item--range" id="calc1"></div>
+                <div class="product-calc-item--range" id="calc2-modal"></div>
                 <input class="product-calc-item--number" type="number" placeholder="Площадь (м2)">
               </div>
             </div>
@@ -2865,6 +2865,21 @@
 
       </div>
     </section>
+
+    <div class="product-baner">
+      <div class="container">
+        <div class="product-baner--img">
+          <img src="./assets/images/catalog/item2.png" alt="">
+        </div>
+        <div class="product-baner--text">BAYRAMIX COLORIX декоративное покрытие с цветными чипсами (флоками)</div>
+        <div class="product-baner--link">
+          <a>Описание</a>
+          <a>Характеристики</a>
+          <a>Цвета</a>
+          <a>Отзывы</a>
+        </div>
+      </div>
+    </div>
 
     <section class="instruments">
       <div class="novelties_container container">
@@ -3850,6 +3865,7 @@
     </footer>
     
     <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/noframework.waypoints.min.js"></script>
     <script src="./js/roundslider.js"></script>
     <script src="./js/jquery.mask.js"></script>
     <script src="./js/nouislider.min.js"></script>

@@ -12320,6 +12320,82 @@ section {
   height: 6rem;
 }
 
+.product-baner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  margin: 0 auto;
+  z-index: 10;
+  -webkit-transform: translateY(calc(100% + 1rem));
+          transform: translateY(calc(100% + 1rem));
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.product-baner.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.product-baner .container {
+  border-radius: 2rem;
+  background: #FFF;
+  -webkit-box-shadow: 10px 20px 70px 0px rgba(173, 178, 201, 0.35);
+          box-shadow: 10px 20px 70px 0px rgba(173, 178, 201, 0.35);
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-baner--img {
+  width: 10rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1.5rem;
+  background: #F4F6F8;
+  margin-right: 6rem;
+}
+.product-baner--img img {
+  width: 7.7rem;
+  height: 7.7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product-baner--text {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  width: 80rem;
+}
+.product-baner--link {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+}
+.product-baner--link a {
+  border-bottom: 1px solid #E50E78;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: #E50E78;
+}
+
 @media (max-width: 48em) {
   .product {
     margin-bottom: 6rem;
@@ -13532,6 +13608,9 @@ section {
     padding: 2.2rem 0;
     font-size: 2.8rem;
     line-height: 130%;
+  }
+  .product-baner {
+    display: none;
   }
 }
 .basket .title-h2 {
