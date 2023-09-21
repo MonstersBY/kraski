@@ -93,6 +93,3 @@ function updateProgress(dropZoneElement, files) {
 
 }
 
-document.querySelector('#promocode-text').addEventListener('click', () => {
-	document.querySelector('#promocode-input').classList.add('show');
-});
