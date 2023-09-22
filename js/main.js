@@ -292,23 +292,25 @@ if($('.catalog__sidebar').length) {
         $(this).addClass('active')
     });
 }
-if($('.catalog__sort').length) {
-    $('.catalog__sort-container--text').on('click', function(){
-        $(this).parents('.catalog__sort-container').toggleClass('active')
-    })
-    $(document).mouseup(function (e) {
-        var container = $('.catalog__sort-container');
-        if (container.has(e.target).length === 0){
-            container.removeClass('active')
-        }
-    });
-    $('.catalog__sort-container-list-modal').on('click', function(){
-        $(this).parents('.catalog__sort-container').removeClass('active')
-    })
-    $('.catalog__sort-container-item-radio').on('click', function(){
-        $('.catalog__sort-container--text').text($(this).find('p').text())
-    })
 
+//filter
+$('.catalog__sort-container--text').on('click', function(){
+    $(this).parents('.catalog__sort-container').toggleClass('active')
+})
+$(document).mouseup(function (e) {
+    var container = $('.catalog__sort-container');
+    if (container.has(e.target).length === 0){
+        container.removeClass('active')
+    }
+});
+$('.catalog__sort-container-list-modal').on('click', function(){
+    $(this).parents('.catalog__sort-container').removeClass('active')
+})
+$('.catalog__sort-container-item-radio').on('click', function(){
+    $('.catalog__sort-container--text').text($(this).find('p').text())
+})
+
+if($('.catalog__sort').length) {
     $('.catalog__sort-filter').on('click', function(){
         $('.catalog__sidebar').addClass('active')
         $('body').addClass('modalac')
@@ -339,10 +341,10 @@ if($('.product').length) {
         $(this).parents('.calc').find('.minus').removeClass('not-active')
 
         if($(this).parents('product_purchase-calc')) {
-            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
     
-            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html().split(' ')[0])
+            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
         }
 
@@ -359,10 +361,10 @@ if($('.product').length) {
             }
 
             if($(this).parents('product_purchase-calc')) {
-                let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html().split(' ')[0])
+                let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis - priceDisOrigin +' ₽')
         
-                let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html().split(' ')[0])
+                let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price - priceOrigin +' ₽')
             }
         }
@@ -551,8 +553,31 @@ if($('.product').length) {
                 scrollTop: $('.product-info').position().top - $('.header-fixed').height() - 10
             }, 1);    
         });       
-        
-    })          
+    })
+
+
+    $('.product-tinting-all_colors-slide').on( "click", function(e) {
+        $('.product-tinting-all_colors-slide').removeClass('active')
+        $(this).addClass('active')
+        const color = $(this).find('.product-tinting-all_colors-slide--colors').css('background')
+        $('.product-tinting-images--choice').css('background', color)
+        $('.product-tinting-images--back').css('background', color)
+        $('.product-tinting--left').addClass('active')
+        $('.product-tinting-end').find('.product-tinting-end--selected').addClass('active')
+        $('.product-tinting-end').find('.btn').removeClass('disable')
+    });
+    $('.product-tinting-end--selected svg').on( "click", function(e) {
+        $('.product-tinting-all_colors-slide').removeClass('active')
+        $('.product-tinting-images--back').css('background', 'inherit')
+        $('.product-tinting--left').removeClass('active')
+        $('.product-tinting-end').find('.product-tinting-end--selected').removeClass('active')
+        $('.product-tinting-end').find('.btn').addClass('disable')
+    });
+
+    $('.product-info_left-color').on( "click", function(e) {
+        $('body').addClass('modalac')
+        $('.product-color-modal').addClass('active')
+      });
 
 }
 

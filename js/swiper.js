@@ -23,7 +23,7 @@ $(document).ready(function() {
         navigation: {
             prevEl: '.catalog__brand-prev-btn',
             nextEl: '.catalog__brand-next-btn',
-          },
+        },
     });
 
     let recomendationSlider = new Swiper('.recomendation__slider', {
@@ -145,5 +145,93 @@ $(document).ready(function() {
       thumbs: {
           swiper: productPBottom,
       },
+    });
+
+    const tintingImages = new Swiper('.product-tinting-images', {
+      loop: 'true',
+        navigation: {
+          prevEl: '.product-tinting-images-prev-btn',
+          nextEl: '.product-tinting-images-next-btn',
+      },
+    });
+
+    var tintingСolors = new Swiper(".product-tinting-all_colors", {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      grid: {
+        rows: 3,
+      },
+      spaceBetween: `${remToPx(1.8)}rem`,
+      pagination: {
+        el: ".product-tinting-all_colors-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        }
+      },
+      navigation: {
+        prevEl: '.product-tinting-all_colors--prev',
+        nextEl: '.product-tinting-all_colors--next',
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 7,
+          slidesPerGroup: 7,
+          spaceBetween: `${remToPx(2)}rem`,
+          grid: {
+            rows: 5,
+          },
+        },
+      },
+    });
+    const limitBullets = {
+      desk: 3,
+      mob: 2,
+    }
+        
+    $('.open-tinting').on( "click", function(e) {
+      $('body').addClass('modalac')
+      $('.product-tinting-modal').addClass('active')
+      setTimeout(()=>{ChangeBulletColors()},500)
+    });
+
+
+    function ChangeBulletColors() {
+      if($('.product-tinting-all_colors').length) {
+
+        if (screen.width < 769) {
+          const allLength = $('.product-tinting-all_colors-pagination .swiper-pagination-bullet').length
+          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet').each(function (index) {
+            if(limitBullets.mob < index+1 && allLength - limitBullets.mob > index) {
+              $(this).addClass('notshow')
+            } else {
+              if(index+1 == limitBullets.mob) {
+                $(this).addClass('left-dots')
+                $(this).addClass('notdot')
+              }
+              if(allLength - limitBullets.mob == index) {
+                $(this).addClass('right-dots')
+              }
+            }
+          })
+          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').removeClass('notshow')
+          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
+          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
+          let indexActive = parseInt($('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').html())
+          if(limitBullets.mob+2 < indexActive) {
+            $('.product-tinting-all_colors-pagination .left-dots').removeClass('notdot')
+          } else {
+            $('.product-tinting-all_colors-pagination .left-dots').addClass('notdot')
+          }
+          if(allLength - limitBullets.mob > indexActive) {
+            $('.product-tinting-all_colors-pagination .right-dots').removeClass('notdot')
+          } else {
+            $('.product-tinting-all_colors-pagination .right-dots').addClass('notdot')
+          }
+        }
+      }
+    }
+    tintingСolors.on('slideChange', function () {
+      ChangeBulletColors()
     });
 })

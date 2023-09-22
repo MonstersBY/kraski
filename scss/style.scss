@@ -39,6 +39,13 @@
     margin-left: 1.5rem;
   }
 }
+// .swiper-grid > .swiper-wrapper{
+//   flex-wrap:wrap
+// }
+// .swiper-grid-column > .swiper-wrapper{
+//   flex-wrap:wrap;
+//   flex-direction:column
+// }
 
 @keyframes appearence_1 {
   0% {
@@ -168,6 +175,15 @@
   background: linear-gradient(139deg, #dd3197 0%, #822faf 100%);
   color: #fff;
   font-size: 1.8rem;
+
+  &.disable {
+    background: #DFDFF0;
+    cursor: default;
+    .btn--icon path{
+      stroke: #DFDFF0;
+    }
+
+  }
 }
 .btn--icon {
   display: flex;
