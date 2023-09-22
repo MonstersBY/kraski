@@ -310,6 +310,24 @@ $('.catalog__sort-container-item-radio').on('click', function(){
     $('.catalog__sort-container--text').text($(this).find('p').text())
 })
 
+//filter
+$('.catalog__sort-container--text').on('click', function(){
+    $(this).parents('.catalog__sort-container').toggleClass('active')
+})
+$(document).mouseup(function (e) {
+    var container = $('.catalog__sort-container');
+    if (container.has(e.target).length === 0){
+        container.removeClass('active')
+    }
+});
+$('.catalog__sort-container-list-modal').on('click', function(){
+    $(this).parents('.catalog__sort-container').removeClass('active')
+})
+$('.catalog__sort-container-item-radio').on('click', function(){
+    $('.catalog__sort-container--text').text($(this).find('p').text())
+})
+
+if($('.catalog__sort').length) {
 if($('.catalog__sort').length) {
     $('.catalog__sort-filter').on('click', function(){
         $('.catalog__sidebar').addClass('active')
@@ -342,8 +360,10 @@ if($('.catalog__sort').length) {
 
         if($(this).parents('product_purchase-calc')) {
             let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
+            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
     
+            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
             let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
         }
@@ -362,8 +382,10 @@ if($('.catalog__sort').length) {
 
             if($(this).parents('product_purchase-calc')) {
                 let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
+                let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis - priceDisOrigin +' ₽')
         
+                let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
                 let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price - priceOrigin +' ₽')
             }
@@ -390,10 +412,13 @@ if($('.catalog__sort').length) {
         $(this).addClass('active')
     });
     var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+    var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     $("#calc1").roundSlider({
         radius: 10.5 * htmlFontSize,
+        radius: 10.5 * htmlFontSize,
         startAngle: 90,
+        width: 2.2 * htmlFontSize,
         width: 2.2 * htmlFontSize,
         value: 0,
         handleSize: "+10",
@@ -429,7 +454,33 @@ if($('.catalog__sort').length) {
     });
     $("#calc2-modal").roundSlider({
         radius: 10.5 * htmlFontSize,
+        radius: 10.5 * htmlFontSize,
         startAngle: 90,
+        width: 2.2 * htmlFontSize,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
+    $("#calc1-modal").roundSlider({
+        radius: 10.5 * htmlFontSize,
+        startAngle: 90,
+        width: 2.2 * htmlFontSize,
+        value: 0,
+        handleSize: "+10",
+        sliderType: "min-range",
+        editableTooltip: false,
+        rangeColor: '#e50e78a6',
+        max: 20,
+        tooltipFormat: tooltipVal2,
+    });
+    $("#calc2-modal").roundSlider({
+        radius: 10.5 * htmlFontSize,
+        startAngle: 90,
+        width: 2.2 * htmlFontSize,
         width: 2.2 * htmlFontSize,
         value: 0,
         handleSize: "+10",

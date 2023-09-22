@@ -257,6 +257,54 @@
                     }
                 }
 
+                &--colors {
+
+                    &--open {
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140%;
+                        color: #E50E78;
+                        border-bottom: 1px solid #E50E78;
+                        height: fit-content;
+                        margin-top: 1rem;
+                        margin-left: 1.5rem;
+                        cursor: pointer;
+                    }
+                    .product_info-item-btn {
+                        padding: 0;
+                        background: inherit;
+                        display: flex;
+                        box-shadow: unset;
+                        border: none;
+
+                        &--colors {
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 50%;
+                            margin-bottom: 0.4rem;
+                        }
+
+                        span {
+                            opacity: 0;
+                        }
+
+                        &.active {
+                            background: inherit;
+                            border: none;
+
+                            .product_info-item-btn--colors {
+                                border: 1.5px solid #DD3197;
+                            }
+
+                            span {
+                                opacity: 1;
+                                color: #E50E78;
+                            }
+                        }
+                    }
+                }
+
 				&--tinting {
 					.product_info-item-btn {
 						flex-direction: row;
