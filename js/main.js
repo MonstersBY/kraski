@@ -360,10 +360,8 @@ if($('.catalog__sort').length) {
 
         if($(this).parents('product_purchase-calc')) {
             let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
-            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
     
-            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
             let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
             $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
         }
@@ -382,10 +380,8 @@ if($('.catalog__sort').length) {
 
             if($(this).parents('product_purchase-calc')) {
                 let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
-                let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis - priceDisOrigin +' ₽')
         
-                let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
                 let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
                 $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price - priceOrigin +' ₽')
             }
@@ -412,13 +408,10 @@ if($('.catalog__sort').length) {
         $(this).addClass('active')
     });
     var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
 
     $("#calc1").roundSlider({
         radius: 10.5 * htmlFontSize,
-        radius: 10.5 * htmlFontSize,
         startAngle: 90,
-        width: 2.2 * htmlFontSize,
         width: 2.2 * htmlFontSize,
         value: 0,
         handleSize: "+10",
@@ -454,7 +447,6 @@ if($('.catalog__sort').length) {
     });
     $("#calc2-modal").roundSlider({
         radius: 10.5 * htmlFontSize,
-        radius: 10.5 * htmlFontSize,
         startAngle: 90,
         width: 2.2 * htmlFontSize,
         value: 0,
@@ -465,31 +457,7 @@ if($('.catalog__sort').length) {
         max: 20,
         tooltipFormat: tooltipVal2,
     });
-    $("#calc1-modal").roundSlider({
-        radius: 10.5 * htmlFontSize,
-        startAngle: 90,
-        width: 2.2 * htmlFontSize,
-        value: 0,
-        handleSize: "+10",
-        sliderType: "min-range",
-        editableTooltip: false,
-        rangeColor: '#e50e78a6',
-        max: 20,
-        tooltipFormat: tooltipVal2,
-    });
-    $("#calc2-modal").roundSlider({
-        radius: 10.5 * htmlFontSize,
-        startAngle: 90,
-        width: 2.2 * htmlFontSize,
-        width: 2.2 * htmlFontSize,
-        value: 0,
-        handleSize: "+10",
-        sliderType: "min-range",
-        editableTooltip: false,
-        rangeColor: '#e50e78a6',
-        max: 20,
-        tooltipFormat: tooltipVal2,
-    });
+    
     function tooltipVal2(args) {
         return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
     }
@@ -541,34 +509,6 @@ if($('.catalog__sort').length) {
 			$(this).parents('.product-calc-item-choice-container').find('.product-calc-item-choice--box').removeClass('active')
 			$(this).addClass('active')
 		});
-
-		$("#calc1").roundSlider({
-			radius: 105,
-			startAngle: 90,
-			width: 22,
-			value: 0,
-			handleSize: "+10",
-			sliderType: "min-range",
-			editableTooltip: false,
-			rangeColor: '#e50e78a6',
-			max: 20,
-			tooltipFormat: tooltipVal2,
-		});
-		$("#calc2").roundSlider({
-			radius: 105,
-			startAngle: 90,
-			width: 22,
-			value: 0,
-			handleSize: "+10",
-			sliderType: "min-range",
-			editableTooltip: false,
-			rangeColor: '#e50e78a6',
-			max: 20,
-			tooltipFormat: tooltipVal2,
-		});
-		function tooltipVal2(args) {
-			return `<span class='rs-tooltip-text--number'>${args.value}</span>` + `<span class='rs-tooltip-text--subtitle'>площадь (м2)</span>`;
-		}
 
 		$('.start-write-review').on("click", function (e) {
 			e.preventDefault();
@@ -670,5 +610,6 @@ if($('.catalog__sort').length) {
         $('body').addClass('modalac')
         $('.product-color-modal').addClass('active')
       });
+    }
 
 })
