@@ -321,6 +321,7 @@
 		}
 	}
 	&__personal {
+		position: relative;
 		display: flex;
 		gap: 3rem;
 		&-link {
