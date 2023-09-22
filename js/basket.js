@@ -101,7 +101,7 @@ function backetCheckAll() {
 	backetCheckBoxes.forEach(function (checkbox) {
 		checkbox.addEventListener('change', (event) => {
 			event.currentTarget.checked ? stack.push(checkbox) : stack.pop(checkbox);
-			if (stack.length == backetCheckBoxes.length) {
+			if (stack.length === backetCheckBoxes.length) {
 				allCheckBacket.checked = true;
 			} else {
 				allCheckBacket.checked = false;
@@ -124,12 +124,30 @@ function promoCode() {
 	});
 }
 
+function showMiniBacket() {
+	const backetMiniOffsetTop = $('.basket-footer-fixed').offset().top;
+	const mainBacketOffsetTop = $('#mainBacketPurchase').offset().top;
+	const backetMini = $('.basket-footer-fixed');
+
+	if (backetMiniOffsetTop >= mainBacketOffsetTop) {
+		backetMini.removeClass('show');
+	} else {
+		backetMini.addClass('show');
+	}
+
+}
+
 
 promoCode();
 removeBacketCard()
 showRecommendation()
 backetCheckAll();
+showMiniBacket();
 
 window.addEventListener('resize', () => {
 	removeBacketCard();
+});
+
+window.addEventListener('scroll', () => {
+	showMiniBacket();
 });
