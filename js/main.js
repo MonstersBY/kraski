@@ -328,7 +328,6 @@ $('.catalog__sort-container-item-radio').on('click', function(){
 })
 
 if($('.catalog__sort').length) {
-if($('.catalog__sort').length) {
     $('.catalog__sort-filter').on('click', function(){
         $('.catalog__sidebar').addClass('active')
         $('body').addClass('modalac')
@@ -358,15 +357,13 @@ if($('.catalog__sort').length) {
 			$(this).parents('.calc').find('.number').html(count + 1)
 			$(this).parents('.calc').find('.minus').removeClass('not-active')
 
-        if($(this).parents('product_purchase-calc')) {
-            let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
-            $(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
-    
-            let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
-            $(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
-        }
-
-
+			if($(this).parents('product_purchase-calc')) {
+				let pricedis = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price span').html())
+				$(this).parents('.product_purchase-box').find('.product_purchase--price span').html(pricedis + priceDisOrigin +' ₽')
+		
+				let price = parseInt($(this).parents('.product_purchase-box').find('.product_purchase--price strong').html())
+				$(this).parents('.product_purchase-box').find('.product_purchase--price strong').html(price + priceOrigin +' ₽')
+			}
 		});
 
     $('.calc .minus').on( "click", function(e) {
@@ -521,8 +518,6 @@ if($('.catalog__sort').length) {
 			$('body').removeClass('modalac')
 			$('.product-info_left-write').removeClass('active')
 		});
-
-	}
     $('.open-product-calc').on( "click", function(e) {
         e.preventDefault();
         $('body').addClass('modalac')
