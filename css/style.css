@@ -14366,6 +14366,96 @@ section {
   }
 }
 
+.lk .lk-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 80px;
+}
+.lk .lk-form {
+  width: 100%;
+  max-width: 116.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 5rem;
+  -ms-grid-rows: auto 3rem auto 3rem auto 3rem auto;
+      grid-template-areas: "name current-password" "telephone new-password" "email repeat-password" "address .";
+}
+.lk .form__item_type_name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+.lk .form__item_type_telephone {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: telephone;
+}
+.lk .form__item_type_email {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+.lk .form__item_type_address {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: address;
+}
+.lk .form__item_type_current-password {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: current-password;
+}
+.lk .form__item_type_new-password {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: new-password;
+}
+.lk .form__item_type_repeat-password {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: repeat-password;
+}
+.lk .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 32.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6rem;
+  padding: 1.9rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 1px solid var(--button-gradient, #dd3197);
+  background: var(--white, #fff);
+  -webkit-box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+          box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+}
+.lk .btn__text {
+  font-family: Euclid Circular A;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  background: var(--button-gradient, linear-gradient(96deg, #dd3197 0%, #822faf 101.4%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .mobile {
   display: none;
 }
