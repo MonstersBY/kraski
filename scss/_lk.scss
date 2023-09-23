@@ -1,0 +1,131 @@
+.lk {
+
+  .lk-bottom {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+  }
+
+  .lk-inner{
+    width: 100%;
+    max-width: 116.5rem;
+    border-radius: 3rem;
+    padding: 40px;
+    background: var(--white, #fff);
+    box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
+  }
+
+  .lk-form {
+    margin-top: 3rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 5rem;
+    grid-template-areas:
+      "name current-password"
+      "telephone new-password"
+      "email repeat-password"
+      "address ."
+      "submit .";
+  }
+
+  .form__item {
+    &_type {
+      // .form__item_type_name
+      &_name {
+        grid-area: name;
+      }
+      // .form__item_type_telephone
+      &_telephone {
+        grid-area: telephone;
+      }
+      // .form__item_type_email
+      &_email {
+        grid-area: email;
+      }
+      // .form__item_type_address
+      &_address {
+        gap: 20px;
+        grid-area: address;
+        // .form__item_type_address .btn
+        .btn {
+          display: flex;
+          width: 100%;
+          max-width: 32.5rem;
+          align-items: center;
+          justify-content: center;
+          height: 6rem;
+          padding: 1.9rem 3rem;
+          box-sizing: border-box;
+          border-radius: 1.5rem;
+          border: 1px solid var(--button-gradient, #dd3197);
+          background: var(--white, #fff);
+          box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+
+          &__text {
+            font-family: Euclid Circular A;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            background: var(
+              --button-gradient,
+              linear-gradient(96deg, #dd3197 0%, #822faf 101.4%)
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+      // .form__item_type_current-password
+      &_current-password {
+        grid-area: current-password;
+      }
+      // .form__item_type_new-password
+      &_new-password {
+        grid-area: new-password;
+      }
+      // .form__item_type_repeat-password
+      &_repeat-password {
+        grid-area: repeat-password;
+      }
+    }
+  }
+
+  .btn-submit {
+    margin-top: 2rem;
+    grid-area: submit;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 30.5rem;
+    padding: 1.9rem 3rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    background: var(
+      --button-gradient,
+      linear-gradient(96deg, #dd3197 0%, #822faf 101.4%)
+    );
+    box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+
+    &__text {
+      color: var(--white, #fff);
+      font-family: Euclid Circular A;
+      font-size: 1.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+    &:hover {
+      background: linear-gradient(96deg, #fa67bf 0%, #be63ef 101.4%);
+    }
+
+    &_disable {
+      background: var(--Line, #dfdff0);
+    }
+  }
+}

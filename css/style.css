@@ -41,6 +41,15 @@
   margin-left: 1.5rem;
 }
 
+.title-h4 {
+  color: #3b3c40;
+  font-family: Euclid Circular A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 @-webkit-keyframes appearence_1 {
   0% {
     opacity: 0;
@@ -14364,6 +14373,146 @@ section {
     height: 8rem;
     padding: 2.134rem;
   }
+}
+
+.lk .lk-bottom {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8rem;
+}
+.lk .lk-inner {
+  width: 100%;
+  max-width: 116.5rem;
+  border-radius: 3rem;
+  padding: 40px;
+  background: var(--white, #fff);
+  -webkit-box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
+          box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
+}
+.lk .lk-form {
+  margin-top: 3rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5rem 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 5rem;
+  -ms-grid-rows: auto 3rem auto 3rem auto 3rem auto 3rem auto;
+      grid-template-areas: "name current-password" "telephone new-password" "email repeat-password" "address ." "submit .";
+}
+.lk .form__item_type_name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+.lk .form__item_type_telephone {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: telephone;
+}
+.lk .form__item_type_email {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+.lk .form__item_type_address {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  gap: 20px;
+  grid-area: address;
+}
+.lk .form__item_type_address .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 32.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 6rem;
+  padding: 1.9rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 1px solid var(--button-gradient, #dd3197);
+  background: var(--white, #fff);
+  -webkit-box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+          box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+}
+.lk .form__item_type_address .btn__text {
+  font-family: Euclid Circular A;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  background: var(--button-gradient, linear-gradient(96deg, #dd3197 0%, #822faf 101.4%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.lk .form__item_type_current-password {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: current-password;
+}
+.lk .form__item_type_new-password {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: new-password;
+}
+.lk .form__item_type_repeat-password {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: repeat-password;
+}
+.lk .btn-submit {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  margin-top: 2rem;
+  grid-area: submit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 30.5rem;
+  padding: 1.9rem 3rem;
+  height: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5rem;
+  background: var(--button-gradient, linear-gradient(96deg, #dd3197 0%, #822faf 101.4%));
+  -webkit-box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+          box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+}
+.lk .btn-submit__text {
+  color: var(--white, #fff);
+  font-family: Euclid Circular A;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+.lk .btn-submit:hover {
+  background: linear-gradient(96deg, #fa67bf 0%, #be63ef 101.4%);
+}
+.lk .btn-submit_disable {
+  background: var(--Line, #dfdff0);
 }
 
 .mobile {
