@@ -14386,6 +14386,58 @@ section {
           flex-direction: row;
   gap: 8rem;
 }
+.lk__aside {
+  width: 100%;
+  max-width: 31.5rem;
+}
+.lk__navigation {
+  width: 100%;
+}
+.lk__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.lk__navigation-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 0 1.6rem 4rem;
+}
+.lk__navigation-item_active {
+  background: #F3EFFF;
+}
+.lk__navigation-item_leave {
+  margin-top: 2rem;
+}
+.lk__navigation-item_leave .lk__navigation-text {
+  color: #9293B0;
+}
+.lk__navigation-text {
+  color: #3b3c40;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
 .lk .lk-inner {
   width: 100%;
   max-width: 116.5rem;
@@ -14405,6 +14457,9 @@ section {
   gap: 3rem 5rem;
   -ms-grid-rows: auto 3rem auto 3rem auto 3rem auto 3rem auto;
       grid-template-areas: "name current-password" "telephone new-password" "email repeat-password" "address ." "submit .";
+}
+.lk .form__item .form__item-inner {
+  height: 6rem;
 }
 .lk .form__item_type_name {
   -ms-grid-row: 1;
