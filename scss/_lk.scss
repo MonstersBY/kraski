@@ -387,9 +387,13 @@
       // .top-section__bottom-block
       &__bottom-block {
         margin-top: 1.5rem;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        display: grid;
+        gap: 1.5rem 2rem;
+        grid-template-columns: max-content max-content;
+        grid-template-areas:
+          "lifetime lifetime"
+          "status manager";
+        align-items: center;
       }
     }
 
@@ -422,7 +426,7 @@
 
     // .order-card__lifetime
     &__lifetime {
-      margin-top: 1rem;
+      grid-area: lifetime;
       color: #9293b0;
       font-family: Euclid Circular A;
       font-size: 1.6rem;
@@ -433,6 +437,7 @@
 
     // .order-card__status
     &__status {
+      grid-area: status;
       display: flex;
       padding: 0.9rem 2.4rem;
       justify-content: center;
@@ -461,6 +466,7 @@
 
     // .order-card__manager
     &__manager {
+      grid-area: manager;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -487,10 +493,8 @@
       &__bottom-block {
         margin-top: 1rem;
         display: flex;
-        flex-direction: row;
+        gap: 2rem;
         justify-content: space-between;
-        gap: 4rem;
-        align-items: flex-end;
       }
     }
 
@@ -538,6 +542,112 @@
       font-style: normal;
       font-weight: 500;
       line-height: 140%;
+    }
+  }
+
+  @media (max-width: 48em) {
+    .order-card-list {
+      max-width: 100%;
+    }
+
+    .order-card {
+      padding: 4rem;
+      border-radius: 4rem;
+      box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+
+      .top-section {
+        padding-bottom: 3rem;
+        // .top-section__bottom-block
+        &__bottom-block {
+          margin-top: 3rem;
+          display: grid;
+          gap: 2rem;
+          grid-template-columns: max-content;
+          grid-template-areas:
+            "status"
+            "lifetime"
+            "manager";
+          justify-items: flex-start;
+        }
+      }
+
+      // .order-card__name
+      &__name {
+        font-size: 3.6rem;
+      }
+
+      // .order-card__price
+      &__price {
+        font-size: 3.6rem;
+      }
+
+      // .order-card__lifetime
+      &__lifetime {
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      // .order-card__status
+      &__status {
+        padding: 1.8rem 4.8rem;
+        border-radius: 3rem;
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      // .order-card__manager
+      &__manager {
+        gap: 2rem;
+      }
+
+      // .order-card__manager-name
+      &__manager-name {
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      // .order-card__bottom-section
+      .bottom-section {
+        margin-top: 3rem;
+
+        &__bottom-block {
+          margin-top: 3rem;
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          align-items: flex-start;
+        }
+      }
+
+      // .order-card__tags
+      &__tags {
+        gap: 4rem;
+      }
+      // .order-card__tag
+      &__tag {
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      // .order-card__location-block
+      &__location-block {
+        gap: 1rem;
+      }
+
+      // .order-card__location
+      &__location {
+        width: 100%;
+        max-width: 100%;
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
+
+      // .order-card__button
+      &__button {
+        color: #e50e78;
+        font-size: 2.8rem;
+        line-height: 130%;
+      }
     }
   }
 }

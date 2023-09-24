@@ -14806,14 +14806,18 @@ section {
 }
 .lk-my-orders .order-card .top-section__bottom-block {
   margin-top: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem 2rem;
+  -ms-grid-columns: -webkit-max-content 2rem -webkit-max-content;
+  -ms-grid-columns: max-content 2rem max-content;
+  grid-template-columns: -webkit-max-content -webkit-max-content;
+  grid-template-columns: max-content max-content;
+  -ms-grid-rows: auto 1.5rem auto;
+      grid-template-areas: "lifetime lifetime" "status manager";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .lk-my-orders .order-card__name {
   -webkit-user-select: none;
@@ -14843,7 +14847,10 @@ section {
   line-height: normal;
 }
 .lk-my-orders .order-card__lifetime {
-  margin-top: 1rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: lifetime;
   color: #9293b0;
   font-family: Euclid Circular A;
   font-size: 1.6rem;
@@ -14852,6 +14859,9 @@ section {
   line-height: 140%;
 }
 .lk-my-orders .order-card__status {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: status;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14882,6 +14892,9 @@ section {
   border: 1px solid #ff4345;
 }
 .lk-my-orders .order-card__manager {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: manager;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14920,17 +14933,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  gap: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 4rem;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 .lk-my-orders .order-card__tags {
   display: -webkit-box;
@@ -14978,6 +14984,107 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+}
+@media (max-width: 48em) {
+  .lk-my-orders .order-card-list {
+    max-width: 100%;
+  }
+  .lk-my-orders .order-card {
+    padding: 4rem;
+    border-radius: 4rem;
+    -webkit-box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+            box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+  }
+  .lk-my-orders .order-card .top-section {
+    padding-bottom: 3rem;
+  }
+  .lk-my-orders .order-card .top-section__bottom-block {
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+    gap: 2rem;
+    -ms-grid-columns: -webkit-max-content;
+    -ms-grid-columns: max-content;
+    grid-template-columns: -webkit-max-content;
+    grid-template-columns: max-content;
+    -ms-grid-rows: auto 2rem auto 2rem auto;
+        grid-template-areas: "status" "lifetime" "manager";
+    justify-items: flex-start;
+  }
+  .lk-my-orders .order-card__name {
+    font-size: 3.6rem;
+  }
+  .lk-my-orders .order-card__price {
+    font-size: 3.6rem;
+  }
+  .lk-my-orders .order-card__lifetime {
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card__status {
+    padding: 1.8rem 4.8rem;
+    border-radius: 3rem;
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card__manager {
+    gap: 2rem;
+  }
+  .lk-my-orders .order-card__manager-name {
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card .bottom-section {
+    margin-top: 3rem;
+  }
+  .lk-my-orders .order-card .bottom-section__bottom-block {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .lk-my-orders .order-card__tags {
+    gap: 4rem;
+  }
+  .lk-my-orders .order-card__tag {
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card__location-block {
+    gap: 1rem;
+  }
+  .lk-my-orders .order-card__location {
+    width: 100%;
+    max-width: 100%;
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card__button {
+    color: #e50e78;
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+  .lk-my-orders .order-card__lifetime {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  .lk-my-orders .order-card__status {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .lk-my-orders .order-card__manager {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
 }
 
 .mobile {
