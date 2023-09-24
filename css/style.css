@@ -14378,6 +14378,9 @@ section {
   }
 }
 
+.lk {
+  position: relative;
+}
 .lk .lk-bottom {
   margin-top: 4rem;
   display: -webkit-box;
@@ -14389,14 +14392,17 @@ section {
           flex-direction: row;
   gap: 8rem;
 }
-.lk__aside {
+.lk .desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   max-width: 31.5rem;
 }
-.lk__navigation {
+.lk .desktop-menu__navigation {
   width: 100%;
 }
-.lk__navigation-list {
+.lk .desktop-menu__navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14405,7 +14411,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.lk__navigation-item {
+.lk .desktop-menu__navigation-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14423,16 +14429,16 @@ section {
   gap: 1rem;
   padding: 1.6rem 0 1.6rem 4rem;
 }
-.lk__navigation-item_active {
+.lk .desktop-menu__navigation-item_active {
   background: #f3efff;
 }
-.lk__navigation-item_leave {
+.lk .desktop-menu__navigation-item_leave {
   margin-top: 2rem;
 }
-.lk__navigation-item_leave .lk__navigation-text {
+.lk .desktop-menu__navigation-item_leave .lk__navigation-text {
   color: #9293b0;
 }
-.lk__navigation-text {
+.lk .desktop-menu__navigation-text {
   color: #3b3c40;
   text-align: center;
   font-family: Euclid Circular A;
@@ -14440,6 +14446,9 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
+}
+.lk .mobile-menu {
+  display: none;
 }
 .lk .lk-inner {
   width: 100%;
@@ -14587,13 +14596,117 @@ section {
             flex-direction: column;
     gap: 6rem;
   }
-  .lk__aside {
-    display: none;
-    width: 100%;
-    max-width: 31.5rem;
-  }
   .lk .title-h3 {
     display: none;
+  }
+  .lk .desktop-menu {
+    display: none;
+  }
+  .lk .mobile-menu {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+  }
+  .lk .mobile-menu__close-btn {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .lk .mobile-menu__btn {
+    cursor: pointer;
+    width: 100%;
+    max-width: 100%;
+    height: 8.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.8rem;
+    gap: 2rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    -webkit-box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+            box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+  }
+  .lk .mobile-menu__btn > span {
+    color: var(--black, #3b3c40);
+    font-family: Euclid Circular A;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+  .lk .mobile-menu__btn:last-child {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .lk .mobile-menu__navigation {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .lk .mobile-menu__navigation.active {
+    padding: 5rem;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 2rem;
+    background: #fff;
+    -webkit-box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+            box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
+  }
+  .lk .mobile-menu__navigation-list {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6rem;
+  }
+  .lk .mobile-menu__navigation-item {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .lk .mobile-menu__navigation-text {
+    font-size: 3.4rem;
+    line-height: 140%;
   }
   .lk .lk-inner {
     width: 100%;
@@ -14648,6 +14761,223 @@ section {
   .lk .btn-submit_disable {
     background: var(--Line, #dfdff0);
   }
+}
+
+.lk-my-orders {
+  width: 100%;
+}
+.lk-my-orders .order-card-list {
+  width: 100%;
+  max-width: 116.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.lk-my-orders .order-card {
+  width: 100%;
+  padding: 4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3rem;
+  background: #fff;
+  -webkit-box-shadow: 0.5rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.35);
+          box-shadow: 0.5rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.35);
+}
+.lk-my-orders .order-card .top-section {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #dfdff0;
+}
+.lk-my-orders .order-card .top-section__top-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.lk-my-orders .order-card .top-section__bottom-block {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+.lk-my-orders .order-card__name {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #3b3c40;
+  font-family: Euclid Circular A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.lk-my-orders .order-card__name:hover {
+  color: #e50e78;
+}
+.lk-my-orders .order-card__price {
+  color: #3b3c40;
+  text-align: right;
+  font-family: Euclid Circular A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.lk-my-orders .order-card__lifetime {
+  margin-top: 1rem;
+  color: #9293b0;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-my-orders .order-card__status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.9rem 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.5rem;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-my-orders .order-card__status_active {
+  color: #ff9935;
+  border: 1px solid #ff9935;
+}
+.lk-my-orders .order-card__status_closed {
+  color: #9293b0;
+  border: 1px solid #9293b0;
+}
+.lk-my-orders .order-card__status_cancelled {
+  color: #ff4345;
+  border: 1px solid #ff4345;
+}
+.lk-my-orders .order-card__manager {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.lk-my-orders .order-card__manager-name {
+  color: #3b3c40;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-my-orders .order-card .bottom-section {
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.lk-my-orders .order-card .bottom-section__bottom-block {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 4rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.lk-my-orders .order-card__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+.lk-my-orders .order-card__tag {
+  color: #9293b0;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-my-orders .order-card__location-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+}
+.lk-my-orders .order-card__location {
+  width: 100%;
+  max-width: 51.4rem;
+  color: #3b3c40;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-my-orders .order-card__button {
+  color: #e50e78;
+  text-align: right;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
 }
 
 .mobile {
