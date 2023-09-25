@@ -15092,6 +15092,25 @@ section {
   width: 100%;
   max-width: 90.2rem;
 }
+.lk-info p,
+.lk-info ul {
+  margin-top: 3rem;
+  color: #3B3C40;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.lk-info li,
+.lk-info ol {
+  color: #3B3C40;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
 .lk-info .container {
   padding: 0 0;
 }
@@ -15156,15 +15175,6 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-.lk-info__delivery > p {
-  margin-top: 3rem;
-  color: #3B3C40;
-  font-family: Euclid Circular A;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
 }
 .lk-info .note {
   color: #9293B0;
@@ -15270,6 +15280,13 @@ section {
   .lk-info {
     max-width: 100%;
   }
+  .lk-info p,
+  .lk-info ul {
+    margin-top: 4rem;
+    color: #3B3C40;
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
   .lk-info .lk-info__btns {
     overflow: auto;
     padding-bottom: 3rem;
@@ -15307,12 +15324,6 @@ section {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .lk-info__delivery > p {
-    margin-top: 4rem;
-    color: #3B3C40;
-    font-size: 2.8rem;
-    line-height: 130%;
   }
   .lk-info__table-container {
     border-radius: 4rem;
@@ -15391,6 +15402,42 @@ section {
     padding-right: 2rem;
     width: 27rem;
   }
+}
+
+.lk-info-payment .title-h4 {
+  margin-top: 3rem;
+}
+.lk-info-payment ol {
+  margin: 3rem 0 0;
+  padding-left: 1.6rem;
+}
+.lk-info-payment__card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2rem;
+}
+.lk-info-payment__card-list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8.2rem;
+  height: 5rem;
+  border-radius: 1.5rem;
+  background: #F4F6F8;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.lk-info-payment__card-list > li > svg {
+  height: 1.6rem;
 }
 
 .mobile {
