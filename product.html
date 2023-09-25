@@ -1799,7 +1799,7 @@
                 <div class="product_purchase-info--icon">
                   <img src="./assets/images/icon/discount-grey.svg" alt="">
                 </div>
-                <span><a href="">Нашли дешевле?</a></span>
+                <span class="found-cheaper-open"><a href="">Нашли дешевле?</a></span>
               </div>
             </div>
           </div>
@@ -3621,6 +3621,98 @@
           <a>Отзывы</a>
         </div>
       </div>
+    </div>
+
+    <div class="found-cheaper-modal modal">
+      <div class="modal-screen"></div>
+      <div class="found-cheaper-modal-container modal-container">
+        <div class="modal-container--exit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M29.5242 29.5247L10.4766 10.4771M29.5242 10.4771L10.4766 29.5247" stroke="#9293B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="found-cheaper--back">
+          <img src="./assets/images/icon/found-cheaper--back.svg" alt="">
+        </div>
+        <div class="found-cheaper--title">Расскажите, где дешевле</div>
+        <div class="found-cheaper--subtitle">Оставьте ссылку на ресурс, где вы видели этот товар по более выгодной цене</div>
+        <form class="form found-cheaper--form">
+          <label class="form__item">
+            <div class="form__item-inner">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M21.7388 17.1636C21.5716 18.4339 20.9477 19.6 19.9837 20.4439C19.0196 21.2879 17.7813 21.7521 16.5 21.7498C9.05626 21.7498 3.00001 15.6936 3.00001 8.24981C2.99771 6.96852 3.4619 5.73021 4.30588 4.76615C5.14986 3.80209 6.31592 3.17822 7.58626 3.01106C7.9075 2.97184 8.2328 3.03756 8.51362 3.19841C8.79444 3.35926 9.0157 3.60662 9.14438 3.90356L11.1244 8.32387V8.33512C11.2229 8.56242 11.2636 8.81059 11.2428 9.05744C11.222 9.3043 11.1404 9.54217 11.0053 9.74981C10.9884 9.77512 10.9706 9.79856 10.9519 9.822L9.00001 12.1357C9.7022 13.5626 11.1947 15.042 12.6403 15.7461L14.9222 13.8045C14.9446 13.7857 14.9681 13.7681 14.9925 13.752C15.2 13.6136 15.4387 13.5292 15.687 13.5062C15.9353 13.4833 16.1854 13.5227 16.4147 13.6207L16.4269 13.6264L20.8434 15.6054C21.1409 15.7337 21.3889 15.9547 21.5503 16.2356C21.7116 16.5164 21.7778 16.842 21.7388 17.1636Z" fill="#3B3C40"/>
+                </svg>
+              </span>
+              <input type="tel" placeholder="Номер телефона">
+            </div>
+          </label>
+          <label class="form__item">
+            <div class="form__item-inner">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8.39578 10.6154H15.5977C16.2579 10.6154 16.798 11.1346 16.798 11.7692C16.798 12.4038 16.2579 12.9231 15.5977 12.9231H8.39578C7.7356 12.9231 7.19545 12.4038 7.19545 11.7692C7.19545 11.1346 7.7356 10.6154 8.39578 10.6154ZM22.7157 11.7692C23.4599 11.7692 24 11.0885 23.832 10.3962C23.5105 9.1421 22.7614 8.0277 21.704 7.23086C20.6466 6.43402 19.342 6.00067 17.9984 6H14.3374C13.7132 6 13.1971 6.49615 13.1971 7.09615C13.1971 7.69615 13.7132 8.19231 14.3374 8.19231H17.9984C19.7388 8.19231 21.2032 9.34615 21.6114 10.8923C21.7434 11.4 22.1755 11.7692 22.7157 11.7692ZM2.34614 11.0538C2.68223 9.35769 4.33868 8.19231 6.13917 8.19231H9.65612C10.2803 8.19231 10.7964 7.69615 10.7964 7.09615C10.7964 6.49615 10.2803 6 9.65612 6H6.2592C3.12635 6 0.329595 8.20385 0.0295136 11.2038C-0.0534741 12.0049 0.0390211 12.8137 0.30104 13.5783C0.563059 14.3429 0.98879 15.0462 1.55081 15.643C2.11282 16.2398 2.79865 16.7168 3.56412 17.0432C4.32959 17.3697 5.15771 17.5384 5.99513 17.5385H9.65612C10.2803 17.5385 10.7964 17.0423 10.7964 16.4423C10.7964 15.8423 10.2803 15.3462 9.65612 15.3462H5.99513C5.44378 15.3445 4.89966 15.2255 4.40186 14.9977C3.90406 14.7698 3.46494 14.4388 3.11606 14.0284C2.76718 13.618 2.51719 13.1385 2.38407 12.6241C2.25095 12.1098 2.238 11.5735 2.34614 11.0538ZM19.1987 11.7692C18.5385 11.7692 17.9984 12.2885 17.9984 12.9231V15.2308H15.5977C14.9375 15.2308 14.3974 15.75 14.3974 16.3846C14.3974 17.0192 14.9375 17.5385 15.5977 17.5385H17.9984V19.8462C17.9984 20.4808 18.5385 21 19.1987 21C19.8589 21 20.399 20.4808 20.399 19.8462V17.5385H22.7997C23.4599 17.5385 24 17.0192 24 16.3846C24 15.75 23.4599 15.2308 22.7997 15.2308H20.399V12.9231C20.399 12.2885 19.8589 11.7692 19.1987 11.7692Z" fill="#3B3C40"/>
+                </svg>
+              </span>
+              <input type="url" placeholder="Ссылка на ресурс">
+            </div>
+          </label>
+          <button class="btn">
+            <span class="btn--text">Отправить</span>
+            <div class="btn--icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4301 5.92993L20.5001 11.9999L14.4301 18.0699"
+                  stroke="url(#paint0_linear_203_2652)"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3.5 12H20.33"
+                  stroke="url(#paint1_linear_203_2652)"
+                  stroke-width="2"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_203_2652"
+                    x1="14.4301"
+                    y1="5.92993"
+                    x2="21.2005"
+                    y2="6.27831"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#DD3197" />
+                    <stop offset="1" stop-color="#822FAF" />
+                  </linearGradient>
+                  <linearGradient
+                    id="paint1_linear_203_2652"
+                    x1="3.5"
+                    y1="12"
+                    x2="8.20568"
+                    y2="20.1502"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#DD3197" />
+                    <stop offset="1" stop-color="#822FAF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </button>
+        </form>
+      </div>
+
     </div>
 
     <section class="instruments">
