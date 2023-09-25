@@ -604,7 +604,22 @@ if($('.catalog__sort').length) {
     $('.product-info_left-color').on( "click", function(e) {
         $('body').addClass('modalac')
         $('.product-color-modal').addClass('active')
-      });
-    }
+    });
+
+
+	$('.product-colors-slide').on( "click", function(e) {
+		$('.product-colors-slide').removeClass('active')
+		$(this).addClass('active')
+    });
+
+	$('.found-cheaper-open').on( "click", function(e) {
+        e.preventDefault();
+        $('body').addClass('modalac')
+        $('.found-cheaper-modal').addClass('active')
+    });
+
+}
+
+
 
 })

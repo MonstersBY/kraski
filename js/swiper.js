@@ -259,4 +259,82 @@ $(document).ready(function () {
     tintingСolors.on('slideChange', function () {
       ChangeBulletColors()
     });
+
+	var colorSwiper = new Swiper(".product-colors-swiper", {
+		slidesPerView: 4,
+		slidesPerGroup: 4,
+		grid: {
+		  rows: 3,
+		},
+		spaceBetween: `${remToPx(1.8)}rem`,
+		pagination: {
+		  el: ".product-colors-swiper-pagination",
+		  clickable: true,
+		  renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + "</span>";
+		  }
+		},
+		navigation: {
+		  prevEl: '.product-colors-swiper--prev',
+		  nextEl: '.product-colors-swiper--next',
+		},
+		breakpoints: {
+		  769: {
+			slidesPerView: 5,
+			slidesPerGroup: 5,
+			spaceBetween: `${remToPx(2)}rem`,
+			grid: {
+			  rows: 3,
+			},
+		  },
+		},
+	});
+
+	$('.open-colors-modal').on( "click", function(e) {
+        $('body').addClass('modalac')
+        $('.product-colors-modal').addClass('active')
+		setTimeout(()=>{ChangeBulletColorsCol()},500)
+    });
+
+	colorSwiper.on('slideChange', function () {
+		ChangeBulletColorsCol()
+	});
+
+	function ChangeBulletColorsCol() {
+		if($('.product-colors-modal').length) {
+  
+		  if (screen.width < 769) {
+			const allLength = $('.product-colors-swiper-pagination .swiper-pagination-bullet').length
+			$('.product-colors-swiper-pagination .swiper-pagination-bullet').each(function (index) {
+				if(limitBullets.mob*2 > allLength) {
+					if(limitBullets.mob < index+1 && allLength - limitBullets.mob > index) {
+						$(this).addClass('notshow')
+					} else {
+						if(index+1 == limitBullets.mob) {
+						$(this).addClass('left-dots')
+						$(this).addClass('notdot')
+						}
+						if(allLength - limitBullets.mob == index) {
+						$(this).addClass('right-dots')
+						}
+					}
+				}
+			})
+			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').removeClass('notshow')
+			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
+			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
+			let indexActive = parseInt($('.product-colors-swiper-pagination .swiper-pagination-bullet-active').html())
+			if(limitBullets.mob+2 < indexActive) {
+			  $('.product-colors-swiper-pagination .left-dots').removeClass('notdot')
+			} else {
+			  $('.product-colors-swiper-pagination .left-dots').addClass('notdot')
+			}
+			if(allLength - limitBullets.mob > indexActive) {
+			  $('.product-colors-swiper-pagination .right-dots').removeClass('notdot')
+			} else {
+			  $('.product-colors-swiper-pagination .right-dots').addClass('notdot')
+			}
+		  }
+		}
+	  }
 })
