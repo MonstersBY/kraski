@@ -15271,6 +15271,8 @@ section {
     max-width: 100%;
   }
   .lk-info .lk-info__btns {
+    overflow: auto;
+    padding-bottom: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -15279,13 +15281,13 @@ section {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 1.6rem;
-    padding-bottom: 0;
     border-bottom: none;
   }
   .lk-info .lk-info__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-wrap: nowrap;
     padding: 1.6rem 2.4rem;
     height: 7.4rem;
     border-radius: 2rem;
