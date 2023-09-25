@@ -1,15 +1,11 @@
 $(document).ready(function () {
-  // При клике на mobile-menu__btn
-  $(".mobile-menu__btn").click(function () {
-    $("li").slideDown({
-      // плавно отображаем элементы <li> в документе
-      duration: 800, // продолжительность анимации
-      easing: "linear", // скорость анимации
-      complete: function () {
-        // callback
-        $(".status").text("Элементы плавно появились");
-      },
-      queue: false, // не ставим в очередь
-    });
+  // Раскрывающийся список меню
+  $(".mobile-menu__btn").on("click", function () {
+    $(".mobile-menu__navigation").slideToggle();
+    $(".mobile-menu__navigation").toggleClass("active");
+  });
+  $(".mobile-menu__close-btn").on("click", function () {
+    $(".mobile-menu__navigation").slideToggle();
+    $(".mobile-menu__navigation").toggleClass("active");
   });
 });
