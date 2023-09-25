@@ -15405,6 +15405,7 @@ section {
 }
 
 .lk-info-payment .title-h4 {
+  width: 100%;
   margin-top: 3rem;
 }
 .lk-info-payment ol {
@@ -15438,6 +15439,32 @@ section {
 }
 .lk-info-payment__card-list > li > svg {
   height: 1.6rem;
+}
+@media (max-width: 48em) {
+  .lk-info-payment ol {
+    padding-left: 3.2rem;
+  }
+  .lk-info-payment li {
+    font-size: 2.8rem;
+  }
+  .lk-info-payment__card-list {
+    gap: 4rem;
+  }
+  .lk-info-payment__card-list > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15rem;
+    height: 9rem;
+    border-radius: 2.4rem;
+  }
+  .lk-info-payment__card-list > li > svg {
+    height: 3rem;
+  }
+  .lk-info-payment .title-h4 {
+    margin-top: 6rem;
+    max-width: 42rem;
+  }
 }
 
 .mobile {

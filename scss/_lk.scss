@@ -979,10 +979,9 @@
 
 .lk-info-payment {
   .title-h4 {
+    width: 100%;
     margin-top: 3rem;
   }
-
-  >ul {}
 
   ol {
     margin: 3rem 0 0;
@@ -1004,9 +1003,40 @@
       background: #F4F6F8;
       align-items: center;
       justify-content: center;
-      >svg{
+
+      >svg {
         height: 1.6rem;
       }
+    }
+  }
+
+  @media (max-width: 48em) {
+    ol {
+      padding-left: 3.2rem;
+    }
+
+    li {
+      font-size: 2.8rem;
+    }
+
+    &__card-list {
+      gap: 4rem;
+  
+      >li {
+        display: flex;
+        width: 15rem;
+        height: 9rem;
+        border-radius: 2.4rem;
+  
+        >svg {
+          height: 3rem;
+        }
+      }
+    }
+
+    .title-h4 {
+      margin-top: 6rem;
+      max-width: 42rem;
     }
   }
 }
