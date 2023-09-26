@@ -618,7 +618,18 @@ if($('.catalog__sort').length) {
         $('.found-cheaper-modal').addClass('active')
     });
 
+
 }
+$('.add-like').on( "click", function(e) {
+	e.preventDefault();
+	$('body').addClass('modalac')
+	$('.favorites-modal').addClass('active')
+});
+$('.favorites-modal .btn').on( "click", function(e) {
+	e.preventDefault();
+	$('body').removeClass('modalac')
+	$('.favorites-modal').removeClass('active')
+});
 
 
 
