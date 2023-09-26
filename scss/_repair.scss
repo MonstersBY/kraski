@@ -36,7 +36,7 @@
 		&-item {
 			width: 37.5rem;
 			height: 32rem;
-			border-radius: 30px;
+			border-radius: 3rem;
 			overflow: hidden;
 			position: relative;
 			padding: 1.24rem 1.5rem;
@@ -56,7 +56,7 @@
 				}
 			}
 			&--text {
-				border-radius: 20px;
+				border-radius: 2rem;
 				border: 1px solid var(--white, #fff);
 				background: rgba(244, 246, 248, 0.6);
 				backdrop-filter: blur(12.5px);
@@ -122,6 +122,13 @@
 			flex-direction: column;
 			gap: 4.8rem;
 
+			.title-h3 {
+				font-size: 5.2rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+
 			p {
 				font-size: 2.8rem;
 				line-height: 130%;
@@ -135,7 +142,7 @@
 			&-item {
 				width: 34.4rem;
 				height: 52rem;
-				border-radius: 10px;
+				border-radius: 2rem;
 				padding: 2rem;
 
 				&--img {
@@ -152,7 +159,7 @@
 					}
 				}
 				&--text {
-					border-radius: 10px;
+					border-radius: 2rem;
 					padding: 2rem 2rem 6rem;
 
 					strong {

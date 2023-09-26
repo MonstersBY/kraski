@@ -13,6 +13,39 @@
 		border-radius: 30px;
 		background: #f3efff;
 		flex: none;
+		overflow: hidden;
+		position: relative;
+
+		.form-consultation {
+			position: relative;
+    		z-index: 1;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			width: 44.6rem;
+			height: 44.6rem;
+			background: linear-gradient(30deg, rgba(255, 255, 255, 0.14) 38.93%, rgba(253, 252, 255, 0.50) 91.92%);
+			border-radius: 50%;
+			left: -9rem;
+			bottom: -19rem;
+			position: absolute;
+			z-index: 0;
+		}
+		&::before {
+			content: '';
+			display: block;
+			width: 44.6rem;
+			height: 44.6rem;
+			background: linear-gradient(30deg, rgba(255, 255, 255, 0.27) 38.93%, #FDFCFF 91.92%);
+			border-radius: 50%;
+			top: -10rem;
+			right: -12rem;
+			position: absolute;
+			z-index: 0;
+		}
+
 
 		&--title {
 			color: #3b3c40;
@@ -21,6 +54,8 @@
 			font-weight: 600;
 			line-height: normal;
 			margin-bottom: 1.4rem;
+			position: relative;
+    		z-index: 1;
 		}
 		&--text {
 			color: #9293b0;
@@ -30,6 +65,8 @@
 			line-height: 140%;
 			width: 29.5rem;
 			margin-bottom: 4rem;
+			position: relative;
+    		z-index: 1;
 		}
 		&--info {
 			color: #9293b0;
@@ -37,6 +74,8 @@
 			font-style: normal;
 			font-weight: 500;
 			line-height: 140%;
+			position: relative;
+    		z-index: 1;
 
 			a {
 				text-decoration-line: underline;
@@ -59,6 +98,9 @@
 		height: 25.3rem;
 		display: flex;
 		align-items: center;
+		background: linear-gradient(345deg, #7D68FB 21.47%, #AFA2FB 102.96%);
+		border-radius: 4rem 4rem 0 4rem;
+		overflow: hidden;
 
 		&-info {
 			display: flex;
@@ -92,7 +134,7 @@
 			img {
 				height: 100%;
 				object-fit: cover;
-				border-top-right-radius: 40px;
+				border-top-right-radius: 4rem;
 			}
 		}
 
@@ -137,19 +179,73 @@
 			}
 		}
 		&-date {
-			display: none;
+			position: absolute;
+			top: 3rem;
+			right: 3rem;
+
+			&--text {
+				color: #fff;
+				font-size: 1.6rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 140%;
+				margin-bottom: 0.6rem;
+			}
+			&--bar {
+				width: 100%;
+				height: 4px;
+				background: #ffffff3f;
+				border-radius: 72px;
+				position: relative;
+
+				&-progress {
+					position: absolute;
+					border-radius: 72px;
+					left: 0;
+					height: 4px;
+					background: #fff;
+				}
+			}
 		}
 		&--border {
 			position: absolute;
-			display: block;
-			width: 11.7rem;
-			height: 11.7rem;
-			right: -0.5rem;
-			bottom: -0.5rem;
-			svg {
-				width: 11.7rem;
-				height: 11.7rem;
+			right: 0;
+			bottom: 0;
+			border-radius: 3.5rem 0 0 0;
+			width: 7.2rem;
+			height: 7.2rem;
+			background: #FFF;
+
+			&::before {
+				content: "";
+				position: absolute;
+				right: 100%;
+				bottom: 0rem;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 0 0 5rem 0;
+				box-shadow: 1rem 1rem 0 0.5rem #FFF;
 			}
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: -4rem;
+				width: 4rem;
+				height: 4rem;
+				border-radius: 0 0 5rem 0;
+				box-shadow: 1rem 1rem 0 0.5rem #FFF;
+			}
+			// position: absolute;
+			// display: block;
+			// width: 11.7rem;
+			// height: 11.7rem;
+			// right: -0.5rem;
+			// bottom: -0.5rem;
+			// svg {
+			// 	width: 11.7rem;
+			// 	height: 11.7rem;
+			// }
 		}
 	}
 	.btn-empty {
@@ -182,7 +278,14 @@
 		&__consultation {
 			width: 100%;
 			padding: 10rem 2rem;
-			border-radius: 20px;
+			border-radius: 4rem;
+
+			&::after {
+				content: unset;
+			}
+			&::before {
+				content: unset;
+			}
 
 			&--title {
 				font-size: 6.4rem;
@@ -242,7 +345,7 @@
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
-					border-top-right-radius: 20px;
+					border-top-right-radius: 4rem;
 				}
 			}
 
@@ -286,36 +389,16 @@
 					height: 3.2rem;
 				}
 			}
+			&--border {
+				width: 8rem;
+				height: 8rem;
+			}
+			
 			&-date {
-				position: absolute;
-				top: 3rem;
-				right: 3rem;
-
-				&--text {
-					color: #fff;
-					font-size: 1.6rem;
-					font-style: normal;
-					font-weight: 500;
-					line-height: 140%;
-					margin-bottom: 0.6rem;
-				}
-				&--bar {
-					width: 100%;
-					height: 4px;
-					background: #ffffff3f;
-					border-radius: 72px;
-					position: relative;
-
-					&-progress {
-						position: absolute;
-						border-radius: 72px;
-						left: 0;
-						height: 4px;
-						background: #fff;
-					}
-				}
+				display: none;
 			}
 		}
+		
 		.btn-empty {
 			margin: 0 auto;
 			width: 30.5rem;
