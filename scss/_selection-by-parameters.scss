@@ -110,36 +110,43 @@
     display: flex;
     flex-direction: column;
 
-    &--first {
-      .selection-bp-form-items {
-        height: 25rem;
-      }
-      p {
-        width: 31rem;
-      }
-    }
-    &--second {
-      transition: all 1s ease-in-out;
-      display: none;
-      opacity: 0;
-      .selection-bp-form-items {
-        height: 23rem;
-      }
-      p {
-        width: 23.8rem;
-      }
-    }
-    &--third {
-      transition: all 1s ease-in-out;
-      display: none;
-      opacity: 0;
-      .selection-bp-form-items {
-        height: 30rem;
-      }
-      p {
-        width: 20.9rem;
-      }
-    }
+		&--flex {
+			display: flex;
+		}
+		&--left {
+			flex: 1;
+		}
+
+		&--first {
+			.selection-bp-form-items {
+				height: 25rem;
+			}
+			p {
+				width: 31rem;
+			}
+		}
+		&--second {
+			transition: all 1s ease-in-out;
+			display: none;
+			opacity: 0;
+			.selection-bp-form-items {
+				height: 23rem;
+			}
+			p {
+				width: 23.8rem;
+			}
+		}
+		&--third {
+			transition: all 1s ease-in-out;
+			display: none;
+			opacity: 0;
+			.selection-bp-form-items {
+				height: 30rem;
+			}
+			p {
+				width: 20.9rem;
+			}
+		}
 
     &-items {
       display: flex;
@@ -153,14 +160,14 @@
       gap: 1.5rem;
       cursor: pointer;
 
-      .custom-checkbox {
-        width: 2.4rem;
-        height: 2.4rem;
-        border-radius: 5px;
-        background: #fff;
-        border: 1px solid #9293b0;
-        position: relative;
-        flex: none;
+			.custom-checkbox {
+				width: 2.4rem;
+				height: 2.4rem;
+				border-radius: 0.5rem;
+				background: #fff;
+				border: 1px solid #9293b0;
+				position: relative;
+				flex: none;
 
         &::after {
           content: "";
@@ -292,32 +299,36 @@
       display: flex;
       flex-direction: column;
 
-      &--first {
-        .selection-bp-form-items {
-          height: auto;
-        }
-        p {
-          width: auto;
-        }
-      }
-      &--second {
-        display: none;
-        .selection-bp-form-items {
-          height: auto;
-        }
-        p {
-          width: auto;
-        }
-      }
-      &--third {
-        display: none;
-        .selection-bp-form-items {
-          height: auto;
-        }
-        p {
-          width: auto;
-        }
-      }
+			&--flex {
+				display: block;
+			}
+
+			&--first {
+				.selection-bp-form-items {
+					height: auto;
+				}
+				p {
+					width: auto;
+				}
+			}
+			&--second {
+				display: none;
+				.selection-bp-form-items {
+					height: auto;
+				}
+				p {
+					width: auto;
+				}
+			}
+			&--third {
+				display: none;
+				.selection-bp-form-items {
+					height: auto;
+				}
+				p {
+					width: auto;
+				}
+			}
 
       &-items {
         gap: 3rem;
@@ -327,9 +338,10 @@
       &-item {
         gap: 2rem;
 
-        .custom-checkbox {
-          width: 4.8rem;
-          height: 4.8rem;
+				.custom-checkbox {
+					width: 4.8rem;
+					height: 4.8rem;
+					border-radius: 1rem;
 
           &::after {
             width: 2.2rem;
@@ -337,23 +349,22 @@
           }
         }
 
-        p {
-          font-size: 2.8rem;
-          line-height: 130%;
-        }
-      }
-      &-container {
-        height: 8.4rem;
-        &-box {
-          position: fixed;
-          padding: 3.2rem 3rem;
-          bottom: 16;
-          box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
-          border-radius: 20px 20px 0px 0px;
-          bottom: 0;
-          background: #fff;
-          width: 71rem;
-          transition: all 0.5s ease-in-out;
+				p {
+					font-size: 2.8rem;
+					line-height: 130%;
+				}
+			}
+			&-container {
+				height: 8.4rem;
+				&-box {
+					position: fixed;
+					padding: 3.2rem 3rem 17rem;
+					box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+					border-radius: 20px 20px 0px 0px;
+					bottom: 0;
+					background: #fff;
+					width: 71rem;
+					transition: all 0.5s ease-in-out;
 
           &.disable {
             padding: 0 3rem;
