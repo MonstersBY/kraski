@@ -110,6 +110,13 @@
 		display: flex;
 		flex-direction: column;
 
+		&--flex {
+			display: flex;
+		}
+		&--left {
+			flex: 1;
+		}
+
 		&--first {
 			.selection-bp-form-items {
 				height: 25rem;
@@ -292,6 +299,10 @@
 			display: flex;
 			flex-direction: column;
 
+			&--flex {
+				display: block;
+			}
+
 			&--first {
 				.selection-bp-form-items {
 					height: auto;
@@ -347,8 +358,7 @@
 				height: 8.4rem;
 				&-box {
 					position: fixed;
-					padding: 3.2rem 3rem;
-					bottom: 16;
+					padding: 3.2rem 3rem 17rem;
 					box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
 					border-radius: 20px 20px 0px 0px;
 					bottom: 0;
