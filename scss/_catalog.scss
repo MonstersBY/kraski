@@ -243,8 +243,8 @@
 			}
 			&-img {
 				position: absolute;
-				border-top-right-radius: 40px;
-				border-bottom-right-radius: 40px;
+				border-top-right-radius: 4rem;
+				border-bottom-right-radius: 4rem;
 				top: 0;
 				right: -0.1rem;
 				width: 70.5rem;
@@ -252,8 +252,8 @@
 				clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
 
 				img {
-					border-top-right-radius: 40px;
-					border-bottom-right-radius: 40px;
+					border-top-right-radius: 4rem;
+					border-bottom-right-radius: 4rem;
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
@@ -1593,8 +1593,8 @@
 					box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
 					background: #fff;
 					padding: 8rem 2rem 6.4rem 2rem;
-					border-top-left-radius: 20px;
-					border-top-right-radius: 20px;
+					border-top-left-radius: 4rem;
+					border-top-right-radius: 4rem;
 					z-index: 1;
 					button {
 						width: 100%;
@@ -1668,8 +1668,8 @@
 				}
 				&-img {
 					position: absolute;
-					border-top-right-radius: 20px;
-					border-bottom-right-radius: 20px;
+					border-top-right-radius: 4rem;
+					border-bottom-right-radius: 4rem;
 					top: 0;
 					right: -0.1rem;
 					width: 27.8rem;

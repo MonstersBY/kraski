@@ -7185,6 +7185,36 @@ section {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
+  overflow: hidden;
+  position: relative;
+}
+.promotion-page__consultation .form-consultation {
+  position: relative;
+  z-index: 1;
+}
+.promotion-page__consultation::after {
+  content: "";
+  display: block;
+  width: 44.6rem;
+  height: 44.6rem;
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0.14) 38.93%, rgba(253, 252, 255, 0.5) 91.92%);
+  border-radius: 50%;
+  left: -9rem;
+  bottom: -19rem;
+  position: absolute;
+  z-index: 0;
+}
+.promotion-page__consultation::before {
+  content: "";
+  display: block;
+  width: 44.6rem;
+  height: 44.6rem;
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0.27) 38.93%, #FDFCFF 91.92%);
+  border-radius: 50%;
+  top: -10rem;
+  right: -12rem;
+  position: absolute;
+  z-index: 0;
 }
 .promotion-page__consultation--title {
   color: #3b3c40;
@@ -7193,6 +7223,8 @@ section {
   font-weight: 600;
   line-height: normal;
   margin-bottom: 1.4rem;
+  position: relative;
+  z-index: 1;
 }
 .promotion-page__consultation--text {
   color: #9293b0;
@@ -7202,6 +7234,8 @@ section {
   line-height: 140%;
   width: 29.5rem;
   margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
 }
 .promotion-page__consultation--info {
   color: #9293b0;
@@ -7209,6 +7243,8 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  position: relative;
+  z-index: 1;
 }
 .promotion-page__consultation--info a {
   text-decoration-line: underline;
@@ -7240,6 +7276,9 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: linear-gradient(345deg, #7D68FB 21.47%, #AFA2FB 102.96%);
+  border-radius: 4rem 4rem 0 4rem;
+  overflow: hidden;
 }
 .promotion-page__item-info {
   display: -webkit-box;
@@ -7278,7 +7317,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-top-right-radius: 40px;
+  border-top-right-radius: 4rem;
 }
 .promotion-page__item--back {
   position: absolute;
@@ -7325,19 +7364,62 @@ section {
   height: 2.8rem;
 }
 .promotion-page__item-date {
-  display: none;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+.promotion-page__item-date--text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 0.6rem;
+}
+.promotion-page__item-date--bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2470588235);
+  border-radius: 72px;
+  position: relative;
+}
+.promotion-page__item-date--bar-progress {
+  position: absolute;
+  border-radius: 72px;
+  left: 0;
+  height: 4px;
+  background: #fff;
 }
 .promotion-page__item--border {
   position: absolute;
-  display: block;
-  width: 11.7rem;
-  height: 11.7rem;
-  right: -0.5rem;
-  bottom: -0.5rem;
+  right: 0;
+  bottom: 0;
+  border-radius: 3.5rem 0 0 0;
+  width: 7.2rem;
+  height: 7.2rem;
+  background: #FFF;
 }
-.promotion-page__item--border svg {
-  width: 11.7rem;
-  height: 11.7rem;
+.promotion-page__item--border::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0 0 5rem 0;
+  -webkit-box-shadow: 1rem 1rem 0 0.5rem #FFF;
+          box-shadow: 1rem 1rem 0 0.5rem #FFF;
+}
+.promotion-page__item--border::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0 0 5rem 0;
+  -webkit-box-shadow: 1rem 1rem 0 0.5rem #FFF;
+          box-shadow: 1rem 1rem 0 0.5rem #FFF;
 }
 .promotion-page .btn-empty {
   margin: 0 auto;
@@ -7373,7 +7455,13 @@ section {
   .promotion-page__consultation {
     width: 100%;
     padding: 10rem 2rem;
-    border-radius: 20px;
+    border-radius: 4rem;
+  }
+  .promotion-page__consultation::after {
+    content: unset;
+  }
+  .promotion-page__consultation::before {
+    content: unset;
   }
   .promotion-page__consultation--title {
     font-size: 6.4rem;
@@ -7439,7 +7527,7 @@ section {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 4rem;
   }
   .promotion-page__item--back {
     display: none;
@@ -7485,32 +7573,12 @@ section {
     width: 3.2rem;
     height: 3.2rem;
   }
+  .promotion-page__item--border {
+    width: 8rem;
+    height: 8rem;
+  }
   .promotion-page__item-date {
-    position: absolute;
-    top: 3rem;
-    right: 3rem;
-  }
-  .promotion-page__item-date--text {
-    color: #fff;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-    margin-bottom: 0.6rem;
-  }
-  .promotion-page__item-date--bar {
-    width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.2470588235);
-    border-radius: 72px;
-    position: relative;
-  }
-  .promotion-page__item-date--bar-progress {
-    position: absolute;
-    border-radius: 72px;
-    left: 0;
-    height: 4px;
-    background: #fff;
+    display: none;
   }
   .promotion-page .btn-empty {
     margin: 0 auto;
@@ -7736,6 +7804,16 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.selection-bp-form--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.selection-bp-form--left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 .selection-bp-form--first .selection-bp-form-items {
   height: 25rem;
 }
@@ -7918,6 +7996,9 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .selection-bp-form--flex {
+    display: block;
+  }
   .selection-bp-form--first .selection-bp-form-items {
     height: auto;
   }
@@ -7969,8 +8050,7 @@ section {
   }
   .selection-bp-form-container-box {
     position: fixed;
-    padding: 3.2rem 3rem;
-    bottom: 16;
+    padding: 3.2rem 3rem 17rem;
     -webkit-box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
             box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
     border-radius: 20px 20px 0px 0px;
@@ -8287,8 +8367,8 @@ section {
 }
 .catalog__main-head-img {
   position: absolute;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
   top: 0;
   right: -0.1rem;
   width: 70.5rem;
@@ -8297,8 +8377,8 @@ section {
           clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
 }
 .catalog__main-head-img img {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -9738,8 +9818,8 @@ section {
             box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
     background: #fff;
     padding: 8rem 2rem 6.4rem 2rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
     z-index: 1;
   }
   .catalog__sidebar-form-bottom button {
@@ -9821,8 +9901,8 @@ section {
   }
   .catalog__main-head-img {
     position: absolute;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
     top: 0;
     right: -0.1rem;
     width: 27.8rem;
@@ -10334,7 +10414,7 @@ section {
 .repair-page-box-item {
   width: 37.5rem;
   height: 32rem;
-  border-radius: 30px;
+  border-radius: 3rem;
   overflow: hidden;
   position: relative;
   padding: 1.24rem 1.5rem;
@@ -10356,7 +10436,7 @@ section {
      object-fit: cover;
 }
 .repair-page-box-item--text {
-  border-radius: 20px;
+  border-radius: 2rem;
   border: 1px solid var(--white, #fff);
   background: rgba(244, 246, 248, 0.6);
   -webkit-backdrop-filter: blur(12.5px);
@@ -10428,6 +10508,12 @@ section {
             flex-direction: column;
     gap: 4.8rem;
   }
+  .repair-page-box .title-h3 {
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
   .repair-page-box p {
     font-size: 2.8rem;
     line-height: 130%;
@@ -10444,7 +10530,7 @@ section {
   .repair-page-box-item {
     width: 34.4rem;
     height: 52rem;
-    border-radius: 10px;
+    border-radius: 2rem;
     padding: 2rem;
   }
   .repair-page-box-item--img {
@@ -10461,7 +10547,7 @@ section {
        object-fit: cover;
   }
   .repair-page-box-item--text {
-    border-radius: 10px;
+    border-radius: 2rem;
     padding: 2rem 2rem 6rem;
   }
   .repair-page-box-item--text strong {
