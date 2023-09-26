@@ -619,5 +619,21 @@ $('.form-consultation').on("submit", function (e) {
 	$('.consultation-modal').addClass('active')
 });
 
+$('.shop__card--exit, .shops__card-modal-screen').on( "click", function(e) {
+	e.preventDefault();
+	$('body').removeClass('modalac')
+	$('.shops__card-modal').removeClass('active')
+});
+$('.catalog__list-item-info-list').on( "click", function(e) {
+	e.preventDefault();
+	console.log(123);
+	if (screen.width < 769) {
+		$('body').addClass('modalac')
+		$('.catalog-prev-modal').addClass('active')
+
+	}
+	// spark.svg measure paper_roll house_building price
+
+});
 
 })
