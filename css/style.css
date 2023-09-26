@@ -14411,7 +14411,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.lk .desktop-menu__navigation-item {
+.lk .desktop-menu__navigation-item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14430,8 +14430,33 @@ section {
   gap: 1rem;
   padding: 1.6rem 4rem 1.6rem 4rem;
 }
+.lk .desktop-menu__navigation-item a > svg {
+  width: 2.8rem;
+  height: 2.8rem;
+}
 .lk .desktop-menu__navigation-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 1.6rem 4rem 1.6rem 4rem;
   background: #f3efff;
+}
+.lk .desktop-menu__navigation-item.active > svg {
+  width: 2.8rem;
+  height: 2.8rem;
 }
 .lk .desktop-menu__navigation-item_leave {
   margin-top: 2rem;
