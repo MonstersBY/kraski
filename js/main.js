@@ -619,5 +619,10 @@ $('.form-consultation').on("submit", function (e) {
 	$('.consultation-modal').addClass('active')
 });
 
+$('.shop__card--exit, .shops__card-modal-screen').on( "click", function(e) {
+	e.preventDefault();
+	$('body').removeClass('modalac')
+	$('.shops__card-modal').removeClass('active')
+});
 
 })
