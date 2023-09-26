@@ -1,0 +1,20 @@
+<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="house_building_2wwabjqc7cwc">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M25.8105 12.3574H2.19043V25.9664H10.0117V16.5809H17.8329V25.9664H25.8105V12.3574Z" fill="url(#paint0_linear_1248_57241)"/>
+<path id="Vector_2" d="M2.18998 2.0332L0 11.575H2.18998H25.8101H28L25.8101 2.0332H2.18998Z" fill="url(#paint1_linear_1248_57241)"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1248_57241" x1="11.3535" y1="16.4735" x2="15.032" y2="25.6684" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7D68FB"/>
+<stop offset="1" stop-color="#AFA2FB"/>
+</linearGradient>
+<linearGradient id="paint1_linear_1248_57241" x1="10.8621" y1="4.91919" x2="12.538" y2="12.0014" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7D68FB"/>
+<stop offset="1" stop-color="#AFA2FB"/>
+</linearGradient>
+</defs>
+</svg>
