@@ -1,8 +1,12 @@
 .lk {
   position: relative;
 
+  .switcher {
+    margin-bottom: 0;
+  }
+
   .lk-bottom {
-    margin-top: 4rem;
+    margin-top: 1.85rem;
     display: flex;
     flex-direction: row;
     gap: 8rem;
@@ -62,9 +66,9 @@
       }
 
       &_leave {
-        margin-top: 2rem;
+        margin-top: 3.5rem;
 
-        .lk__navigation-text {
+        .desktop-menu__navigation-text {
           color: #9293b0;
         }
       }
@@ -229,7 +233,7 @@
       gap: 6rem;
     }
 
-    .title-h3 {
+    .title-h2 {
       display: none;
     }
 
@@ -748,15 +752,22 @@
   width: 100%;
   max-width: 90.2rem;
 
-  p,
-  ul {
-    margin-top: 3rem;
+  .lk__paragraph {
+    margin-top: 2rem;
     color: #3b3c40;
     font-family: Euclid Circular A;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
+  }
+
+  .highlight {
+    color: #E50E78;
+  }
+
+  .lk__paragraph:first-of-type {
+    margin-top: 3rem;
   }
 
   li,
@@ -780,6 +791,8 @@
   }
 
   .lk-info__btns {
+    margin-top: 1.85rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -809,13 +822,6 @@
     }
   }
 
-  &__delivery {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-
   .note {
     color: #9293b0;
   }
@@ -832,6 +838,7 @@
 
   &__tables {
     margin-top: 5rem;
+    margin-bottom: 8rem;
   }
 
   .table {
@@ -861,6 +868,7 @@
     }
 
     &__title {
+      margin-top: 0;
       text-align: left;
       color: #3b3c40;
       font-family: Euclid Circular A;
@@ -927,15 +935,34 @@
   @media (max-width: 48em) {
     max-width: 100%;
 
-    p,
     ul {
       margin-top: 4rem;
-      color: #3b3c40;
       font-size: 2.8rem;
       line-height: 130%;
     }
 
+    .lk__paragraph {
+      margin-top: 4rem;
+      font-size: 2.8rem;
+      line-height: 130%;
+    }
+
+    li,
+    ol {
+      font-family: Euclid Circular A;
+      font-size: 2.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
+    }
+
+    .lk__paragraph:first-of-type {
+      margin-top: 4rem;
+    }
+
     .lk-info__btns {
+      margin-bottom: 3rem;
+      margin-top: 0;
       overflow: auto;
       padding-bottom: 3rem;
       display: flex;
@@ -950,7 +977,6 @@
       padding: 1.6rem 2.4rem;
       height: 7.4rem;
       border-radius: 2rem;
-      color: #3b3c40;
       font-size: 2.8rem;
       line-height: 130%;
     }
@@ -976,7 +1002,7 @@
     .table {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 4rem;
       box-sizing: border-box;
 
       &_type {
@@ -1035,7 +1061,7 @@
 
               &:last-of-type {
                 padding-right: 2rem;
-                width: 27rem;
+                width: 24rem;
               }
             }
           }
@@ -1046,17 +1072,34 @@
 }
 
 .lk-info-payment {
-  .title-h4 {
-    width: 100%;
-    margin-top: 3rem;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6rem;
 
   ol {
     margin: 3rem 0 0;
-    padding-left: 1.6rem;
+    padding-left: 2rem;
   }
 
-  &__text-list {}
+  ul {
+    padding-left: 2.5rem;
+    margin-top: 3rem;
+    color: #3b3c40;
+    font-family: Euclid Circular A;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__text-list {
+    padding-left: 2.5rem;
+
+    >li {
+      list-style: disc;
+    }
+  }
 
   &__card-list {
     display: flex;
@@ -1079,6 +1122,8 @@
   }
 
   @media (max-width: 48em) {
+    gap: 8rem;
+
     ol {
       padding-left: 3.2rem;
     }
@@ -1101,14 +1146,174 @@
         }
       }
     }
-
+    &__text-list {
+      padding-left: 4.5rem;
+    }
     .title-h4 {
-      margin-top: 6rem;
       max-width: 42rem;
     }
   }
 }
 
 .lk-info-return {
-  @media (max-width: 48em) {}
+
+  ol {
+    padding-left: 2rem;
+    margin-top: 3.5rem;
+  }
+
+  ul {
+    margin-top: 3rem;
+    color: #3b3c40;
+    font-family: Euclid Circular A;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__block {
+    margin-top: 5rem;
+    padding: 4rem;
+    border-radius: 3rem;
+    background: #F4F6F8;
+  }
+
+  &__resolution-header {
+    margin-top: 0;
+    width: 100%;
+    color: #3B3C40;
+    text-align: right;
+    font-family: Euclid Circular A;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__resolution-title {
+    margin: 3rem auto 0;
+    width: 67.3rem;
+    color: #3B3C40;
+    text-align: center;
+    font-family: Euclid Circular A;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+  }
+
+  @media (max-width: 48em) {
+    .lk__paragraph {
+      margin-top: 4rem;
+    }
+
+    ol {
+      padding-left: 4rem;
+      margin-top: 6rem;
+    }
+
+    &__block {
+      margin-top: 8rem;
+      padding: 4rem;
+      border-radius: 6rem;
+    }
+
+    &__resolution-header {
+      margin-top: 0;
+      margin-left: auto;
+      font-size: 2.4rem;
+      width: 38.8rem;
+    }
+
+    &__resolution-title {
+      margin: 6rem auto 0;
+      width: 63rem;
+      font-size: 3rem;
+      line-height: 140%;
+    }
+  }
+}
+
+.lk-info-help {
+
+  p {
+    color: var(--black, #3B3C40);
+    font-family: Euclid Circular A;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
+
+  &__question-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+  }
+
+  &__question-block {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: #3B3C40;
+    font-family: Euclid Circular A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+    ul {
+      margin: 0;
+      padding-left: 2.5rem;
+
+      >li {
+        list-style: disc;
+      }
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 2.5rem;
+    }
+  }
+
+  &__question-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  @media (max-width: 48em) {
+
+    p {
+      font-size: 2.8rem;
+      line-height: 130%;
+    }
+
+    &__question-blocks {
+      gap: 8rem;
+    }
+
+    &__question-block {
+      gap: 4rem;
+      font-size: 2.8rem;
+      line-height: 130%;
+
+      ul {
+        padding-left: 4.5rem;
+      }
+
+      ol {
+        padding-left: 4.5rem;
+      }
+    }
+
+    &__question-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
 }
