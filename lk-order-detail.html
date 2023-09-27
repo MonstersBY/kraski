@@ -2507,7 +2507,7 @@
                       (Мельница) пав. буква "З" № 12/2
                     </p>
                   </div>
-                  <button class="order-card__button">Отменить заказ</button>
+                  <button class="order-card__button order-card__btn-cancel">Отменить заказ</button>
                 </div>
               </div>
             </div>
@@ -3159,6 +3159,25 @@
         </div>
       </div>
     </footer>
+
+    <div class="order-modal modal">
+      <div class="modal-screen"></div>
+      <div class="order-modal-container modal-container">
+        <div class="modal-container--exit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M29.5242 29.5247L10.4766 10.4771M29.5242 10.4771L10.4766 29.5247" stroke="#9293B0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <div class="order-modal--back">
+          <img src="./assets/images/icon/found-cheaper--back.svg" alt="">
+        </div>
+        <div class="order-modal--title">Отмена заказа</div>
+        <div class="order-modal--subtitle">Вы точно хотите отменить заказ? Изменить действие будет невозможно</div>
+        <button class="btn-empty">
+          <span class="btn-empty--text">Отменить заказ</span>
+        </button>
+      </div>
+    </div>
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/roundslider.js"></script>
