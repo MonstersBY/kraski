@@ -7029,6 +7029,12 @@ section {
   display: flex;
   gap: 2rem;
 }
+.login-form-btns .btn {
+  width: 39.6rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 .login-form-link {
   font-size: 1.8rem;
   font-style: normal;
@@ -17872,7 +17878,7 @@ section {
 @media (max-width: 48em) {
   .order-modal-container {
     width: 71rem;
-    height: 300px;
+    height: 60rem;
     border-radius: 4rem;
     padding: 12.8rem 0 0;
     overflow: hidden;
