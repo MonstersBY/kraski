@@ -42,7 +42,7 @@
         gap: 1rem;
         padding: 1.6rem 4rem 1.6rem 4rem;
 
-        > svg {
+        >svg {
           width: 2.8rem;
           height: 2.8rem;
         }
@@ -59,7 +59,7 @@
         padding: 1.6rem 4rem 1.6rem 4rem;
         background: #f3efff;
 
-        > svg {
+        >svg {
           width: 2.8rem;
           height: 2.8rem;
         }
@@ -120,6 +120,7 @@
     }
 
     &_type {
+
       // .form__item_type_name
       &_name {
         grid-area: name;
@@ -161,10 +162,8 @@
             font-style: normal;
             font-weight: 500;
             line-height: 130%;
-            background: var(
-              --button-gradient,
-              linear-gradient(96deg, #dd3197 0%, #822faf 101.4%)
-            );
+            background: var(--button-gradient,
+                linear-gradient(96deg, #dd3197 0%, #822faf 101.4%));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -201,10 +200,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 1.5rem;
-    background: var(
-      --button-gradient,
-      linear-gradient(96deg, #dd3197 0%, #822faf 101.4%)
-    );
+    background: var(--button-gradient,
+        linear-gradient(96deg, #dd3197 0%, #822faf 101.4%));
     box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
 
     &__text {
@@ -264,7 +261,7 @@
         justify-content: center;
         align-items: center;
 
-        > svg {
+        >svg {
           width: 4rem;
           height: 4rem;
         }
@@ -287,7 +284,7 @@
         border-radius: 2rem;
         box-shadow: 1rem 3rem 14rem 0rem rgba(173, 178, 201, 0.35);
 
-        > svg {
+        >svg {
           &:first-of-type {
             width: 4.8rem;
             height: 4.8rem;
@@ -299,7 +296,7 @@
           }
         }
 
-        > span {
+        >span {
           color: var(--black, #3b3c40);
           font-family: Euclid Circular A;
           font-size: 3.4rem;
@@ -345,7 +342,7 @@
 
       // .mobile-menu__navigation-item
       &__navigation-item {
-        > a {
+        >a {
           cursor: pointer;
           display: flex;
           flex-direction: row;
@@ -353,14 +350,14 @@
           align-items: center;
           gap: 2rem;
 
-          > svg {
+          >svg {
             width: 4.8rem;
             height: 4.8rem;
           }
         }
 
         &.active {
-          > a {
+          >a {
             .mobile-menu__navigation-text {
               color: #e50e78;
             }
@@ -402,6 +399,7 @@
       }
 
       &_type {
+
         // .form__item_type_address
         &_address {
           gap: 2rem;
@@ -750,6 +748,119 @@
   }
 }
 
+.order-modal {
+  &-container {
+    width: 122.4rem;
+    height: 48.5rem;
+    position: relative;
+    border-radius: 3rem;
+    background: #F3EFFF;
+    padding: 12.2rem 0;
+
+    .btn-empty {
+      width: 30.5rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .disabled {
+      border: 2px solid #DFDFF0;
+
+      &--text {
+        color: #DFDFF0;
+      }
+    }
+  }
+
+  &--back {
+    position: absolute;
+    width: 99.2815rem;
+    height: 41.58rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  &--title {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+
+  &--subtitle {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    color: #9293B0;
+    text-align: center;
+    width: 49.8rem;
+    margin: 0 auto 4rem;
+  }
+
+  @media (max-width: 48em) {
+
+    // .order-modal
+    &-container {
+      width: 71rem;
+      height: 60rem;
+      border-radius: 4rem;
+      padding: 12.8rem 0 0;
+      overflow: hidden;
+    }
+
+    &--back {
+      width: 104.1578rem;
+      height: 43.6154rem;
+    }
+
+    &--title {
+      font-size: 5.2rem;
+      margin-bottom: 4.8rem;
+    }
+
+    &--subtitle {
+      font-size: 3rem;
+      line-height: 140%;
+      width: auto;
+      padding: 0 2rem;
+      margin: 0 auto 6rem;
+    }
+
+    .btn-empty {
+      padding: 2.2rem 4rem;
+      height: 8.4rem;
+      display: block;
+      width: fit-content;
+      background: #fff;
+      font-size: 3rem;
+      border-radius: 2rem;
+      box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+
+  
+      &--text {
+        background: linear-gradient(139deg, #dd3197 0%, #822faf 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+
+
+
+}
+
+
+
+
 .order-details {
   width: 100%;
   max-width: 116.5rem;
@@ -793,6 +904,7 @@
   .product-list {
     margin-top: 3rem;
   }
+
   .order-card {
     margin-top: 4rem;
     width: 100%;
@@ -978,8 +1090,10 @@
       line-height: 140%;
     }
   }
+
   .basket-item {
     padding: 4rem;
+
     .product__quantity {
       color: #3b3c40;
       text-align: center;
@@ -994,6 +1108,7 @@
       width: 100%;
       margin: 0 0;
     }
+
     .item-card-main__calc {
       margin-left: 17.7rem;
     }
@@ -1027,9 +1142,11 @@
       font-size: 3rem;
       line-height: 140%;
     }
+
     .product-list {
       margin-top: 6rem;
     }
+
     .order-card {
       margin-top: 6rem;
       padding: 4rem;
@@ -1150,6 +1267,7 @@
       .item-card-main__calc {
         margin-left: 0;
       }
+
       .product__quantity {
         font-size: 2.8rem;
       }
@@ -1316,15 +1434,15 @@
       border-collapse: collapse;
       border-spacing: 0;
 
-      > thead {
+      >thead {
         padding-top: 2rem;
         background: #f4f6f8;
 
-        > tr {
+        >tr {
           padding: 2rem 2rem;
           height: 5.2rem;
 
-          > th {
+          >th {
             padding: 2rem 2rem;
             border-bottom: 1px solid #dfdff0;
             text-align: left;
@@ -1338,8 +1456,8 @@
         }
       }
 
-      > tbody {
-        > tr {
+      >tbody {
+        >tr {
           padding: 1.5rem 2rem;
           height: 5.2rem;
           color: #3b3c40;
@@ -1350,12 +1468,12 @@
           line-height: 140%;
 
           &:last-of-type {
-            > td {
+            >td {
               border-bottom: none;
             }
           }
 
-          > td {
+          >td {
             padding: 2rem 1.5rem;
             border-bottom: 1px solid #dfdff0;
           }
@@ -1465,13 +1583,13 @@
       &__inner {
         max-width: 100%;
 
-        > thead {
+        >thead {
           padding-top: 4rem;
 
-          > tr {
+          >tr {
             height: 11.6rem;
 
-            > th {
+            >th {
               padding: 4rem 4rem;
               font-size: 2.8rem;
               font-style: normal;
@@ -1481,14 +1599,14 @@
           }
         }
 
-        > tbody {
-          > tr {
+        >tbody {
+          >tr {
             padding: 3rem 4rem;
             height: 9.6rem;
             font-size: 2.8rem;
             line-height: 130%;
 
-            > td {
+            >td {
               padding: 3rem 4rem;
 
               &:last-of-type {
@@ -1528,7 +1646,7 @@
   &__text-list {
     padding-left: 2.5rem;
 
-    > li {
+    >li {
       list-style: disc;
     }
   }
@@ -1538,7 +1656,7 @@
     flex-direction: row;
     gap: 2rem;
 
-    > li {
+    >li {
       display: flex;
       width: 8.2rem;
       height: 5rem;
@@ -1547,7 +1665,7 @@
       align-items: center;
       justify-content: center;
 
-      > svg {
+      >svg {
         height: 1.6rem;
       }
     }
@@ -1567,20 +1685,22 @@
     &__card-list {
       gap: 4rem;
 
-      > li {
+      >li {
         display: flex;
         width: 15rem;
         height: 9rem;
         border-radius: 2.4rem;
 
-        > svg {
+        >svg {
           height: 3rem;
         }
       }
     }
+
     &__text-list {
       padding-left: 4.5rem;
     }
+
     .title-h4 {
       max-width: 42rem;
     }
@@ -1697,7 +1817,7 @@
       margin: 0;
       padding-left: 2.5rem;
 
-      > li {
+      >li {
         list-style: disc;
       }
     }

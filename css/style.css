@@ -1100,9 +1100,6 @@
     font-size: 6.4rem;
     line-height: 110%;
   }
-  .title-h2 .title-h4 {
-    font-size: 3.6rem;
-  }
   .title-h2 span {
     font-size: 2.4rem;
     line-height: 140%;
@@ -17814,6 +17811,105 @@ section {
   .lk-my-orders .order-card__manager {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
+  }
+}
+
+.order-modal-container {
+  width: 122.4rem;
+  height: 48.5rem;
+  position: relative;
+  border-radius: 3rem;
+  background: #F3EFFF;
+  padding: 12.2rem 0;
+}
+.order-modal-container .btn-empty {
+  width: 30.5rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.order-modal-container .disabled {
+  border: 2px solid #DFDFF0;
+}
+.order-modal-container .disabled--text {
+  color: #DFDFF0;
+}
+.order-modal--back {
+  position: absolute;
+  width: 99.2815rem;
+  height: 41.58rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.order-modal--title {
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+.order-modal--subtitle {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #9293B0;
+  text-align: center;
+  width: 49.8rem;
+  margin: 0 auto 4rem;
+}
+@media (max-width: 48em) {
+  .order-modal-container {
+    width: 71rem;
+    height: 300px;
+    border-radius: 4rem;
+    padding: 12.8rem 0 0;
+    overflow: hidden;
+  }
+  .order-modal--back {
+    width: 104.1578rem;
+    height: 43.6154rem;
+  }
+  .order-modal--title {
+    font-size: 5.2rem;
+    margin-bottom: 4.8rem;
+  }
+  .order-modal--subtitle {
+    font-size: 3rem;
+    line-height: 140%;
+    width: auto;
+    padding: 0 2rem;
+    margin: 0 auto 6rem;
+  }
+  .order-modal .btn-empty {
+    padding: 2.2rem 4rem;
+    height: 8.4rem;
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background: #fff;
+    font-size: 3rem;
+    border-radius: 2rem;
+    -webkit-box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+            box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
+  }
+  .order-modal .btn-empty--text {
+    background: linear-gradient(139deg, #dd3197 0%, #822faf 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
