@@ -19551,7 +19551,92 @@ section {
   width: 100%;
   max-width: 156.1rem;
 }
+.business__banner {
+  margin-bottom: 6.5rem;
+  z-index: 1;
+  padding: 12.3rem 5rem 9.6rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5rem;
+  background: #f3efff;
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 156.1rem;
+  border-radius: 5rem;
+}
+.business__img {
+  position: absolute;
+  top: 0;
+}
+.business__img > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.business__img_type_left {
+  border-radius: 5rem 0 20rem 5rem;
+  left: 0;
+  width: 38.6rem;
+  height: 100%;
+}
+.business__img_type_left > img {
+  border-radius: 5rem 0 20rem 5rem;
+}
+.business__img_type_right {
+  border: 20rem 0 20rem 20rem;
+  right: 0;
+  width: 41.1rem;
+  height: 100%;
+}
+.business__img_type_right > img {
+  border-radius: 20rem 0 20rem 20rem;
+}
+.business__banner-title {
+  color: #3b3c40;
+  font-family: Euclid Circular A;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 106%;
+}
+.business__banner-subtitle {
+  max-width: 67.3rem;
+  margin-top: 3rem;
+  color: #9293b0;
+  text-align: center;
+  font-family: Euclid Circular A;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+.business__back {
+  z-index: -1;
+  position: absolute;
+  width: 73.5rem;
+  height: 30.6rem;
+  top: 9.5rem;
+  left: 41.8rem;
+}
+.business .btn {
+  margin: 6.5rem auto 0;
+}
 .business__content {
+  margin-top: 6.5rem;
+  margin-bottom: 15rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19561,6 +19646,8 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .business .text-container {
   width: 100%;
@@ -19569,7 +19656,7 @@ section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3rem;
-  background: #F4F6F8;
+  background: #f4f6f8;
 }
 .business .text-container__blocks {
   display: -webkit-box;
@@ -19592,14 +19679,14 @@ section {
 }
 .business .block__title {
   width: 69rem;
-  color: var(--black, #3B3C40);
+  color: var(--black, #3b3c40);
   font-family: Euclid Circular A;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   padding-bottom: 3.2rem;
-  border-bottom: 1px solid #C9C9D7;
+  border-bottom: 1px solid #c9c9d7;
 }
 .business .block__list {
   margin-top: 1.9rem;
@@ -19607,7 +19694,7 @@ section {
 }
 .business .block__list-item {
   list-style: disc;
-  color: #3B3C40;
+  color: #3b3c40;
   font-family: Euclid Circular A;
   font-size: 1.6rem;
   font-style: normal;
@@ -19620,7 +19707,7 @@ section {
   height: -moz-fit-content;
   height: fit-content;
   padding: 6rem 4rem;
-  border-radius: 30px;
+  border-radius: 3rem;
   background: #f3efff;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -19649,7 +19736,7 @@ section {
   display: block;
   width: 44.6rem;
   height: 44.6rem;
-  background: linear-gradient(30deg, rgba(255, 255, 255, 0.27) 38.93%, #FDFCFF 91.92%);
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0.27) 38.93%, #fdfcff 91.92%);
   border-radius: 50%;
   top: -10rem;
   right: -12rem;
@@ -19691,6 +19778,121 @@ section {
   cursor: pointer;
 }
 
+@media (max-width: 48em) {
+  .business {
+    margin: 6 auto 0;
+    max-width: 71rem;
+  }
+  .business__banner {
+    margin-bottom: 6rem;
+    padding: 4rem 4rem 6.6rem 4rem;
+    border-radius: 4rem;
+    margin-top: 6rem;
+    max-width: 71rem;
+    border-radius: 4rem;
+  }
+  .business__img {
+    position: absolute;
+  }
+  .business__img > img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .business__img_type_left {
+    display: none;
+  }
+  .business__img_type_right {
+    top: 25rem;
+    right: 4rem;
+    width: 17.4rem;
+    height: 17.8rem;
+  }
+  .business__img_type_right > img {
+    border-radius: 20rem 0 20rem 20rem;
+  }
+  .business__banner-title {
+    width: 100%;
+    text-align: left;
+    font-size: 6.4rem;
+    line-height: 110%;
+  }
+  .business__banner-subtitle {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 3.2rem;
+    font-size: 3rem;
+    line-height: 140%;
+  }
+  .business__back {
+    width: 76.8506rem;
+    height: 31.9846rem;
+    top: 7.5rem;
+    left: 0;
+  }
+  .business .btn {
+    margin: 6.5rem auto 0 0;
+  }
+  .business__content {
+    margin-top: 6rem;
+    margin-bottom: 16rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16rem;
+  }
+  .business .text-container {
+    width: 100%;
+    max-width: 71rem;
+    padding: 4rem 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 4rem;
+  }
+  .business .block__title {
+    width: 100%;
+    font-size: 3.6rem;
+    padding-bottom: 2rem;
+  }
+  .business .block__list {
+    margin-top: 2rem;
+    padding-left: 4.5rem;
+  }
+  .business .block__list-item {
+    font-size: 3rem;
+  }
+  .business__consultation {
+    padding-top: 16rem;
+    width: 100%;
+    padding: 10rem 2rem;
+    border-radius: 4rem;
+  }
+  .business__consultation::after {
+    content: unset;
+  }
+  .business__consultation::before {
+    content: unset;
+  }
+  .business__consultation--title {
+    font-size: 6.4rem;
+    line-height: 110%;
+    margin-bottom: 4rem;
+  }
+  .business__consultation--text {
+    font-size: 3rem;
+    width: auto;
+    margin-bottom: 6rem;
+  }
+  .business__consultation--info {
+    font-size: 2.4rem;
+  }
+}
 .mobile {
   display: none;
 }
