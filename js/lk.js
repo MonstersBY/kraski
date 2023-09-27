@@ -8,4 +8,14 @@ $(document).ready(function () {
     $(".mobile-menu__navigation").slideToggle();
     $(".mobile-menu__navigation").toggleClass("active");
   });
+
+  $('.order-card__btn-cancel').on( "click", function(e) {
+    e.preventDefault();
+    $('body').addClass('modalac')
+    $('.order-modal').addClass('active')
+  });
+
+
+
 });
+
