@@ -17162,6 +17162,22 @@ section {
   -ms-grid-rows: auto 3rem auto 3rem auto 3rem auto 3rem auto;
       grid-template-areas: "name current-password" "telephone new-password" "email repeat-password" "address ." "submit .";
 }
+.lk .form__change-link {
+  cursor: pointer;
+  margin-left: auto;
+  color: #E50E78;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+@media (max-width: 48em) {
+  .lk .form__change-link {
+    font-size: 2.8rem;
+    line-height: 130%;
+  }
+}
 .lk .form__item .form__item-inner {
   height: 6rem;
 }
@@ -17872,7 +17888,7 @@ section {
 @media (max-width: 48em) {
   .order-modal-container {
     width: 71rem;
-    height: 300px;
+    height: 60rem;
     border-radius: 4rem;
     padding: 12.8rem 0 0;
     overflow: hidden;
