@@ -3,6 +3,15 @@
   width: 100%;
   max-width: 156.1rem;
 
+  .bc{
+    .container{
+        padding-left: 0;
+    }
+    margin-bottom: 6rem;
+    span{
+        color: #9293B0;
+    }
+  }
   // .business__banner
   &__banner {
     margin-bottom: 6.5rem;
@@ -19,6 +28,15 @@
     width: 100%;
     max-width: 156.1rem;
     border-radius: 5rem;
+
+    .btn {
+        margin: 6.5rem auto 0;
+      }
+  }
+
+  .btn {
+    padding-left: 4rem;
+    gap: 4rem;
   }
 
   &__img {
@@ -84,9 +102,7 @@
     left: 41.8rem;
   }
 
-  .btn {
-    margin: 6.5rem auto 0;
-  }
+
 
   &__content {
     margin-top: 6.5rem;
@@ -299,7 +315,7 @@
     }
 
     .btn {
-      margin: 6.5rem auto 0 0;
+      margin: 5rem auto 0 0;
     }
 
     // .business__content
