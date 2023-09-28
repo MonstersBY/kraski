@@ -86,6 +86,11 @@
 	&-btns {
 		display: flex;
 		gap: 2rem;
+		
+		.btn {
+			width: 39.6rem;
+			justify-content: space-between;
+		}
 	}
 	&-link {
 		font-size: 1.8rem;
