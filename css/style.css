@@ -19551,6 +19551,15 @@ section {
   width: 100%;
   max-width: 156.1rem;
 }
+.business .bc {
+  margin-bottom: 6rem;
+}
+.business .bc .container {
+  padding-left: 0;
+}
+.business .bc span {
+  color: #9293B0;
+}
 .business__banner {
   margin-bottom: 6.5rem;
   z-index: 1;
@@ -19575,6 +19584,13 @@ section {
   width: 100%;
   max-width: 156.1rem;
   border-radius: 5rem;
+}
+.business__banner .btn {
+  margin: 6.5rem auto 0;
+}
+.business .btn {
+  padding-left: 4rem;
+  gap: 4rem;
 }
 .business__img {
   position: absolute;
@@ -19630,9 +19646,6 @@ section {
   height: 30.6rem;
   top: 9.5rem;
   left: 41.8rem;
-}
-.business .btn {
-  margin: 6.5rem auto 0;
 }
 .business__content {
   margin-top: 6.5rem;
@@ -19832,7 +19845,7 @@ section {
     left: 0;
   }
   .business .btn {
-    margin: 6.5rem auto 0 0;
+    margin: 5rem auto 0 0;
   }
   .business__content {
     margin-top: 6rem;
