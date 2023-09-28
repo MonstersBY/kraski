@@ -17048,7 +17048,7 @@ section {
   margin-bottom: 0;
 }
 .lk .lk-bottom {
-  margin-top: 1.85rem;
+  margin-top: 3.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17506,7 +17506,34 @@ section {
 }
 
 .lk-my-orders {
+  padding-top: 1.6rem;
   width: 100%;
+}
+.lk-my-orders__unregistered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+.lk-my-orders__unregistered > span {
+  color: #3B3C40;
+  font-family: Euclid Circular A;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 48em) {
+  .lk-my-orders__unregistered > span {
+    font-size: 4rem;
+  }
 }
 .lk-my-orders .order-card-list {
   width: 100%;
@@ -17930,6 +17957,7 @@ section {
 }
 
 .order-details {
+  padding-top: 1.6rem;
   width: 100%;
   max-width: 116.5rem;
 }
