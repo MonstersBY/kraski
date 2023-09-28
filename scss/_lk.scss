@@ -7,7 +7,7 @@
   }
 
   .lk-bottom {
-    margin-top: 1.85rem;
+    margin-top: 3.4rem;
     display: flex;
     flex-direction: row;
     gap: 8rem;
@@ -461,7 +461,30 @@
 }
 
 .lk-my-orders {
+  padding-top: 1.6rem;
   width: 100%;
+
+  // .lk-my-orders__unregistered
+  &__unregistered {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    >span {
+      color: #3B3C40;
+      font-family: Euclid Circular A;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+
+    @media (max-width: 48em) {
+      >span {
+        font-size: 4rem;
+      }
+    }
+  }
 
   .order-card-list {
     width: 100%;
@@ -878,6 +901,7 @@
 
 
 .order-details {
+  padding-top: 1.6rem;
   width: 100%;
   max-width: 116.5rem;
 
