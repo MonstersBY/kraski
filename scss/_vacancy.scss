@@ -1,0 +1,124 @@
+.vacancy {
+    margin: 6rem auto 0;
+    width: 100%;
+    max-width: 156rem;
+    display: flex;
+    flex-direction: column;
+
+    .bc {
+        margin: 0 0;
+
+        >span {
+            color: #9293B0;
+        }
+    }
+
+    .title-h2 {
+        margin-top: 2rem;
+    }
+
+    // .vacancy__blocks
+    &__blocks {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    // .vacancy__block
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    // .vacancy__header
+    &__header {
+        display: flex;
+        flex-direction: row;
+        border-radius: 3rem;
+        background: #F4F6F8;
+        min-height: 10rem;
+        padding: 2rem 5rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    // .vacancy__name {}
+    &__name {
+        color: #444;
+        font-family: Euclid Circular A;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background-color: #E50E78;
+        border-radius: 50%;
+    }
+
+
+    // .requirement 
+    .requirements {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #F4F6F8;
+        border-radius: 3rem;
+        padding: 1.5rem 5rem 4rem 5rem;
+
+        // .requirements__title
+        &__title {
+            width: 100%;
+            max-width: 80rem;
+            padding: 2rem 0;
+            color: #444;
+            font-family: Euclid Circular A;
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        // .requirements__list
+        &__list {
+            padding-left: 2.5rem;
+            width: 100%;
+            max-width: 80rem;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 2rem;
+        }
+
+        // .requirements__item
+        &__item {
+            width: 35.5rem;
+            list-style: disc;
+            font-family: Euclid Circular A;
+            font-size: 1.6rem;
+            color: #3B3C40;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+        }
+    }
+
+    // .vacancy__response-btn
+    .btn-empty {
+       margin-top: 5rem;
+    }
+
+
+}
