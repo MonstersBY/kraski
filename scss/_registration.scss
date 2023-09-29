@@ -9,7 +9,7 @@
 		gap: 2rem;
 	}
 	&__filling {
-		border-radius: 30px;
+		border-radius: 3rem;
 		background: #fff;
 		box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.25);
 		padding: 4rem;
@@ -17,7 +17,7 @@
 		z-index: 0;
 	}
 	&__box {
-		border-radius: 30px;
+		border-radius: 3rem;
 		background: #f3efff;
 		width: 63.8rem;
 		z-index: 0;
@@ -40,11 +40,11 @@
 			border-radius: 50%;
 			display: block;
 			position: absolute;
-			width: 85.7rem;
-			height: 85.7rem;
-			background: linear-gradient(0deg, rgba(255, 255, 255, 0.27) 0%, #fdfcff 100%);
-			top: 3.5rem;
-			right: 2.9rem;
+			width: 67.5rem;
+			height: 67.5rem;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.27) 32.45%, #FDFCFF 99.9%);
+			top: 2.1rem;
+			right: 14.8rem;
 			z-index: -2;
 		}
 	}
@@ -124,13 +124,13 @@
 			gap: 16rem;
 		}
 		&__filling {
-			border-radius: 20px;
+			border-radius: 4rem;
 			padding: 3rem;
 			width: auto;
 			height: auto;
 		}
 		&__box {
-			border-radius: 20px;
+			border-radius: 4rem;
 			width: auto;
 			padding: 11.4rem 4rem;
 
