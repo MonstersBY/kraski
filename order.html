@@ -1987,9 +1987,9 @@
 											<strong class="mobile">Прикрепить файл</strong>
 										</div>
 									</label>
-									<div class="order-form-item__subtitle mobile">При прикреплении файла не надо
-										заполнять поля
-										ИНН и название компании</div>
+									<div class="order-form-item__subtitle">При прикреплении файла не надо заполнять поля
+										ИНН
+										и название компании</div>
 								</div>
 								<div class="order-form-item mobile">
 									<div class="order-form-item__title">Комментарий</div>
@@ -2037,7 +2037,80 @@
 									</div>
 								</div>
 								<div class="pickup-form__main">
-									<div class="pickup-form__map" id="pickup-map"></div>
+									<div class="pickup-form__main-map" id="pickup-main-map">
+										<div class="pickup-form__map" id="pickup-map"></div>
+										<div class="pickup-form__map-modal order-map-modal">
+											<div class="order-map-modal-screen"></div>
+											<div class="order-map-modal__card">
+												<div class="order-map-modal--exit">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path
+															d="M17.7147 17.7137L6.28613 6.28516M17.7147 6.28516L6.28613 17.7137"
+															stroke="#3B3C40" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round"></path>
+													</svg>
+												</div>
+												<div class="order-map-modal__content">
+													<div class="order-map-modal__header">
+														<label class="order-map-modal--item__radio ">
+															<div
+																class="order-map-modal--item__radio-item label-radio desktop">
+																<input class="label-radio__input" type="radio"
+																	checked="">
+																<span class="custom-radio"></span>
+															</div>
+															<div class="order-map-modal--item__radio-name">
+																<div class="order-map-modal--item__radio-title">
+																	Славянский
+																	мир</div>
+																<div class="order-map-modal--item__radio-subtitle">
+																	Строительная
+																	ярмарка</div>
+															</div>
+														</label>
+														<a class="order-map-modal--item__call"
+															href="tel:+7 (495) 120 81-55">
+															<div class="order-map-modal--item__call-item">
+																<strong>+7 (495) 120 81-55</strong>
+																<span>(Доб. 3)</span>
+															</div>
+															<button class="order-map-modal--item__call-btn"
+																type="button">
+																<svg xmlns="http://www.w3.org/2000/svg" width="20"
+																	height="20" viewBox="0 0 20 20" fill="none">
+																	<path
+																		d="M18.1156 14.303C17.9763 15.3616 17.4564 16.3333 16.6531 17.0366C15.8497 17.7399 14.8177 18.1268 13.75 18.1248C7.54688 18.1248 2.50001 13.078 2.50001 6.87484C2.49809 5.8071 2.88492 4.77517 3.58824 3.97179C4.29155 3.16841 5.26326 2.64852 6.32188 2.50922C6.58958 2.47653 6.86067 2.5313 7.09468 2.66534C7.3287 2.79938 7.51309 3.00552 7.62032 3.25297L9.27032 6.93656V6.94594C9.35242 7.13535 9.38633 7.34215 9.36901 7.54787C9.3517 7.75359 9.2837 7.95181 9.1711 8.12484C9.15704 8.14594 9.14219 8.16547 9.12657 8.185L7.50001 10.1131C8.08516 11.3022 9.32891 12.535 10.5336 13.1217L12.4352 11.5037C12.4538 11.4881 12.4734 11.4734 12.4938 11.46C12.6666 11.3447 12.8655 11.2743 13.0725 11.2552C13.2794 11.2361 13.4878 11.2689 13.6789 11.3506L13.6891 11.3553L17.3695 13.0045C17.6174 13.1114 17.8241 13.2956 17.9585 13.5297C18.093 13.7637 18.1481 14.035 18.1156 14.303Z"
+																		fill="white"></path>
+																</svg>
+															</button>
+														</a>
+													</div>
+													<div class="order-map-modal__main">
+														<div class="order-map-modal--item__address">Москва, Киевское
+															шоссе 22-км,
+															дмл. 4, Бизнес-Парк (БП) «Румянцево» корпус «Г» вход 9, этаж
+															2, пв.
+															№228Г</div>
+													</div>
+													<div class="order-map-modal__footer">
+														<div class="order-map-modal--item__time">
+															<span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+																	height="24" viewBox="0 0 24 24" fill="none">
+																	<path
+																		d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1054 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.9899 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.9899 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+																		fill="white"></path>
+																</svg></span>
+															<strong>10:00 – 21:00</strong>
+														</div>
+														<div class="order-map-modal--item__weekend">Без выходных</div>
+													</div>
+												</div>
+												<button class="btn order-map-modal__btn mobile" id="order-submit-map"
+													data-form="first"><span class="btn--text">Далее</span></button>
+											</div>
+										</div>
+									</div>
 									<div class="pickup-form__list " id="pickup-list">
 										<div class="pickup-form__item pickup-list--item active" data-listItem>
 											<div class="pickup-list--item__header">
@@ -2556,7 +2629,80 @@
 									</div>
 								</div>
 								<div class="pickup-form__main">
-									<div class="pickup-form__map" id="pickup-transport-map"></div>
+									<div class="pickup-form__main-map" id="pickup-main-transport-map">
+										<div class="pickup-form__map" id="pickup-transport-map"></div>
+										<div class="pickup-form__map-modal order-map-modal">
+											<div class="order-map-modal-screen"></div>
+											<div class="order-map-modal__card">
+												<div class="order-map-modal--exit">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<path
+															d="M17.7147 17.7137L6.28613 6.28516M17.7147 6.28516L6.28613 17.7137"
+															stroke="#3B3C40" stroke-width="2" stroke-linecap="round"
+															stroke-linejoin="round"></path>
+													</svg>
+												</div>
+												<div class="order-map-modal__content">
+													<div class="order-map-modal__header">
+														<label class="order-map-modal--item__radio ">
+															<div
+																class="order-map-modal--item__radio-item label-radio desktop">
+																<input class="label-radio__input" type="radio"
+																	checked="">
+																<span class="custom-radio"></span>
+															</div>
+															<div class="order-map-modal--item__radio-name">
+																<div class="order-map-modal--item__radio-title">
+																	Славянский
+																	мир</div>
+																<div class="order-map-modal--item__radio-subtitle">
+																	Строительная
+																	ярмарка</div>
+															</div>
+														</label>
+														<a class="order-map-modal--item__call"
+															href="tel:+7 (495) 120 81-55">
+															<div class="order-map-modal--item__call-item">
+																<strong>+7 (495) 120 81-55</strong>
+																<span>(Доб. 3)</span>
+															</div>
+															<button class="order-map-modal--item__call-btn"
+																type="button">
+																<svg xmlns="http://www.w3.org/2000/svg" width="20"
+																	height="20" viewBox="0 0 20 20" fill="none">
+																	<path
+																		d="M18.1156 14.303C17.9763 15.3616 17.4564 16.3333 16.6531 17.0366C15.8497 17.7399 14.8177 18.1268 13.75 18.1248C7.54688 18.1248 2.50001 13.078 2.50001 6.87484C2.49809 5.8071 2.88492 4.77517 3.58824 3.97179C4.29155 3.16841 5.26326 2.64852 6.32188 2.50922C6.58958 2.47653 6.86067 2.5313 7.09468 2.66534C7.3287 2.79938 7.51309 3.00552 7.62032 3.25297L9.27032 6.93656V6.94594C9.35242 7.13535 9.38633 7.34215 9.36901 7.54787C9.3517 7.75359 9.2837 7.95181 9.1711 8.12484C9.15704 8.14594 9.14219 8.16547 9.12657 8.185L7.50001 10.1131C8.08516 11.3022 9.32891 12.535 10.5336 13.1217L12.4352 11.5037C12.4538 11.4881 12.4734 11.4734 12.4938 11.46C12.6666 11.3447 12.8655 11.2743 13.0725 11.2552C13.2794 11.2361 13.4878 11.2689 13.6789 11.3506L13.6891 11.3553L17.3695 13.0045C17.6174 13.1114 17.8241 13.2956 17.9585 13.5297C18.093 13.7637 18.1481 14.035 18.1156 14.303Z"
+																		fill="white"></path>
+																</svg>
+															</button>
+														</a>
+													</div>
+													<div class="order-map-modal__main">
+														<div class="order-map-modal--item__address">Москва, Киевское
+															шоссе 22-км,
+															дмл. 4, Бизнес-Парк (БП) «Румянцево» корпус «Г» вход 9, этаж
+															2, пв.
+															№228Г</div>
+													</div>
+													<div class="order-map-modal__footer">
+														<div class="order-map-modal--item__time">
+															<span><svg xmlns="http://www.w3.org/2000/svg" width="24"
+																	height="24" viewBox="0 0 24 24" fill="none">
+																	<path
+																		d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1054 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.9899 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.9899 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"
+																		fill="white"></path>
+																</svg></span>
+															<strong>10:00 – 21:00</strong>
+														</div>
+														<div class="order-map-modal--item__weekend">Без выходных</div>
+													</div>
+												</div>
+												<button class="btn order-map-modal__btn mobile" id="order-submit-map"
+													data-form="first"><span class="btn--text">Далее</span></button>
+											</div>
+										</div>
+									</div>
 									<div class="pickup-form__list " id="pickup-transport-list">
 										<div class="pickup-form__item pickup-list--item active" data-listTransportItem>
 											<div class="pickup-list--item__header">
@@ -3515,28 +3661,6 @@
 			},
 		]
 
-		const transportMapInfo = [
-			{
-				name: 'Славянский мир',
-				coordinate: [55.612019, 37.487137],
-				active: false,
-			},
-			{
-				name: 'БП “Румянцево”',
-				coordinate: [55.633683, 37.442818],
-				active: false,
-			},
-			{
-				name: 'ТЦ Каширский двор',
-				coordinate: [55.664654, 37.632608],
-				active: false,
-			},
-			{
-				name: 'БП “Румянцево 2”',
-				coordinate: [55.647938, 37.480811],
-				active: false,
-			},
-		]
 		var myMap;
 		var myTransportMap;
 		function createMap(mapInfo) {
@@ -3589,35 +3713,63 @@
 						iconImageOffset: imageOffset,
 					},
 					);
+
 					myMap.geoObjects.add(myPlacemark);
 					myTransportMap.geoObjects.add(myTransportPlacemark);
+
+					myPlacemark.events.add('click', function (e) {
+						$('.order-map-modal').addClass('active');
+						changeTargetMap(e, myMap)
+					})
+					myTransportPlacemark.events.add('click', function (e) {
+						$('.order-map-modal').addClass('active');
+						changeTargetMap(e, myTransportMap)
+					})
+
 				}
 			});
 		}
 
 		createMap(mapInfo)
 
+		function changeTargetMap(evt, map) {
+			map.geoObjects.each(function (element) {
+				element.options.set({
+					iconLayout: 'default#image',
+					iconImageHref: './assets/images/map_icon.svg',
+					iconImageSize: [30, 30],
+					iconImageOffset: [-15, -15]
+				})
+			});
+			evt.get('target').options.set({
+				iconLayout: 'default#image',
+				iconImageHref: './assets/images/map_icon_active.svg',
+				iconImageSize: [60, 60],
+				iconImageOffset: [-30, -30]
+			})
+		}
+
 		$('#cardViewMap').change(function () {
 			createMap(mapInfo);
-			$('#pickup-map').css('display', 'block');
+			$('#pickup-main-map').css('display', 'block');
 			$('#pickup-list').css('display', 'none');
 		})
 
 		$('#cardViewList').change(function () {
 			myMap.destroy();
-			$('#pickup-map').css('display', 'none');
+			$('#pickup-main-map').css('display', 'none');
 			$('#pickup-list').css('display', 'flex');
 		})
 
 		$('#cardViewTransportMap').change(function () {
-			createMap(transportMapInfo);
-			$('#pickup-transport-map').css('display', 'block');
+			createMap(mapInfo);
+			$('#pickup-main-transport-map').css('display', 'block');
 			$('#pickup-transport-list').css('display', 'none');
 		})
 
 		$('#cardViewTransportList').change(function () {
 			myMap.destroy();
-			$('#pickup-transport-map').css('display', 'none');
+			$('#pickup-main-transport-map').css('display', 'none');
 			$('#pickup-transport-list').css('display', 'flex');
 		})
 
