@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Раскрывающийся список меню
-  $(".vacancy__btn").on("click", function () {
+  $(".vacancy__header").on("click", function () {
     // Ищем ближайший .vacancy__container-requirements и .vacancy__btn внутри родительского .vacancy__block
     let containerRequirements = $(this)
       .closest(".vacancy__block")
@@ -11,9 +11,6 @@ $(document).ready(function () {
     btn.toggleClass("active");
   });
 
-//   $(".btn-empty").on("click", function () {
-//     ".anketa-modal".toggleClass("active");
-//   });
 
   $(".btn-empty").on("click", function (e) {
     e.preventDefault();
