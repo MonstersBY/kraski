@@ -1000,7 +1000,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-radius: 50px;
+		border-radius: 5rem;
 		background: #f3efff;
 		overflow: hidden;
 	}
@@ -1017,7 +1017,7 @@
 		img {
 			height: 100%;
 			object-fit: cover;
-			border-radius: 50px 500px 500px 50px;
+			border-radius: 5rem 50rem 50rem 5rem;
 		}
 	}
 	&__wrapper {
