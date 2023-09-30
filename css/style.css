@@ -24720,6 +24720,549 @@ section {
     bottom: 0;
   }
 }
+.vacancy {
+  margin: 6rem auto 0;
+  width: 100%;
+  max-width: 156rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.vacancy .bc {
+  margin: 0 0;
+}
+.vacancy .bc .container {
+  padding-left: 0;
+}
+.vacancy .bc .container > span {
+  color: #9293b0;
+}
+.vacancy .title-h2 {
+  margin-top: 2rem;
+}
+.vacancy__blocks {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  gap: 2rem;
+}
+.vacancy__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.vacancy__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 3rem;
+  background: #f4f6f8;
+  min-height: 10rem;
+  padding: 2rem 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+.vacancy__container-requirements {
+  display: none;
+}
+.vacancy__name {
+  color: #444;
+  font-family: Euclid Circular A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.vacancy__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: #e50e78;
+  border-radius: 50%;
+}
+.vacancy__btn > svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.vacancy__btn.active > svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.vacancy .requirements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #f4f6f8;
+  border-radius: 3rem;
+  padding: 1.5rem 5rem 4rem 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.vacancy .requirements__title {
+  width: 100%;
+  max-width: 80rem;
+  padding: 2rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #444;
+  font-family: Euclid Circular A;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.vacancy .requirements__list {
+  padding-left: 2.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 80rem;
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+}
+.vacancy .requirements__item {
+  width: 80rem;
+  list-style: disc;
+  font-family: Euclid Circular A;
+  font-size: 1.6rem;
+  color: #3b3c40;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+.vacancy .btn-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35.5rem;
+  margin-top: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 48em) {
+  .vacancy {
+    margin: 6rem auto 0;
+    max-width: 71rem;
+  }
+  .vacancy .title-h2 {
+    max-width: 34.2rem;
+    margin-top: 6rem;
+  }
+  .vacancy__blocks {
+    margin-top: 6.4rem;
+    margin-bottom: 16rem;
+    gap: 2rem;
+  }
+  .vacancy__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .vacancy__header {
+    border-radius: 4rem;
+    min-height: 12.8rem;
+    padding: 4rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .vacancy__name {
+    font-size: 3.6rem;
+  }
+  .vacancy__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #e50e78;
+    border-radius: 50%;
+  }
+  .vacancy__btn > svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .vacancy .requirements {
+    border-radius: 4rem;
+    padding: 4rem 4rem 6rem 4rem;
+  }
+  .vacancy .requirements__title {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0;
+    font-size: 3.6rem;
+  }
+  .vacancy .requirements__list {
+    padding-left: 5rem;
+    max-width: 100%;
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 4rem;
+  }
+  .vacancy .requirements__item {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .vacancy .btn-empty {
+    width: 100%;
+    margin-top: 6rem;
+    border-radius: 2rem;
+  }
+  .vacancy .anketa-modal-container {
+    width: 71rem;
+    height: auto;
+    padding: 12.8rem 2rem;
+    border-radius: 20px;
+  }
+  .vacancy .anketa-modal-container--second {
+    display: none;
+  }
+  .vacancy .anketa-modal-container--second .modal-container--title {
+    width: auto;
+    margin-bottom: 3.2rem;
+  }
+  .vacancy .anketa-modal-container--second .modal-container--subtitle {
+    margin-bottom: 6rem;
+    width: 39rem;
+  }
+  .vacancy .anketa-modal-container--second .btn {
+    margin: 0 auto;
+  }
+  .vacancy .anketa-modal-container .modal-container--title {
+    margin-bottom: 4.8rem;
+    text-align: center;
+  }
+  .vacancy .anketa-modal-container .modal-container--subtitle {
+    width: 35rem;
+    margin: 0 auto 6rem;
+  }
+  .vacancy .anketa-modal-container--back {
+    top: 35%;
+    width: 148rem;
+    height: 61.4rem;
+  }
+  .vacancy .anketa-modal-container--back svg {
+    width: 148rem;
+    height: 61.4rem;
+  }
+  .vacancy .anketa-form {
+    width: 67rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .vacancy .anketa-form-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 4rem;
+    width: 47rem;
+    gap: 4rem;
+  }
+  .vacancy .anketa-form-bottom .btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .vacancy .anketa-form-bottom--text {
+    width: auto;
+    font-size: 2.4rem;
+  }
+}
+
+.anketa-modal-container {
+  width: 95.6rem;
+  height: 71.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3efff;
+  border-radius: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.anketa-modal-container--second {
+  display: none;
+}
+.anketa-modal-container--second .modal-container--title {
+  width: 52.3rem;
+  margin-bottom: 3.2rem;
+}
+.anketa-modal-container--second .modal-container--subtitle {
+  margin-bottom: 4rem;
+}
+.anketa-modal-container--second .btn {
+  margin: 0 auto;
+}
+.anketa-modal-container .modal-container--title {
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+.anketa-modal-container .modal-container--subtitle {
+  margin-bottom: 3rem;
+}
+.anketa-modal-container--back {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 116.6412rem;
+  height: 48.5585rem;
+  z-index: -1;
+}
+.anketa-modal-container--back svg {
+  width: 116.6412rem;
+  height: 48.5585rem;
+}
+.anketa-modal-container .btn-empty {
+  width: 30.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.anketa-form {
+  width: 57.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.anketa-form-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+.anketa-form-bottom--text {
+  width: 25.4rem;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: #9293b0;
+}
+.anketa-form-bottom--text a {
+  text-decoration-line: underline;
+}
+
+@media (max-width: 48em) {
+  .anketa-modal-container {
+    width: 71rem;
+    height: auto;
+    padding: 12.8rem 2rem;
+    border-radius: 20px;
+  }
+  .anketa-modal-container--second {
+    display: none;
+  }
+  .anketa-modal-container--second .modal-container--title {
+    width: auto;
+    margin-bottom: 3.2rem;
+  }
+  .anketa-modal-container--second .modal-container--subtitle {
+    margin-bottom: 6rem;
+    width: 39rem;
+  }
+  .anketa-modal-container--second .btn {
+    margin: 0 auto;
+  }
+  .anketa-modal-container .modal-container--title {
+    margin-bottom: 4.8rem;
+    text-align: center;
+  }
+  .anketa-modal-container .modal-container--subtitle {
+    width: 56rem;
+    margin: 0 auto 6rem;
+  }
+  .anketa-modal-container--back {
+    top: 35%;
+    width: 148rem;
+    height: 61.4rem;
+  }
+  .anketa-modal-container--back svg {
+    width: 148rem;
+    height: 61.4rem;
+  }
+  .anketa-form {
+    width: 67rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .anketa-form .form__item-inner textarea {
+    height: 26rem;
+  }
+  .anketa-form-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-top: 4rem;
+    width: 100%;
+    gap: 4rem;
+  }
+  .anketa-form-bottom .btn-empty {
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .anketa-form-bottom .btn {
+    padding-left: 4rem;
+    width: 100%;
+    border-radius: 2rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .anketa-form-bottom .btn--icon {
+    border-radius: 1.6rem;
+  }
+  .anketa-form-bottom--text {
+    width: auto;
+    font-size: 2.4rem;
+  }
+}
 .mobile {
   display: none;
 }
