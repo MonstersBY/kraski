@@ -1,0 +1,142 @@
+.error-block {
+	width: 100%;
+
+	&__container {
+		border-radius: 5rem;
+		background: #f3efff;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 63.7rem;
+		position: relative;
+		padding-left: 13rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		&-title {
+			display: flex;
+			flex-direction: column;
+			gap: 0.9rem;
+			font-size: 7rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 106%;
+			margin-bottom: 2rem;
+		}
+		&-subtitle {
+			font-size: 2.4rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: normal;
+			margin-bottom: 2rem;
+		}
+		&-message {
+			font-size: 1.6rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 140%;
+			margin-bottom: 4rem;
+			color: #9293b0;
+		}
+	}
+	&__img {
+		width: 65rem;
+		height: 100%;
+		border-radius: 18rem 0rem 0 18rem;
+		overflow: hidden;
+		z-index: 2;
+		box-shadow: 1.2rem 2.5rem 5.4rem rgba(126, 117, 178, 0.25);
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+
+		&--mobile {
+			display: none;
+		}
+	}
+	&__back {
+		height: 100%;
+		width: 78.4rem;
+		z-index: 1;
+		position: absolute;
+		top: 0rem;
+		right: 0rem;
+		img {
+			width: 100%;
+			height: 100%;
+			-o-object-fit: cover;
+			object-fit: cover;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.error-block {
+		&__wrapper {
+			z-index: 5;
+			width: 37.6rem;
+
+			&-title {
+				font-size: 6.4rem;
+				line-height: 110%;
+				margin-bottom: 2.2rem;
+			}
+			&-subtitle {
+				font-size: 3.6rem;
+				font-weight: 600;
+				margin-bottom: 3.4rem;
+			}
+			&-message {
+				font-size: 3rem;
+				line-height: 140%;
+				margin-bottom: 3.6rem;
+			}
+		}
+		&__container {
+			border-radius: 4rem;
+			width: 70rem;
+			align-items: center;
+			height: 65.4rem;
+			padding-left: 4rem;
+		}
+
+		&__back {
+			display: none;
+			&--mobile {
+				display: block;
+				position: absolute;
+				width: 40rem;
+				height: 100%;
+				right: 0;
+				bottom: 0;
+
+				img {
+					-o-object-fit: fill;
+					object-fit: fill;
+				}
+			}
+		}
+
+		&__img {
+			display: none;
+
+			&--mobile {
+				display: block;
+				position: absolute;
+				width: 32.2rem;
+				height: 49.4rem;
+				box-shadow: none;
+				right: 0;
+				bottom: 0;
+			}
+		}
+	}
+}
