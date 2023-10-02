@@ -229,24 +229,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		return Math.round(pxValue) + 'px';
 	}
 
-	function stepAnimateText(element, animation, delay) {
-		$(element).each(function () {
-			var text = $(this).text();
-			var curr = '';
+  function stepAnimateText(element, animation, delay){
+    $(element).each(function() {
+      var text = $(this).text();
+      var curr = '';
+  
+      for (var i=0; i < text.length; i++){
+        var character = text.charAt(i);
+        $(this).html(curr+'<span class="'+animation+'" style="-webkit-animation-delay: '+i*delay+'s; animation-delay: '+i*delay+'s">'+character +"</span>");
+        curr = $(this).html();
+      }
+    });
+    setTimeout(() => {
+      stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 0.3);
+    }, 6000);
+  }
+  stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 0.3);
 
-			for (var i = 0; i < text.length; i++) {
-				var character = text.charAt(i);
-				$(this).html(curr + '<span class="' + animation + '" style="-webkit-animation-delay: ' + i * delay + 's; animation-delay: ' + i * delay + 's">' + character + "</span>");
-				curr = $(this).html();
-			}
-		});
-		setTimeout(() => {
-			stepAnimateText('.banner__advertisement-animation--text', 'fadeInDown', 0.6);
-		}, 8000);
-	}
-	stepAnimateText('.banner__advertisement-animation--text', 'fadeInDown', 0.6);
-
-	if ($('.tel').length) {
-		$('.tel').mask('+7(999) 999-99-99');
-	}
+  if($('.tel').length){
+    $('.tel').mask('+7(999) 999-99-99');
+  }
 });
