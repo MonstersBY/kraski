@@ -30,8 +30,8 @@
 			height: 5rem;
 			padding: 1.4rem 2.6rem;
 			border-radius: 1.5rem;
-			border: 1px solid #9293b0;
-			box-shadow: 1rem 1.5rem 5rem 0px rgba(173, 178, 201, 0.2);
+			border: 0.1rem solid #9293b0;
+			box-shadow: 1rem 1.5rem 5rem 0rem rgba(173, 178, 201, 0.2);
 			color: #3b3c40;
 			font-size: 1.6rem;
 			font-weight: 500;
@@ -192,7 +192,7 @@
 		padding-top: 2.5rem;
 		display: flex;
 		justify-content: space-between;
-		border-top: 1px solid #d9d9d9;
+		border-top: 0.1rem solid #d9d9d9;
 		&-info {
 			color: #9293b0;
 			font-size: 1.6rem;
@@ -219,7 +219,7 @@
 		align-items: center;
 		justify-content: center;
 		background: #f3efff;
-		border-radius: 30px;
+		border-radius: 3rem;
 		flex-direction: column;
 		overflow: hidden;
 
@@ -429,7 +429,7 @@
 			width: 71rem;
 			height: auto;
 			padding: 12.8rem 2rem;
-			border-radius: 20px;
+			border-radius: 2rem;
 
 			&--second {
 				display: none;

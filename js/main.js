@@ -641,4 +641,19 @@ $(document).ready(function () {
 
 	});
 
+	$('.product-info_left-write-rating--stars input').each(function (index, element) {
+		$(element).change(function () {
+			if ($('#star1').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("1");
+			} else if ($('#star2').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("2");
+			} else if ($('#star3').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("3");
+			} else if ($('#star4').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("4");
+			} else {
+				$('.product-info_left-write-rating--circle span').text("5");
+			}
+		})
+	})
 })
