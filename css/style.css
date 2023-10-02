@@ -20715,7 +20715,8 @@ section {
           align-items: center;
 }
 .order-modal-container .disabled {
-  border: 0.2rem solid #dfdff0;
+  border: 2px solid #dfdff0;
+
 }
 .order-modal-container .disabled--text {
   color: #dfdff0;
@@ -21339,6 +21340,7 @@ section {
   padding: 0 0;
 }
 .lk-info .lk-info-container {
+  position: relative;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21348,7 +21350,12 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.lk-info__scrollable {
+  overflow: hidden;
+}
 .lk-info .lk-info__btns {
+  width: 90.2rem;
+  position: relative;
   margin-top: 1.85rem;
   margin-bottom: 4rem;
   display: -webkit-box;
@@ -21358,11 +21365,13 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 2rem;
   padding-bottom: 4rem;
   border-bottom: 0.1rem solid #dfdff0;
 }
 .lk-info .lk-info__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21517,10 +21526,47 @@ section {
   .lk-info .lk__paragraph:first-of-type {
     margin-top: 4rem;
   }
+  .lk-info__scrollable {
+    overflow: hidden;
+  }
+  .lk-info__scrollable-prev {
+    position: absolute;
+    left: 0;
+    top: 1.8rem;
+    z-index: 1;
+  }
+  .lk-info__scrollable-prev--shadow {
+    position: absolute;
+    display: block;
+    left: -0.2rem;
+    top: -2rem;
+    width: 8rem;
+    height: 8rem;
+    background: -webkit-gradient(linear, left top, right top, color-stop(36.76%, #fff), color-stop(99.93%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(90deg, #fff 36.76%, rgba(255, 255, 255, 0) 99.93%);
+    z-index: -1;
+  }
+  .lk-info__scrollable-next {
+    position: absolute;
+    right: 0;
+    top: 1.8rem;
+    z-index: 1;
+  }
+  .lk-info__scrollable-next--shadow {
+    position: absolute;
+    display: block;
+    left: -6rem;
+    top: -2rem;
+    width: 8rem;
+    height: 8rem;
+    background: -webkit-gradient(linear, right top, left top, color-stop(36.76%, #fff), color-stop(99.93%, rgba(255, 255, 255, 0)));
+    background: linear-gradient(-90deg, #fff 36.76%, rgba(255, 255, 255, 0) 99.93%);
+    z-index: -1;
+  }
   .lk-info .lk-info__btns {
+    width: 71rem;
     margin-bottom: 3rem;
     margin-top: 0;
-    overflow: auto;
     padding-bottom: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -21529,7 +21575,6 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 1.6rem;
     border-bottom: none;
   }
   .lk-info .lk-info__btn {

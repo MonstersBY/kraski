@@ -16,6 +16,30 @@ $(document).ready(function () {
   });
 
 
+  let lkSwiper = new Swiper('.lk-info__scrollable', {
+		slidesPerView: 'auto',
+		spaceBetween: `${remToPx(1.5)}rem`,
+		navigation: {
+			prevEl: '.lk-info__scrollable-prev',
+			nextEl: '.lk-info__scrollable-next',
+		},
 
+		breakpoints: {
+			769: {
+				spaceBetween: `${remToPx(1.2)}rem`,
+			},
+		},
+	});
+
+  function remToPx(remValue) {
+		// Получаем текущий базовый размер шрифта (font-size) из элемента <html>
+		var htmlFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+		// Переводим значение из rem в px
+		var pxValue = remValue * htmlFontSize;
+
+		// Округляем значение до целых пикселей (по желанию)
+		return Math.round(pxValue) + 'px';
+	}
 });
 
