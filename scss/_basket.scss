@@ -20,6 +20,15 @@
 			row-gap: 16rem;
 		}
 	}
+
+	&__footer-fixed {
+		transform: translateY(150%);
+
+		&.show {
+			transition: all 0.3s ease-out;
+			transform: translateY(0);
+		}
+	}
 	&__main {
 		width: 114.5rem;
 
@@ -1078,7 +1087,6 @@
 }
 
 .basket-footer-fixed {
-	transform: translateY(150%);
 	transition: all 0.3s ease-out;
 
 	background-color: #fff;
@@ -1092,11 +1100,6 @@
 
 	width: 71rem;
 	min-height: 26.4rem;
-
-	&.show {
-		transition: all 0.3s ease-out;
-		transform: translateY(0);
-	}
 
 	// .basket_footer-fixed__inner
 	&__inner {

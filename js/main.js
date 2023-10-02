@@ -553,7 +553,7 @@ $(document).ready(function () {
 		});
 
 		var productBaner = new Waypoint({
-			element: document.getElementById('productBanerStart'),
+			element: document.getElementById('product-info'),
 			handler: function () {
 				$('.product-baner').toggleClass('active')
 			}
@@ -610,8 +610,11 @@ $(document).ready(function () {
 	}
 	$('.add-like').on("click", function (e) {
 		e.preventDefault();
-		$('body').addClass('modalac')
-		$('.favorites-modal').addClass('active')
+		if(!$(this).hasClass('liked')) {
+			$('body').addClass('modalac')
+			$('.favorites-modal').addClass('active')
+		}
+		$(this).toggleClass('liked')
 	});
 	$('.favorites-modal .btn').on("click", function (e) {
 		e.preventDefault();
@@ -641,4 +644,19 @@ $(document).ready(function () {
 
 	});
 
+	$('.product-info_left-write-rating--stars input').each(function (index, element) {
+		$(element).change(function () {
+			if ($('#star1').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("1");
+			} else if ($('#star2').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("2");
+			} else if ($('#star3').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("3");
+			} else if ($('#star4').is(':checked')) {
+				$('.product-info_left-write-rating--circle span').text("4");
+			} else {
+				$('.product-info_left-write-rating--circle span').text("5");
+			}
+		})
+	})
 })

@@ -17,7 +17,7 @@
 			gap: 0.6rem;
 			padding: 1.7rem 2.4rem;
 			border-radius: 1.5rem;
-			border: 1px solid #e50e78;
+			border: 0.1rem solid #e50e78;
 
 			input {
 				font-size: 1.6rem;
@@ -79,9 +79,9 @@
 		input[type="file"] {
 			position: absolute;
 			overflow: hidden;
-			margin: -1px;
-			width: 1px;
-			height: 1px;
+			margin: -0.1rem;
+			width: 0.1rem;
+			height: 0.1rem;
 			clip: rect(0 0 0 0);
 		}
 		&--title {
@@ -106,7 +106,7 @@
 		}
 		&-block {
 			border-radius: 1.5rem;
-			border: 1px solid #e50e78;
+			border: 0.1rem solid #e50e78;
 			height: 12rem;
 			width: 100%;
 			display: flex;
@@ -188,8 +188,8 @@
 				display: flex;
 				gap: 1.2rem;
 				padding: 2.2rem 4rem;
-				border-radius: 10px;
-				border: 1px solid #e50e78;
+				border-radius: 1rem;
+				border: 0.1rem solid #e50e78;
 
 				input {
 					font-size: 2.8rem;
@@ -215,9 +215,9 @@
 			input[type="file"] {
 				position: absolute;
 				overflow: hidden;
-				margin: -1px;
-				width: 1px;
-				height: 1px;
+				margin: -0.1rem;
+				width: 0.1rem;
+				height: 0.1rem;
 				clip: rect(0 0 0 0);
 			}
 			&--title {
