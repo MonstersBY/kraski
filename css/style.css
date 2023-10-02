@@ -10825,6 +10825,9 @@ section {
   height: 50.7rem;
   margin-bottom: 2.3rem;
 }
+.product_pictures-pagination {
+  display: none;
+}
 .product_pictures-slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11353,6 +11356,29 @@ section {
 }
 .product_purchase-info a {
   border-bottom: 0.05rem solid #3b3c40;
+}
+.product__footer-fixed--add .basket-footer-fixed__inner {
+  gap: 2rem;
+  padding: 4.2rem 3.8rem 3.2rem 2rem;
+}
+.product__footer-fixed--add .basket-footer-fixed__coast {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.product__footer-fixed--add .header__personal-cart svg {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.product__footer-fixed--add .header__personal-toast {
+  width: 3.6rem;
+  height: 3.6rem;
+  font-size: 2.4rem;
+  line-height: normal;
+}
+.product__footer-fixed--add .header__personal-toast--cart {
+  right: -1.5rem;
+  top: -2rem;
 }
 
 .product-info-container {
@@ -13533,7 +13559,20 @@ section {
   .product_pictures-swiper {
     width: 71rem;
     height: 55.4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+  }
+  .product_pictures-pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product_pictures-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.3rem;
+    width: 1rem;
+    height: 1rem;
   }
   .product_pictures-slide {
     display: -webkit-box;
@@ -15441,6 +15480,16 @@ section {
     row-gap: 16rem;
   }
 }
+.basket__footer-fixed {
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+}
+.basket__footer-fixed.show {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .basket__main {
   width: 114.5rem;
 }
@@ -16706,8 +16755,6 @@ section {
 }
 
 .basket-footer-fixed {
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   background-color: #fff;
@@ -16720,12 +16767,6 @@ section {
   z-index: 2;
   width: 71rem;
   min-height: 26.4rem;
-}
-.basket-footer-fixed.show {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 .basket-footer-fixed__inner {
   display: -webkit-box;

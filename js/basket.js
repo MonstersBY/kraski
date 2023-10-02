@@ -123,9 +123,9 @@ function promoCode() {
 }
 
 function showMiniBacket() {
-	const backetMiniOffsetTop = $('.basket-footer-fixed').offset().top;
+	const backetMiniOffsetTop = $('.basket__footer-fixed').offset().top;
 	const mainBacketOffsetTop = $('#mainBacketPurchase').offset().top;
-	const backetMini = $('.basket-footer-fixed');
+	const backetMini = $('.basket__footer-fixed');
 
 	if (backetMiniOffsetTop >= mainBacketOffsetTop) {
 		backetMini.removeClass('show');

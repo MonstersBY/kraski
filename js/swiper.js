@@ -165,176 +165,180 @@ $(document).ready(function () {
 		spaceBetween: `${remToPx(2)}rem`,
 	});
 
-    const productP = new Swiper('.product_pictures-swiper', {
-      spaceBetween: `${remToPx(2)}rem`,
-      thumbs: {
-          swiper: productPBottom,
-      },
-    });
+	const productP = new Swiper('.product_pictures-swiper', {
+		spaceBetween: `${remToPx(2)}rem`,
+		thumbs: {
+			swiper: productPBottom,
+		},
+		pagination: {
+			el: ".product_pictures-pagination",
+			clickable: true
+		},
+	});
 
-    const tintingImages = new Swiper('.product-tinting-images', {
-      loop: 'true',
-        navigation: {
-          prevEl: '.product-tinting-images-prev-btn',
-          nextEl: '.product-tinting-images-next-btn',
-      },
-    });
+	const tintingImages = new Swiper('.product-tinting-images', {
+		loop: 'true',
+		navigation: {
+			prevEl: '.product-tinting-images-prev-btn',
+			nextEl: '.product-tinting-images-next-btn',
+		},
+	});
 
-    var tintingСolors = new Swiper(".product-tinting-all_colors", {
-      slidesPerView: 4,
-      slidesPerGroup: 4,
-      grid: {
-        rows: 3,
-      },
-      spaceBetween: `${remToPx(1.8)}rem`,
-      pagination: {
-        el: ".product-tinting-all_colors-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
-        }
-      },
-      navigation: {
-        prevEl: '.product-tinting-all_colors--prev',
-        nextEl: '.product-tinting-all_colors--next',
-      },
-      breakpoints: {
-        769: {
-          slidesPerView: 7,
-          slidesPerGroup: 7,
-          spaceBetween: `${remToPx(2)}rem`,
-          grid: {
-            rows: 5,
-          },
-        },
-      },
-    });
-    const limitBullets = {
-      desk: 3,
-      mob: 2,
-    }
-        
-    $('.open-tinting').on( "click", function(e) {
-      $('body').addClass('modalac')
-      $('.product-tinting-modal').addClass('active')
-      setTimeout(()=>{ChangeBulletColors()},500)
-    });
+	var tintingСolors = new Swiper(".product-tinting-all_colors", {
+		slidesPerView: 4,
+		slidesPerGroup: 4,
+		grid: {
+			rows: 3,
+		},
+		spaceBetween: `${remToPx(1.8)}rem`,
+		pagination: {
+			el: ".product-tinting-all_colors-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + "</span>";
+			}
+		},
+		navigation: {
+			prevEl: '.product-tinting-all_colors--prev',
+			nextEl: '.product-tinting-all_colors--next',
+		},
+		breakpoints: {
+			769: {
+				slidesPerView: 7,
+				slidesPerGroup: 7,
+				spaceBetween: `${remToPx(2)}rem`,
+				grid: {
+					rows: 5,
+				},
+			},
+		},
+	});
+	const limitBullets = {
+		desk: 3,
+		mob: 2,
+	}
+
+	$('.open-tinting').on("click", function (e) {
+		$('body').addClass('modalac')
+		$('.product-tinting-modal').addClass('active')
+		setTimeout(() => { ChangeBulletColors() }, 500)
+	});
 
 
-    function ChangeBulletColors() {
-      if($('.product-tinting-all_colors').length) {
+	function ChangeBulletColors() {
+		if ($('.product-tinting-all_colors').length) {
 
-        if (screen.width < 769) {
-          const allLength = $('.product-tinting-all_colors-pagination .swiper-pagination-bullet').length
-          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet').each(function (index) {
-            if(limitBullets.mob < index+1 && allLength - limitBullets.mob > index) {
-              $(this).addClass('notshow')
-            } else {
-              if(index+1 == limitBullets.mob) {
-                $(this).addClass('left-dots')
-                $(this).addClass('notdot')
-              }
-              if(allLength - limitBullets.mob == index) {
-                $(this).addClass('right-dots')
-              }
-            }
-          })
-          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').removeClass('notshow')
-          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
-          $('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
-          let indexActive = parseInt($('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').html())
-          if(limitBullets.mob+2 < indexActive) {
-            $('.product-tinting-all_colors-pagination .left-dots').removeClass('notdot')
-          } else {
-            $('.product-tinting-all_colors-pagination .left-dots').addClass('notdot')
-          }
-          if(allLength - limitBullets.mob > indexActive) {
-            $('.product-tinting-all_colors-pagination .right-dots').removeClass('notdot')
-          } else {
-            $('.product-tinting-all_colors-pagination .right-dots').addClass('notdot')
-          }
-        }
-      }
-    }
-    tintingСolors.on('slideChange', function () {
-      ChangeBulletColors()
-    });
+			if (screen.width < 769) {
+				const allLength = $('.product-tinting-all_colors-pagination .swiper-pagination-bullet').length
+				$('.product-tinting-all_colors-pagination .swiper-pagination-bullet').each(function (index) {
+					if (limitBullets.mob < index + 1 && allLength - limitBullets.mob > index) {
+						$(this).addClass('notshow')
+					} else {
+						if (index + 1 == limitBullets.mob) {
+							$(this).addClass('left-dots')
+							$(this).addClass('notdot')
+						}
+						if (allLength - limitBullets.mob == index) {
+							$(this).addClass('right-dots')
+						}
+					}
+				})
+				$('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').removeClass('notshow')
+				$('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
+				$('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
+				let indexActive = parseInt($('.product-tinting-all_colors-pagination .swiper-pagination-bullet-active').html())
+				if (limitBullets.mob + 2 < indexActive) {
+					$('.product-tinting-all_colors-pagination .left-dots').removeClass('notdot')
+				} else {
+					$('.product-tinting-all_colors-pagination .left-dots').addClass('notdot')
+				}
+				if (allLength - limitBullets.mob > indexActive) {
+					$('.product-tinting-all_colors-pagination .right-dots').removeClass('notdot')
+				} else {
+					$('.product-tinting-all_colors-pagination .right-dots').addClass('notdot')
+				}
+			}
+		}
+	}
+	tintingСolors.on('slideChange', function () {
+		ChangeBulletColors()
+	});
 
 	var colorSwiper = new Swiper(".product-colors-swiper", {
 		slidesPerView: 4,
 		slidesPerGroup: 4,
 		grid: {
-		  rows: 3,
+			rows: 3,
 		},
 		spaceBetween: `${remToPx(1.8)}rem`,
 		pagination: {
-		  el: ".product-colors-swiper-pagination",
-		  clickable: true,
-		  renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + (index + 1) + "</span>";
-		  }
+			el: ".product-colors-swiper-pagination",
+			clickable: true,
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + "</span>";
+			}
 		},
 		navigation: {
-		  prevEl: '.product-colors-swiper--prev',
-		  nextEl: '.product-colors-swiper--next',
+			prevEl: '.product-colors-swiper--prev',
+			nextEl: '.product-colors-swiper--next',
 		},
 		breakpoints: {
-		  769: {
-			slidesPerView: 5,
-			slidesPerGroup: 5,
-			spaceBetween: `${remToPx(2)}rem`,
-			grid: {
-			  rows: 3,
+			769: {
+				slidesPerView: 5,
+				slidesPerGroup: 5,
+				spaceBetween: `${remToPx(2)}rem`,
+				grid: {
+					rows: 3,
+				},
 			},
-		  },
 		},
 	});
 
-	$('.open-colors-modal').on( "click", function(e) {
-        $('body').addClass('modalac')
-        $('.product-colors-modal').addClass('active')
-		setTimeout(()=>{ChangeBulletColorsCol()},500)
-    });
+	$('.open-colors-modal').on("click", function (e) {
+		$('body').addClass('modalac')
+		$('.product-colors-modal').addClass('active')
+		setTimeout(() => { ChangeBulletColorsCol() }, 500)
+	});
 
 	colorSwiper.on('slideChange', function () {
 		ChangeBulletColorsCol()
 	});
 
 	function ChangeBulletColorsCol() {
-		if($('.product-colors-modal').length) {
-  
-		  if (screen.width < 769) {
-			const allLength = $('.product-colors-swiper-pagination .swiper-pagination-bullet').length
-			$('.product-colors-swiper-pagination .swiper-pagination-bullet').each(function (index) {
-				if(limitBullets.mob*2 > allLength) {
-					if(limitBullets.mob < index+1 && allLength - limitBullets.mob > index) {
-						$(this).addClass('notshow')
-					} else {
-						if(index+1 == limitBullets.mob) {
-						$(this).addClass('left-dots')
-						$(this).addClass('notdot')
-						}
-						if(allLength - limitBullets.mob == index) {
-						$(this).addClass('right-dots')
+		if ($('.product-colors-modal').length) {
+
+			if (screen.width < 769) {
+				const allLength = $('.product-colors-swiper-pagination .swiper-pagination-bullet').length
+				$('.product-colors-swiper-pagination .swiper-pagination-bullet').each(function (index) {
+					if (limitBullets.mob * 2 > allLength) {
+						if (limitBullets.mob < index + 1 && allLength - limitBullets.mob > index) {
+							$(this).addClass('notshow')
+						} else {
+							if (index + 1 == limitBullets.mob) {
+								$(this).addClass('left-dots')
+								$(this).addClass('notdot')
+							}
+							if (allLength - limitBullets.mob == index) {
+								$(this).addClass('right-dots')
+							}
 						}
 					}
+				})
+				$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').removeClass('notshow')
+				$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
+				$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
+				let indexActive = parseInt($('.product-colors-swiper-pagination .swiper-pagination-bullet-active').html())
+				if (limitBullets.mob + 2 < indexActive) {
+					$('.product-colors-swiper-pagination .left-dots').removeClass('notdot')
+				} else {
+					$('.product-colors-swiper-pagination .left-dots').addClass('notdot')
 				}
-			})
-			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').removeClass('notshow')
-			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').next().removeClass('notshow')
-			$('.product-colors-swiper-pagination .swiper-pagination-bullet-active').prev().removeClass('notshow')
-			let indexActive = parseInt($('.product-colors-swiper-pagination .swiper-pagination-bullet-active').html())
-			if(limitBullets.mob+2 < indexActive) {
-			  $('.product-colors-swiper-pagination .left-dots').removeClass('notdot')
-			} else {
-			  $('.product-colors-swiper-pagination .left-dots').addClass('notdot')
+				if (allLength - limitBullets.mob > indexActive) {
+					$('.product-colors-swiper-pagination .right-dots').removeClass('notdot')
+				} else {
+					$('.product-colors-swiper-pagination .right-dots').addClass('notdot')
+				}
 			}
-			if(allLength - limitBullets.mob > indexActive) {
-			  $('.product-colors-swiper-pagination .right-dots').removeClass('notdot')
-			} else {
-			  $('.product-colors-swiper-pagination .right-dots').addClass('notdot')
-			}
-		  }
 		}
-	  }
+	}
 })
