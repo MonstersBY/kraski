@@ -553,7 +553,7 @@ $(document).ready(function () {
 		});
 
 		var productBaner = new Waypoint({
-			element: document.getElementById('productBanerStart'),
+			element: document.getElementById('product-info'),
 			handler: function () {
 				$('.product-baner').toggleClass('active')
 			}
