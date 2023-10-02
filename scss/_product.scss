@@ -1782,6 +1782,7 @@
 		&--left {
 			display: flex;
 			gap: 1.2rem;
+			align-items: center;
 
 			span {
 				color: #9293b0;
@@ -1789,6 +1790,7 @@
 				font-style: normal;
 				font-weight: 500;
 				line-height: 130%;
+				height: fit-content;
 			}
 			strong {
 				font-size: 2.4rem;
