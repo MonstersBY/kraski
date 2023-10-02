@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Личный кабинет</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -2540,156 +2544,181 @@
 
           <section class="lk-info switcher">
             <div class="container lk-info-container">
-              <ul class="lk-info__btns switcher__control">
-                <li class="lk-info__btn switcher__btn active">Доставка</li>
-                <li class="lk-info__btn switcher__btn">Способ оплаты</li>
-                <li class="lk-info__btn switcher__btn">Возврат товаров</li>
-                <li class="lk-info__btn switcher__btn">Помощь</li>
-              </ul>
-              <div class="switcher__container">
-                <div class="switcher__content active">
-                  <div class="lk-info-delivery">
-                    <div class="lk-info__text-block">
-                      <div class="title-h4">Доставка по Москве</div>
-                      <p class="lk__paragraph">
-                        Доставка товара осуществляется в&nbsp;течении
-                        2&nbsp;рабочих дней, с&nbsp;момента заказа товара.
-                        Подходящее время оговаривается предварительно
-                        с&nbsp;менеджером, после оформления и&nbsp;подтверждения
-                        вашего заказа. Доставка товара производится
-                        до&nbsp;подъезда клиента.
-                      </p>
-                      <p class="lk__paragraph">
-                        Уважаемые клиенты убедительная просьба указывать
-                        действующие номера телефонов для оперативной связи
-                        с&nbsp;Вами и&nbsp;в&nbsp;день доставки, находиться
-                        по&nbsp;конкретному адресу указанному в&nbsp;заявке.
-                        Обращаем ваше внимание колерованный товар отправляется
-                        клиенту только после 100% оплаты товара.
-                        В&nbsp;назначенный день доставки товара менеджер или
-                        водитель-курьер свяжется с&nbsp;вами по&nbsp;указанному
-                        телефону за&nbsp;час до&nbsp;доставки.
-                      </p>
-                      <p class="lk__paragraph note">
-                        * При отказе от&nbsp;покупки по&nbsp;любой причине
-                        стоимость доставки оплачивается в&nbsp;полном размере.
-                        В&nbsp;соответствии
-                        с&nbsp;п.&nbsp;3&nbsp;ст.&nbsp;497&nbsp;ГК РФ, если
-                        на&nbsp;момент фактического получения заказа&nbsp;Вы
-                        отказываетесь от&nbsp;покупки, то&nbsp;Вам необходимо
-                        будет оплатить доставку.
-                      </p>
-                    </div>
-                    <div class="lk-info__tables">
-                      <div class="table table_type_delivery">
-                        <span class="table__title"> Стоимость доставки </span>
-                        <div class="table__container">
-                          <table class="table__inner">
-                            <thead>
-                              <tr>
-                                <th>Вид доставки</th>
-                                <th>Цена</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Заказы от любой суммы</td>
-                                <td>500 ₽</td>
-                              </tr>
+              <div>
+                <div class="lk-info__scrollable">
+                  <ul class="lk-info__btns switcher__control swiper-wrapper">
+                    <li class="lk-info__btn switcher__btn swiper-slide active">
+                      Доставка
+                    </li>
+                    <li class="lk-info__btn switcher__btn swiper-slide">
+                      Способ оплаты
+                    </li>
+                    <li class="lk-info__btn switcher__btn swiper-slide">
+                      Возврат товаров
+                    </li>
+                    <li class="lk-info__btn switcher__btn swiper-slide">
+                      Помощь
+                    </li>
+                  </ul>
+                  <div class="lk-info__scrollable-prev">
+                    <div class="lk-info__scrollable-left"></div>
+                    <div class="lk-info__scrollable-prev--shadow"></div>
+                  </div>
+                  <div class="lk-info__scrollable-next">
+                    <div class="lk-info__scrollable-right"></div>
+                    <div class="lk-info__scrollable-next--shadow"></div>
+                  </div>
+                </div>
 
-                              <tr>
-                                <td>За МКАД стоимость километража</td>
-                                <td>40 ₽ / 1 км</td>
-                              </tr>
+                <div class="switcher__container">
+                  <div class="switcher__content active">
+                    <div class="lk-info-delivery">
+                      <div class="lk-info__text-block">
+                        <div class="title-h4">Доставка по Москве</div>
+                        <p class="lk__paragraph">
+                          Доставка товара осуществляется в&nbsp;течении
+                          2&nbsp;рабочих дней, с&nbsp;момента заказа товара.
+                          Подходящее время оговаривается предварительно
+                          с&nbsp;менеджером, после оформления
+                          и&nbsp;подтверждения вашего заказа. Доставка товара
+                          производится до&nbsp;подъезда клиента.
+                        </p>
+                        <p class="lk__paragraph">
+                          Уважаемые клиенты убедительная просьба указывать
+                          действующие номера телефонов для оперативной связи
+                          с&nbsp;Вами и&nbsp;в&nbsp;день доставки, находиться
+                          по&nbsp;конкретному адресу указанному в&nbsp;заявке.
+                          Обращаем ваше внимание колерованный товар отправляется
+                          клиенту только после 100% оплаты товара.
+                          В&nbsp;назначенный день доставки товара менеджер или
+                          водитель-курьер свяжется с&nbsp;вами
+                          по&nbsp;указанному телефону за&nbsp;час
+                          до&nbsp;доставки.
+                        </p>
+                        <p class="lk__paragraph note">
+                          * При отказе от&nbsp;покупки по&nbsp;любой причине
+                          стоимость доставки оплачивается в&nbsp;полном размере.
+                          В&nbsp;соответствии
+                          с&nbsp;п.&nbsp;3&nbsp;ст.&nbsp;497&nbsp;ГК РФ, если
+                          на&nbsp;момент фактического получения заказа&nbsp;Вы
+                          отказываетесь от&nbsp;покупки, то&nbsp;Вам необходимо
+                          будет оплатить доставку.
+                        </p>
+                      </div>
+                      <div class="lk-info__tables">
+                        <div class="table table_type_delivery">
+                          <span class="table__title"> Стоимость доставки </span>
+                          <div class="table__container">
+                            <table class="table__inner">
+                              <thead>
+                                <tr>
+                                  <th>Вид доставки</th>
+                                  <th>Цена</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Заказы от любой суммы</td>
+                                  <td>500 ₽</td>
+                                </tr>
 
-                              <tr>
-                                <td>Доставка до транспортной компании</td>
-                                <td>500 ₽</td>
-                              </tr>
+                                <tr>
+                                  <td>За МКАД стоимость километража</td>
+                                  <td>40 ₽ / 1 км</td>
+                                </tr>
 
-                              <tr>
-                                <td>Срочная доставка день в день</td>
-                                <td>1500 ₽</td>
-                              </tr>
+                                <tr>
+                                  <td>Доставка до транспортной компании</td>
+                                  <td>500 ₽</td>
+                                </tr>
 
-                              <tr>
-                                <td>Самовывоз из любого магазина</td>
-                                <td>Бесплатно</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                                <tr>
+                                  <td>Срочная доставка день в день</td>
+                                  <td>1500 ₽</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Самовывоз из любого магазина</td>
+                                  <td>Бесплатно</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+
+                        <div class="table table_type_tariff">
+                          <span class="table__title">
+                            Тарифы подъем на этаж
+                          </span>
+                          <div class="table__container">
+                            <table class="table__inner">
+                              <thead>
+                                <tr>
+                                  <th>Вид доставки</th>
+                                  <th>Цена</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Есть лифт</td>
+                                  <td>250 ₽</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Нет лифта</td>
+                                  <td>100 ₽ / 1 этаж</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Разгрузка (до подъезда)</td>
+                                  <td>Бесплатно</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
+                      <div class="lk-info__text-block">
+                        <div class="title-h4">Доставка в регионы России</div>
+                        <p class="lk__paragraph">
+                          Делаем максимум усилий для наших клиентов! Самый
+                          удобный сервис только в&nbsp;сети магазинов
+                          &laquo;Краски Здесь&raquo;. Мы&nbsp;поможем вам
+                          сэкономить ваши деньги. Вы&nbsp;только оплачиваете
+                          услуги выбранной вами транспортной компании. Вам надо
+                          сообщить наш адрес (41-км МКАД, строительный рынок
+                          &laquo;Славянский Мир&raquo; пав. &#8470;
+                          З&nbsp;12/2), откуда будет произведен забор товара
+                          транспортной компанией.
+                        </p>
 
-                      <div class="table table_type_tariff">
-                        <span class="table__title">
-                          Тарифы подъем на этаж
-                        </span>
-                        <div class="table__container">
-                          <table class="table__inner">
-                            <thead>
-                              <tr>
-                                <th>Вид доставки</th>
-                                <th>Цена</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Есть лифт</td>
-                                <td>250 ₽</td>
-                              </tr>
-
-                              <tr>
-                                <td>Нет лифта</td>
-                                <td>100 ₽ / 1 этаж</td>
-                              </tr>
-
-                              <tr>
-                                <td>Разгрузка (до подъезда)</td>
-                                <td>Бесплатно</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                        <p class="lk__paragraph">
+                          Как это работает:<br />
+                          1. Вам необходимо выбрать транспортную компанию,
+                          которая производит доставку грузов в&nbsp;ваш
+                          регион/город;
+                          <br />2. Далее нужно произвести оплату за&nbsp;услуги
+                          транспортной компании, оплату транспортная компания
+                          может потребовать заранее или после доставки товара
+                          в&nbsp;ваш регион/город.&nbsp;<br />3.
+                          В&nbsp;завершении процедуры оформления, вам необходимо
+                          связаться с&nbsp;нашим менеджером и&nbsp;сообщить
+                          названия выбранной вами транспортной компании,
+                          а&nbsp;также их&nbsp;контактный телефон, которая
+                          произведет забор вашего заказа с&nbsp;нашего магазина.
+                          Не&nbsp;забудьте проинформировать менеджера
+                          о&nbsp;дате прибытия выбранной вами транспортной
+                          компании.
+                        </p>
+                        <p class="lk__paragraph">
+                          Уважаемые клиенты обращаем ваше внимание! Если
+                          вы&nbsp;сделали заказ товара &laquo;под заказ&raquo;,
+                          перед его оформлением через транспортную компанию
+                          до&nbsp;вашего региона/города, обязательно дождитесь
+                          звонка от&nbsp;нашего менеджера с&nbsp;подтверждением
+                          наличия данного товара!
+                        </p>
                       </div>
-                    </div>
-                    <div class="lk-info__text-block">
-                      <div class="title-h4">Доставка в регионы России</div>
-                      <p class="lk__paragraph">
-                        Делаем максимум усилий для наших клиентов! Самый удобный
-                        сервис только в&nbsp;сети магазинов &laquo;Краски
-                        Здесь&raquo;. Мы&nbsp;поможем вам сэкономить ваши
-                        деньги. Вы&nbsp;только оплачиваете услуги выбранной вами
-                        транспортной компании. Вам надо сообщить наш адрес
-                        (41-км МКАД, строительный рынок &laquo;Славянский
-                        Мир&raquo; пав. &#8470; З&nbsp;12/2), откуда будет
-                        произведен забор товара транспортной компанией.
-                      </p>
-
-                      <p class="lk__paragraph">
-                        Как это работает:<br />
-                        1. Вам необходимо выбрать транспортную компанию, которая
-                        производит доставку грузов в&nbsp;ваш регион/город;
-                        <br />2. Далее нужно произвести оплату за&nbsp;услуги
-                        транспортной компании, оплату транспортная компания
-                        может потребовать заранее или после доставки товара
-                        в&nbsp;ваш регион/город.&nbsp;<br />3. В&nbsp;завершении
-                        процедуры оформления, вам необходимо связаться
-                        с&nbsp;нашим менеджером и&nbsp;сообщить названия
-                        выбранной вами транспортной компании, а&nbsp;также
-                        их&nbsp;контактный телефон, которая произведет забор
-                        вашего заказа с&nbsp;нашего магазина. Не&nbsp;забудьте
-                        проинформировать менеджера о&nbsp;дате прибытия
-                        выбранной вами транспортной компании.
-                      </p>
-                      <p class="lk__paragraph">
-                        Уважаемые клиенты обращаем ваше внимание! Если
-                        вы&nbsp;сделали заказ товара &laquo;под заказ&raquo;,
-                        перед его оформлением через транспортную компанию
-                        до&nbsp;вашего региона/города, обязательно дождитесь
-                        звонка от&nbsp;нашего менеджера с&nbsp;подтверждением
-                        наличия данного товара!
-                      </p>
                     </div>
                   </div>
                 </div>
@@ -2955,7 +2984,14 @@
                           <ul>
                             <li>Через корзину на сайте</li>
                             <li>
-                              Письмом по электронной почте info@kraski-zdes.ru
+                              Письмом по электронной почте
+                              <span
+                                style="
+                                  padding: 1px;
+                                  border-bottom: 1px solid #3b3c40;
+                                "
+                                >info@kraski-zdes.ru</span
+                              >
                             </li>
                             <li>По телефону +7 (495) 120-81-55</li>
                           </ul>
@@ -2998,14 +3034,20 @@
                         <div class="title-h4">Как выбрать краску?</div>
                         <div class="lk-info-help__question-content">
                           <div>
-                            <span class="highlight" style="padding-right: 0.5rem">Вариант 1.</span>Позвоните
-                            по телефону +7 (495) 120-81-55 и получить
+                            <span
+                              class="highlight"
+                              style="padding-right: 0.5rem"
+                              >Вариант 1.</span
+                            >Позвоните по телефону +7 (495) 120-81-55 и получить
                             профессиональную консультацию от наших менеджеров с
                             детализаций по всем нюансам. С полным расчетом вашей
                             площади и калькуляцией всех необходимых материалов.
                           </div>
                           <div>
-                            <span class="highlight" style="padding-right: 0.5rem" >Вариант 2.</span
+                            <span
+                              class="highlight"
+                              style="padding-right: 0.5rem"
+                              >Вариант 2.</span
                             >Воспользуйтесь современным фильтром для подбора
                             конкретного лакокрасочного материала отвечающим всем
                             вашим заданным параметрам и условиям. Почувствуй
