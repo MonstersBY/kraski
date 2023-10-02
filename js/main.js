@@ -610,8 +610,11 @@ $(document).ready(function () {
 	}
 	$('.add-like').on("click", function (e) {
 		e.preventDefault();
-		$('body').addClass('modalac')
-		$('.favorites-modal').addClass('active')
+		if(!$(this).hasClass('liked')) {
+			$('body').addClass('modalac')
+			$('.favorites-modal').addClass('active')
+		}
+		$(this).toggleClass('liked')
 	});
 	$('.favorites-modal .btn').on("click", function (e) {
 		e.preventDefault();

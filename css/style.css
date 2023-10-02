@@ -9691,6 +9691,26 @@ section {
   margin-right: 3rem;
 }
 
+.add-like.liked {
+  opacity: 1;
+}
+
+.add-like.liked svg path {
+  fill: #E50E78;
+}
+
+.add-like .slike {
+  display: none;
+}
+
+.add-like.liked .flike {
+  display: none;
+}
+
+.add-like.liked .slike {
+  display: block;
+}
+
 @media (max-width: 48em) {
   .catalog .title-h2 {
     margin-bottom: 6.4rem;
@@ -20476,6 +20496,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 2rem;
 }
 .lk-my-orders .order-card__tag {
   color: #9293b0;
@@ -20587,6 +20608,9 @@ section {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .lk-my-orders .order-card__tags {
+    gap: 4rem;
   }
   .lk-my-orders .order-card__tag {
     font-size: 2.8rem;
@@ -20809,7 +20833,7 @@ section {
           justify-content: space-between;
 }
 .order-details .order-card .top-section__bottom-block {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: -ms-grid;
   display: grid;
   gap: 1.5rem 2rem;
@@ -20837,6 +20861,8 @@ section {
   line-height: normal;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+.order-details .order-card__name:hover {
   color: #e50e78;
 }
 .order-details .order-card__price {
@@ -20963,6 +20989,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  gap: 2rem;
 }
 .order-details .order-card__tag {
   color: #9293b0;
@@ -21026,14 +21053,14 @@ section {
 }
 .order-details .basket-item .basket-item-card__footer {
   width: 100%;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
 }
 .order-details .basket-item .item-card-main__calc {
   margin-left: 17.7rem;
 }
 .order-details .basket-item .number {
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .order-details .basket-item .item-card-base__title {
   margin-top: 1rem;
@@ -21042,11 +21069,11 @@ section {
   margin-top: 1rem;
 }
 .order-details .basket-item .item-card-base__top {
-  margin: 0 0;
+  margin: 0;
 }
 .order-details .basket-item .basket-item-card__base {
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
   border: none;
 }
 @media (max-width: 48em) {
@@ -21137,6 +21164,9 @@ section {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .order-details .order-card__tags {
+    gap: 4rem;
+  }
   .order-details .order-card__tag {
     font-size: 2.8rem;
     line-height: 130%;
@@ -21184,8 +21214,8 @@ section {
   }
   .order-details .basket-item .basket-item-card__footer {
     width: 100%;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
   }
   .order-details .basket-item .item-card-base__title {
     margin-top: 3rem;
