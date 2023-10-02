@@ -16,8 +16,6 @@ function removeBacketCard() {
 	})
 }
 
-
-
 function addRemoveClasses(element, block) {
 	element.forEach((el) => {
 		el.addEventListener('click', () => {

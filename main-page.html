@@ -1923,7 +1923,7 @@
 			</div>
 		</div>
 		<div class="header-bottom-fixed mobile">
-			<a class="header-bottom-fixed-item">
+			<a class="header-bottom-fixed-item active">
 				<div class="header-bottom-fixed-item--icon">
 					<svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
 						<path
@@ -2356,8 +2356,36 @@
 							</div>
 						</li>
 					</ul>
-					<div class="popular-swiper-left"></div>
-					<div class="popular-swiper-right"></div>
+					<div class="popular-swiper-left">
+						<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+							<path
+								d="M16.0881 19.9201L9.56805 13.4001C8.79805 12.6301 8.79805 11.3701 9.56805 10.6001L16.0881 4.08008"
+								stroke="url(#paint0_linear_219_17884)" stroke-width="2" stroke-miterlimit="10"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<defs>
+								<linearGradient id="paint0_linear_219_17884" x1="16.0881" y1="4.08008" x2="8.16742"
+									y2="4.44531" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#DD3197" />
+									<stop offset="1" stop-color="#822FAF" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
+					<div class="popular-swiper-right">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M8.91003 4.07992L15.43 10.5999C16.2 11.3699 16.2 12.6299 15.43 13.3999L8.91003 19.9199"
+								stroke="url(#paint0_linear_203_21065)" stroke-width="2" stroke-miterlimit="10"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<defs>
+								<linearGradient id="paint0_linear_203_21065" x1="8.91003" y1="19.9199" x2="16.8307"
+									y2="19.5547" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#DD3197" />
+									<stop offset="1" stop-color="#822FAF" />
+								</linearGradient>
+							</defs>
+						</svg>
+					</div>
 				</div>
 				<div class="switcher__container">
 					<div class="switcher__content">
@@ -5507,7 +5535,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="shops switcher">
 		<div class="shops_container container">
 			<div class="shops__info">
@@ -5525,7 +5553,7 @@
 							<h4 class="shops__name-title">Славянский мир</h4>
 							<span class="shops__name-chapter">Строительная ярмарка</span>
 						</div>
-						<div class="shops__phone">
+						<a class="shops__phone" href="tel:+7 (496) 120 81-55">
 							<div class="shops__phone-wrapper">
 								<span class="shops__phone-number">7 (496) 120 81-55</span>
 								<span class="shops__phone-additional">(Доб. 3)</span>
@@ -5540,7 +5568,7 @@
 										fill="white" />
 								</svg>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="shops__address">
 						Москва, 41-км МКАД, Строительная Ярмарка «Славянский Мир» (Мельница) пав. буква "З" №
@@ -6244,10 +6272,31 @@
 					},
 					);
 					myMap.geoObjects.add(myPlacemark);
+
+					myPlacemark.events.add('click', function (e) {
+						changeTargetMap(e, myMap)
+					})
 				}
 			});
 		}
 		createMap(mapInfo)
+
+		function changeTargetMap(evt, map) {
+			map.geoObjects.each(function (element) {
+				element.options.set({
+					iconLayout: 'default#image',
+					iconImageHref: './assets/images/map_icon.svg',
+					iconImageSize: [30, 30],
+					iconImageOffset: [-15, -15]
+				})
+			});
+			evt.get('target').options.set({
+				iconLayout: 'default#image',
+				iconImageHref: './assets/images/map_icon_active.svg',
+				iconImageSize: [60, 60],
+				iconImageOffset: [-30, -30]
+			})
+		}
 
 		$('.shops__categories-link').on('click', function () {
 			myMap.destroy()
