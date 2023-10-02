@@ -11,7 +11,7 @@
 	&__filling {
 		border-radius: 3rem;
 		background: #fff;
-		box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.25);
+		box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.25);
 		padding: 4rem;
 		width: 90.2rem;
 		z-index: 0;
@@ -42,7 +42,7 @@
 			position: absolute;
 			width: 67.5rem;
 			height: 67.5rem;
-			background: linear-gradient(0deg, rgba(255, 255, 255, 0.27) 32.45%, #FDFCFF 99.9%);
+			background: linear-gradient(0deg, rgba(255, 255, 255, 0.27) 32.45%, #fdfcff 99.9%);
 			top: 2.1rem;
 			right: 14.8rem;
 			z-index: -2;
@@ -86,7 +86,7 @@
 	&-btns {
 		display: flex;
 		gap: 2rem;
-		
+
 		.btn {
 			width: 39.6rem;
 			justify-content: space-between;
@@ -121,7 +121,7 @@
 		&-bottom {
 			display: flex;
 			flex-direction: column;
-			gap: 16rem;
+			gap: 8rem;
 		}
 		&__filling {
 			border-radius: 4rem;

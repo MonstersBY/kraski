@@ -71,7 +71,7 @@
 				line-height: 140%;
 				backdrop-filter: blur(6px);
 				width: 23.8rem;
-				border: 1px solid #fff;
+				border: 0.1rem solid #fff;
 				border-radius: 1.5rem;
 				background: rgba(244, 246, 248, 0.5);
 				padding: 0.9rem 2rem;
@@ -124,7 +124,7 @@
 						flex: unset;
 						width: 14.3rem;
 						padding: 0.9rem 1.5rem;
-						border: 1px solid #e50e78;
+						border: 0.1rem solid #e50e78;
 						border-radius: 1.5rem;
 						font-size: 1.6rem;
 						font-style: normal;
@@ -137,7 +137,7 @@
 					background: rgba(59, 60, 64, 0.2);
 					border: unset;
 					box-shadow: unset;
-					height: 4px;
+					height: 0.4rem;
 					cursor: pointer;
 
 					.noUi-connect {
@@ -279,8 +279,8 @@
 
 			&.active {
 				.catalog__sort-container--text {
-					border: 2px solid #e50e78;
-					margin: -2px;
+					border: 0.2rem solid #e50e78;
+					margin: -0.2rem;
 					height: calc(5rem + 4px);
 
 					&::after {
@@ -325,7 +325,7 @@
 				padding: 2.5rem;
 				border-radius: 3rem;
 				background: #fff;
-				box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+				box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
 				width: fit-content;
 				position: absolute;
 				top: 6rem;
@@ -521,7 +521,7 @@
 			// background: #FFF;
 			// border-radius: 3rem;
 			// overflow: hidden;
-			filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
+			filter: drop-shadow(0.5rem 1.5rem 7rem rgba(173, 178, 201, 0.35));
 
 			&:hover {
 				height: 52.4rem;
@@ -588,7 +588,7 @@
 				justify-content: center;
 				align-items: center;
 				border-radius: 3rem;
-				border: 2px solid #f4f6f8;
+				border: 0.2rem solid #f4f6f8;
 				width: 32.5rem;
 				height: 21.4rem;
 				overflow: hidden;
@@ -632,7 +632,7 @@
 					width: 32.5rem;
 					height: 5rem;
 					text-align: center;
-					border-radius: 0px 0px 3rem 3rem;
+					border-radius: 0 0 3rem 3rem;
 					background: rgba(227, 19, 122, 0.2);
 					// backdrop-filter: blur(6px);
 					font-size: 1.6rem;
@@ -720,7 +720,7 @@
 						display: block;
 						position: absolute;
 						width: 100%;
-						height: 1px;
+						height: 0.1rem;
 						transform: rotate(-3.086deg);
 						background: #9293b0;
 						top: 1rem;
@@ -763,7 +763,7 @@
 			width: 37.5rem;
 			height: 42.2rem;
 			&--one {
-				filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
+				filter: drop-shadow(0.5rem 1.5rem 7rem rgba(173, 178, 201, 0.35));
 				border-radius: 2rem;
 				background: linear-gradient(147deg, #8176e8 0%, #d7d9fa 100%);
 				display: flex;
@@ -819,7 +819,7 @@
 					align-items: center;
 					margin: auto -1.5rem 0;
 					padding: 1.5rem 1.5rem 0;
-					border-top: 2px solid #fff;
+					border-top: 0.2rem solid #fff;
 
 					&--text {
 						font-size: 1.8rem;
@@ -845,7 +845,7 @@
 				}
 			}
 			&--two {
-				filter: drop-shadow(5px 15px 70px rgba(173, 178, 201, 0.35));
+				filter: drop-shadow(0.5rem 1.5rem 7rem rgba(173, 178, 201, 0.35));
 				border-radius: 2rem;
 				display: flex;
 				flex-direction: column;
@@ -934,7 +934,7 @@
 		width: 130rem;
 		border-radius: 3rem;
 		background: #fff;
-		box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+		box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
 		padding: 6rem;
 
 		.modal-container--title {
@@ -980,7 +980,7 @@
 	}
 	&-item {
 		width: 38rem;
-		border-top: 1px solid #dfdff0;
+		border-top: 0.1rem solid #dfdff0;
 		position: relative;
 
 		&.active {
@@ -1007,7 +1007,7 @@
 			background: rgba(59, 60, 64, 0.2);
 			border: unset;
 			box-shadow: unset;
-			height: 4px;
+			height: 0.4rem;
 			cursor: pointer;
 
 			.noUi-connect {
@@ -1048,7 +1048,7 @@
 				flex: 1;
 				width: 100%;
 				padding: 0.9rem 1.5rem;
-				border: 1px solid #e50e78;
+				border: 0.1rem solid #e50e78;
 				border-radius: 1.5rem;
 				font-size: 1.6rem;
 				font-style: normal;
@@ -1098,7 +1098,7 @@
 		height: auto;
 		border-radius: 3rem;
 		background: #fff;
-		box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+		box-shadow: 0.5rem 1.5rem 7rem 0 rgba(173, 178, 201, 0.35);
 		display: flex;
 		justify-content: space-between;
 		padding: 6rem 6rem 4.8rem;
@@ -1210,7 +1210,7 @@
 			padding-left: 6rem;
 
 			&::-webkit-scrollbar {
-				width: 1px;
+				width: 0.1rem;
 			}
 
 			&::-webkit-scrollbar-track {
@@ -1292,7 +1292,7 @@
 					box-shadow: unset;
 
 					&.active {
-						border: 1.5px solid #dd3197 !important;
+						border: 0.15rem solid #dd3197 !important;
 					}
 				}
 			}
@@ -1307,8 +1307,8 @@
 			padding: 1.2rem 2rem;
 			background: #fff;
 			border-radius: 1.5rem;
-			border: 1px solid #fff;
-			box-shadow: 5px 7px 14px 0px rgba(173, 178, 201, 0.15);
+			border: 0.1rem solid #fff;
+			box-shadow: 0.5rem 0.7rem 1.4rem 0rem rgba(173, 178, 201, 0.15);
 			cursor: pointer;
 
 			strong {
@@ -1327,7 +1327,7 @@
 			}
 
 			&.active {
-				border: 1px solid #dd3197;
+				border: 0.1rem solid #dd3197;
 				box-shadow: none;
 				background: #f4f6f8;
 			}
@@ -1337,7 +1337,7 @@
 				font-weight: 500;
 				line-height: 140%;
 				color: #e50e78;
-				border-bottom: 1px solid #e50e78;
+				border-bottom: 0.1rem solid #e50e78;
 				cursor: pointer;
 			}
 		}
@@ -1348,7 +1348,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;
-		box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+		box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
 		border-radius: 3rem;
 
 		&-info {
@@ -1387,7 +1387,7 @@
 						display: block;
 						position: absolute;
 						width: 100%;
-						height: 1px;
+						height: 0.1rem;
 						-webkit-transform: rotate(-3.086deg);
 						transform: rotate(-3.086deg);
 						background: #9293b0;
@@ -1439,7 +1439,7 @@
 					left: 0;
 
 					img {
-						border-radius: 20px;
+						border-radius: 2rem;
 						width: 100%;
 						height: 100%;
 						object-fit: cover;
@@ -1450,7 +1450,7 @@
 					font-size: 2.8rem;
 					line-height: 130%;
 					width: 100%;
-					border-radius: 10px;
+					border-radius: 1rem;
 					padding: 1.8rem 4rem;
 				}
 			}
@@ -1556,7 +1556,7 @@
 							flex: 1;
 							width: 100%;
 							padding: 2rem 3rem;
-							border-radius: 10px;
+							border-radius: 1rem;
 							font-size: 3rem;
 						}
 					}
@@ -1594,7 +1594,7 @@
 					position: fixed;
 					bottom: 0;
 					left: 0;
-					box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+					box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
 					background: #fff;
 					padding: 8rem 2rem 6.4rem 2rem;
 					border-top-left-radius: 4rem;
@@ -1617,7 +1617,7 @@
 
 						&--item {
 							padding: 1.6rem 2.4rem;
-							border-radius: 10px;
+							border-radius: 1rem;
 							background: #f4f6f8;
 							font-size: 2.8rem;
 							font-style: normal;
@@ -1645,7 +1645,7 @@
 
 			&-head {
 				display: flex;
-				border-radius: 20px;
+				border-radius: 2rem;
 				height: 23rem;
 				padding-left: 4rem;
 				margin-bottom: 6.8rem;
@@ -1681,8 +1681,8 @@
 					clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 100%);
 
 					img {
-						border-top-right-radius: 20px;
-						border-bottom-right-radius: 20px;
+						border-top-right-radius: 2rem;
+						border-bottom-right-radius: 2rem;
 					}
 				}
 			}
@@ -1712,7 +1712,7 @@
 				&--text {
 					font-size: 2.8rem;
 					padding: 1.4rem 9.2rem 1.4rem 2.4rem;
-					border-radius: 10px;
+					border-radius: 1rem;
 					height: 7.4rem;
 
 					&::after {
@@ -1726,7 +1726,7 @@
 					display: none;
 					flex-direction: column;
 					padding: 6rem 2rem;
-					border-radius: 20px;
+					border-radius: 2rem;
 					border-bottom-left-radius: unset;
 					border-bottom-right-radius: unset;
 					background: #fff;
@@ -1752,7 +1752,7 @@
 					padding: 1.4rem 0;
 					border-radius: 0;
 					width: 100%;
-					border-bottom: 1px solid #dfdff05e;
+					border-bottom: 0.1rem solid #dfdff05e;
 
 					&:last-child {
 						border-bottom: unset;
@@ -1770,7 +1770,7 @@
 				display: block;
 				background: #f4f6f8;
 				padding: 1.4rem 2.4rem;
-				border-radius: 10px;
+				border-radius: 1rem;
 				width: 9.6rem;
 				height: 7.4rem;
 
@@ -1789,7 +1789,7 @@
 			.swiper-slide {
 				width: fit-content;
 				padding: 1.4rem 2.4rem;
-				border-radius: 10px;
+				border-radius: 1rem;
 				font-size: 2.8rem;
 				line-height: 130%;
 				height: 7.4rem;
@@ -1900,7 +1900,7 @@
 				}
 
 				&-visual {
-					border-radius: 20px;
+					border-radius: 2rem;
 					border: 1px solid #f4f6f8;
 					width: 100%;
 					height: 44rem;
@@ -1911,7 +1911,7 @@
 						top: 3rem;
 						left: 3rem;
 						padding: 0.2rem 1.4rem;
-						border-radius: 20px;
+						border-radius: 2rem;
 						font-size: 2.4rem;
 					}
 					&--img {
@@ -2021,13 +2021,13 @@
 				height: 52.4rem;
 
 				&--one {
-					border-radius: 10px;
+					border-radius: 1rem;
 					padding: 2rem;
 					position: relative;
 
 					.catalog__list-advertising-container {
 						width: 100%;
-						border-radius: 10px;
+						border-radius: 1rem;
 						background: #fff;
 						position: relative;
 						padding: 3.2rem 0 3.2rem 20.6rem;
@@ -2059,7 +2059,7 @@
 					.catalog__list-advertising-bottom {
 						margin: auto -2rem 0;
 						padding: 2rem 2rem 0;
-						border-top: 1px solid #fff;
+						border-top: 0.1rem solid #fff;
 
 						&--text {
 							font-size: 2.8rem;
@@ -2076,7 +2076,7 @@
 					}
 				}
 				&--two {
-					border-radius: 10px;
+					border-radius: 1rem;
 
 					.catalog__list-advertising-container {
 						margin-top: auto;
@@ -2103,13 +2103,13 @@
 							width: 100%;
 							height: 100%;
 							object-fit: cover;
-							border-radius: 20px;
+							border-radius: 2rem;
 						}
 					}
 					.catalog__list-advertising-bottom {
 						padding: 2rem;
-						border-bottom-left-radius: 10px;
-						border-bottom-right-radius: 10px;
+						border-bottom-left-radius: 1rem;
+						border-bottom-right-radius: 1rem;
 
 						&--text {
 							font-size: 2.8rem;
@@ -2134,8 +2134,8 @@
 			height: auto;
 			padding: 6rem 4rem;
 			border-radius: 4rem;
-			background: #FFF;
-			
+			background: #fff;
+
 			.btn {
 				width: 100%;
 				padding: 0.5rem;
@@ -2152,7 +2152,7 @@
 		&-item {
 			display: flex;
 			padding: 1.6rem 0;
-			border-bottom: 1px solid #dfdff03b;
+			border-bottom: 0.1rem solid #dfdff03b;
 			font-size: 2.8rem;
 			font-style: normal;
 			font-weight: 500;
@@ -2172,7 +2172,7 @@
 			&--title {
 				margin-top: 1rem;
 				flex: none;
-				color: #9293B0;
+				color: #9293b0;
 				margin-right: 1.6rem;
 			}
 			&--info {
