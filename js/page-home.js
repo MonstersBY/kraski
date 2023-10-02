@@ -241,10 +241,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
     setTimeout(() => {
-      stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
-    }, 16000);
+      stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 0.3);
+    }, 6000);
   }
-  stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 1.2);
+  stepAnimateText('.banner__advertisement-animation--text','fadeInDown', 0.3);
 
   if($('.tel').length){
     $('.tel').mask('+7(999) 999-99-99');
