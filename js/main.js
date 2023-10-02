@@ -341,9 +341,10 @@ $(document).ready(function () {
 				$(this).parents('.dropdown').toggleClass('active')
 			})
 		}
+	}
 
 		// Карточка товара
-		if ($('.product').length) {
+	if ($('.product').length) {
 			$('.product_info-item-btn').on("click", function (e) {
 				e.preventDefault();
 				$(this).parents('.product_info-item-btns').find('.product_info-item-btn').removeClass('active')
@@ -522,7 +523,6 @@ $(document).ready(function () {
 				$('.product-info_left-write').removeClass('active')
 			});
 
-		}
 		$('.open-product-calc').on("click", function (e) {
 			e.preventDefault();
 			$('body').addClass('modalac')
