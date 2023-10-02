@@ -633,7 +633,6 @@
     &__tags {
       display: flex;
       flex-direction: row;
-      gap: 2rem;
     }
 
     // .order-card__tag
@@ -644,6 +643,14 @@
       font-style: normal;
       font-weight: 500;
       line-height: 140%;
+
+      &:not(:first-child)::before {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        content: "•";
+      }
     }
 
     // .order-card__location-block
@@ -753,15 +760,17 @@
         }
       }
 
-      // .order-card__tags
-      &__tags {
-        gap: 4rem;
-      }
-
       // .order-card__tag
       &__tag {
         font-size: 2.8rem;
         line-height: 130%;
+        &:not(:first-child)::before {
+          padding-left: 2rem;
+          padding-right: 2rem;
+          width: 1rem;
+          height: 1rem;
+          content: "•";
+        }
       }
 
       // .order-card__location-block
