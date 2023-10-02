@@ -1244,7 +1244,7 @@
 	}
 	.btn {
 		padding: 0.5rem 0.5rem 0.5rem 3rem;
-		border-radius: 1.5rem;
+		border-radius: 2.5rem;
 		display: flex;
 		gap: 2.5rem;
 		width: -webkit-fit-content;
@@ -1269,7 +1269,7 @@
 			width: 7.2rem;
 			height: 7.2rem;
 
-			border-radius: 0.8rem;
+			border-radius: 2rem;
 			background: #fff;
 			z-index: 1;
 			svg {
@@ -1296,7 +1296,7 @@
 		font-size: 3rem;
 		box-shadow: 1rem 1.5rem 5rem 0 rgba(173, 178, 201, 0.2);
 		border: 0.15rem solid #dd3197; /* !importanté */
-		border-radius: 2rem;
+		border-radius: 2.5rem;
 		position: relative;
 
 		&--icon {
@@ -1305,7 +1305,7 @@
 			justify-content: center;
 			width: 7.2rem;
 			height: 7.2rem;
-			border-radius: 0.8rem;
+			border-radius: 2rem;
 			z-index: 1;
 			background: linear-gradient(139deg, #dd3197 0%, #822faf 100%);
 			svg {

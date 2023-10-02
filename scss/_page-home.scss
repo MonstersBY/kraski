@@ -97,7 +97,7 @@
 			text-shadow: none;
 			color: transparent;
 			text-transform: uppercase;
-			-webkit-text-stroke: 1px #fff;
+			-webkit-text-stroke: 0.1rem #fff;
 			width: max-content;
 			left: 20.5rem;
 			top: 3.2rem;
@@ -482,7 +482,7 @@
 			justify-content: space-between;
 			align-items: center;
 			border-radius: 2rem;
-			border: 1px solid var(--white, #fff);
+			border: 0.1rem solid var(--white, #fff);
 			background: rgba(244, 246, 248, 0.5);
 			backdrop-filter: blur(6px);
 			padding: 1.2rem 2.2rem;
@@ -555,7 +555,7 @@
 		}
 	}
 	&_container {
-		border-radius: 50px;
+		border-radius: 5rem;
 		background-color: #f8f5ff;
 		overflow: hidden;
 		position: relative;
@@ -1131,7 +1131,7 @@
 			font-weight: 500;
 			line-height: 1.4;
 			border-radius: 1.5rem;
-			border: 1px solid #e50e78;
+			border: 0.1rem solid #e50e78;
 			&::placeholder {
 				color: #9293b0;
 			}
@@ -1170,6 +1170,7 @@
 		flex-direction: column;
 		border-radius: 3rem;
 		box-shadow: 0.5rem 1.5rem 7rem 0px rgba(173, 178, 201, 0.35);
+
 		&-title {
 			color: #3b3c40;
 			font-size: 2.4rem;
@@ -1400,8 +1401,8 @@
 				&-slider {
 					padding: 2.5rem;
 					background: #fff;
-					box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
-					border-radius: 30px;
+					box-shadow: 0.5rem 1.5rem 7rem 0rem rgba(173, 178, 201, 0.35);
+					border-radius: 3rem;
 
 					&--img {
 						width: auto;
@@ -1440,7 +1441,7 @@
 		justify-content: space-between;
 		padding: 9.2rem 8rem 8rem 9.2rem;
 		border-radius: 5rem;
-		border: 2px solid #f3efff;
+		border: 0.2rem solid #f3efff;
 		background: #f3efff;
 	}
 	&__blur {
@@ -1773,7 +1774,7 @@
 			padding: 0;
 		}
 		&_container {
-			border-radius: 20px;
+			border-radius: 2rem;
 		}
 		&__list {
 			&-pagination {
@@ -1836,7 +1837,7 @@
 		padding: 0 2rem;
 		&_container {
 			padding: 8rem 4rem;
-			border-radius: 20px;
+			border-radius: 2rem;
 			overflow: hidden;
 		}
 		&__content {
@@ -1881,7 +1882,7 @@
 	.material {
 		&__content {
 			&-title::after {
-				border-radius: 128px;
+				border-radius: 12.8rem;
 				font-size: 3rem;
 				font-style: normal;
 				font-weight: 500;
@@ -2181,7 +2182,7 @@
 					}
 					&-slider {
 						padding: 2rem 2rem 6rem;
-						border-radius: 20px;
+						border-radius: 2rem;
 
 						&--img {
 							width: auto;
@@ -2189,7 +2190,7 @@
 							margin-bottom: 2.4rem;
 
 							img {
-								border-radius: 10px;
+								border-radius: 1rem;
 							}
 						}
 					}
@@ -2240,7 +2241,7 @@
 					}
 					&__time {
 						padding: 0.8rem 2rem;
-						border-radius: 15px;
+						border-radius: 1.5rem;
 						gap: 2rem;
 
 						&-icon {
@@ -2326,7 +2327,7 @@
 			width: 71rem;
 			height: 49.6rem;
 			gap: 4.8rem;
-			border-radius: 15px;
+			border-radius: 1.5rem;
 			padding: 0 2rem;
 
 			.modal-container--subtitle {
