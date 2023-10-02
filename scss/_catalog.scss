@@ -1402,6 +1402,21 @@
 		}
 	}
 }
+.add-like.liked {
+	opacity: 1;
+}
+.add-like.liked svg path {
+	fill: #E50E78;
+}
+.add-like .slike {
+	display: none;
+}
+.add-like.liked .flike {
+	display: none;
+}
+.add-like.liked .slike {
+	display: block;
+}
 
 @media (max-width: 48em) {
 	.catalog {
