@@ -21102,6 +21102,7 @@ section {
   }
   .order-details .basket-item .item-card-main {
     margin: 0 0;
+    padding-bottom: 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 0 23rem 1fr 3.2rem;
@@ -21117,6 +21118,13 @@ section {
     width: 100%;
     margin: 0 0;
     padding: 0 0;
+  }
+  .order-details .basket-item .item-card-base__title {
+    margin-top: 3rem;
+  }
+  .order-details .basket-item .item-card-base__col {
+    margin-top: 3rem;
+    gap: 2rem;
   }
   .order-details .basket-item .basket-item-card__base {
     margin: 0 0;

@@ -1340,6 +1340,7 @@
 
       .item-card-main {
         margin: 0 0;
+        padding-bottom: 0;
         display: grid;
         grid-template-columns: 0 23rem 1fr 3.2rem;
       }
@@ -1357,6 +1358,14 @@
         margin: 0 0;
         padding: 0 0;
       }
+      .item-card-base__title{
+        margin-top: 3rem;
+      }
+
+      .item-card-base__col{
+        margin-top: 3rem;
+        gap: 2rem;
+      }
 
       .basket-item-card__base {
         margin: 0 0;
@@ -1373,6 +1382,8 @@
         font-weight: 500;
         line-height: 130%;
       }
+
+
     }
   }
 }
