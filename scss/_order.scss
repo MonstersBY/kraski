@@ -634,10 +634,11 @@
 }
 
 .order-form-item {
-	min-width: 51.2rem;
+	max-width: 51.2rem;
+	width: 100%;
 
 	@media (max-width: 48em) {
-		width: 100%;
+		max-width: 100%;
 	}
 	// .order-form-item__title
 	&__title {
@@ -1590,7 +1591,7 @@
 		.order-form-item {
 			&.apartment {
 				max-width: 26.2rem;
-				width: 100%;
+				min-width: unset;
 
 				@media (max-width: 48em) {
 					max-width: 100%;
@@ -1603,6 +1604,11 @@
 						width: 56.6rem;
 					}
 				}
+			}
+			&.address {
+				max-width: unset;
+				width: unset;
+				flex: 1 1 auto;
 			}
 
 			&__placeholder {
