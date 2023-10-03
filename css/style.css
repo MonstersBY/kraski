@@ -2791,6 +2791,9 @@ section {
   .header__top {
     display: none;
   }
+  .header__top_container {
+    background-color: inherit;
+  }
   .header__top--mob {
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
@@ -13261,8 +13264,12 @@ section {
   padding: 6rem;
   border-radius: 3rem;
   background: #fff;
-  overflow: auto;
-  height: 80rem;
+  -webkit-transform: unset;
+          transform: unset;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .product-tinting-modal-container::-webkit-scrollbar {
   width: 0;
@@ -13333,7 +13340,7 @@ section {
 }
 .product-tinting--left {
   width: 39.6rem;
-  height: 75rem;
+  height: 44.4rem;
   position: relative;
 }
 .product-tinting--left.active .product-tinting-images--choice {
@@ -13425,7 +13432,7 @@ section {
 }
 .product-tinting-img {
   width: 100%;
-  height: 100%;
+  height: 44.4rem;
 }
 .product-tinting-img img {
   width: 100%;
@@ -13446,8 +13453,8 @@ section {
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  -ms-grid-rows: (auto)[5];
-  grid-template-rows: repeat(5, auto);
+  -ms-grid-rows: (auto)[4];
+  grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
 }
 .product-tinting-all_colors .swiper-wrapper > *:nth-child(1) {
@@ -13464,10 +13471,6 @@ section {
 }
 .product-tinting-all_colors .swiper-wrapper > *:nth-child(4) {
   -ms-grid-row: 4;
-  -ms-grid-column: 1;
-}
-.product-tinting-all_colors .swiper-wrapper > *:nth-child(5) {
-  -ms-grid-row: 5;
   -ms-grid-column: 1;
 }
 .product-tinting-all_colors-slide {
@@ -13487,8 +13490,8 @@ section {
   color: #e50e78;
 }
 .product-tinting-all_colors-slide--colors {
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 .product-tinting-all_colors-slide--text {
@@ -13538,7 +13541,7 @@ section {
   position: absolute;
   width: 2rem;
   height: 2rem;
-  bottom: 7rem;
+  bottom: 1rem;
   cursor: pointer;
 }
 .product-tinting-all_colors--prev.swiper-button-disabled, .product-tinting-all_colors--next.swiper-button-disabled {
@@ -13737,8 +13740,8 @@ section {
   gap: 0.6rem;
 }
 .product-colors-slide--color {
-  width: 8rem;
-  height: 8rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
 }
 .product-colors-slide--text {
@@ -26506,6 +26509,9 @@ section {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.error-block__back--mobile {
+  display: none;
 }
 
 @media (max-width: 48em) {

@@ -890,6 +890,9 @@
 		}
 		&__top {
 			display: none;
+			&_container {
+				background-color: inherit;
+			}
 			&--mob {
 				transition: all 0.3s ease-out;
 				padding: 1.6rem 2rem 1.6rem 1.6rem;
