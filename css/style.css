@@ -8936,9 +8936,6 @@ section {
   width: 32.5rem;
   height: auto;
 }
-.catalog__list-block--list .catalog__list-item-visual--open {
-  display: none;
-}
 .catalog__list-block--list .catalog__list-item--back {
   width: 116.5rem;
   height: 24.7rem;
