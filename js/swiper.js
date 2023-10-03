@@ -204,11 +204,11 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			769: {
-				slidesPerView: 7,
-				slidesPerGroup: 7,
+				slidesPerView: 9,
+				slidesPerGroup: 9,
 				spaceBetween: `${remToPx(2)}rem`,
 				grid: {
-					rows: 5,
+					rows: 4,
 				},
 			},
 		},
@@ -284,8 +284,8 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			769: {
-				slidesPerView: 5,
-				slidesPerGroup: 5,
+				slidesPerView: 7,
+				slidesPerGroup: 7,
 				spaceBetween: `${remToPx(2)}rem`,
 				grid: {
 					rows: 3,

@@ -1967,8 +1967,11 @@
 		padding: 6rem;
 		border-radius: 3rem;
 		background: #fff;
-		overflow: auto;
-		height: 80rem;
+		transform: unset;
+		top: 1rem;
+		left: 0;
+		right: 0;
+		margin: auto;
 		&::-webkit-scrollbar {
 			width: 0;
 		}
@@ -2037,7 +2040,7 @@
 
 	&--left {
 		width: 39.6rem;
-		height: 75rem;
+		height: 44.4rem;
 		position: relative;
 
 		&.active {
@@ -2123,7 +2126,7 @@
 	}
 	&-img {
 		width: 100%;
-		height: 100%;
+		height: 44.4rem;
 
 		img {
 			width: 100%;
@@ -2142,7 +2145,7 @@
 		.swiper-wrapper {
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-rows: repeat(5, auto);
+			grid-template-rows: repeat(4, auto);
 			grid-auto-flow: column;
 		}
 
@@ -2157,8 +2160,8 @@
 			}
 
 			&--colors {
-				width: 8rem;
-				height: 8rem;
+				width: 5rem;
+				height: 5rem;
 				border-radius: 50%;
 			}
 			&--text {
@@ -2200,7 +2203,7 @@
 			position: absolute;
 			width: 2rem;
 			height: 2rem;
-			bottom: 7rem;
+			bottom: 1rem;
 			cursor: pointer;
 
 			&.swiper-button-disabled {
@@ -2369,8 +2372,8 @@
 		gap: 0.6rem;
 
 		&--color {
-			width: 8rem;
-			height: 8rem;
+			width: 5rem;
+			height: 5rem;
 			border-radius: 50%;
 		}
 		&--text {
