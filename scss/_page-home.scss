@@ -97,10 +97,10 @@
 			width: 7.5rem;
 			height: 7.5rem;
 			border-radius: 3.5rem 0 0 0;
-			background-color: #F3EFFF;
+			background-color: #f3efff;
 
 			&:before {
-				content: '';
+				content: "";
 				position: absolute;
 				right: 100%;
 				bottom: 0;
@@ -108,11 +108,11 @@
 				height: 2.5rem;
 				border: none;
 				border-radius: 0 0 3.5rem 0;
-				box-shadow: 2rem 2rem 0 2rem #F3EFFF;
-			  }
-		  
-			  &:after {
-				content: '';
+				box-shadow: 2rem 2rem 0 2rem #f3efff;
+			}
+
+			&:after {
+				content: "";
 				position: absolute;
 				bottom: 100%;
 				right: 0;
@@ -120,11 +120,9 @@
 				height: 4rem;
 				border-radius: 0 0 3.5rem 0;
 				border: none;
-				box-shadow: 2rem 2rem 0 2rem #F3EFFF;
-			  }
+				box-shadow: 2rem 2rem 0 2rem #f3efff;
+			}
 		}
-
-		
 
 		&-animation {
 			position: absolute;
@@ -1602,7 +1600,6 @@
 			width: 100%;
 			height: 59rem;
 
-			
 			&-circle {
 				border-radius: 50%;
 				filter: blur(61px);
@@ -1620,10 +1617,10 @@
 				width: 10rem;
 				height: 10rem;
 				border-radius: 5rem 0 0 0;
-				background-color: #F3EFFF;
-	
+				background-color: #f3efff;
+
 				&:before {
-					content: '';
+					content: "";
 					position: absolute;
 					right: 100%;
 					bottom: 0;
@@ -1631,11 +1628,11 @@
 					height: 5rem;
 					border: none;
 					border-radius: 0 0 6rem 0;
-					box-shadow: 4rem 4rem 0 4rem #F3EFFF;
-				  }
-			  
-				  &:after {
-					content: '';
+					box-shadow: 4rem 4rem 0 4rem #f3efff;
+				}
+
+				&:after {
+					content: "";
 					position: absolute;
 					bottom: 100%;
 					right: 0;
@@ -1643,10 +1640,10 @@
 					height: 7rem;
 					border-radius: 0 0 6rem 0;
 					border: none;
-					box-shadow: 4rem 4rem 0 4rem #F3EFFF;
-				  }
+					box-shadow: 4rem 4rem 0 4rem #f3efff;
+				}
 			}
-	
+
 			&-animation {
 				font-size: 10rem;
 			}
@@ -2421,6 +2418,174 @@
 				svg {
 					width: 61.2rem;
 					height: 25.6rem;
+				}
+			}
+		}
+	}
+}
+
+.shops {
+	&__card-modal {
+		display: none;
+		@media (max-width: 48em) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(59, 60, 64, 0.4509803922);
+			z-index: 20;
+
+			&.active {
+				display: block;
+			}
+		}
+
+		&-screen {
+			@media (max-width: 48em) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		> .shops__card {
+			height: auto;
+			background: #fff;
+
+			@media (max-width: 48em) {
+				display: flex;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				width: 71rem;
+				padding: 13.2rem 4rem 7rem;
+			}
+
+			> .shop__card--exit {
+				display: block;
+				position: absolute;
+				width: 4.8rem;
+				height: 4.8rem;
+				top: 4rem;
+				right: 4rem;
+			}
+
+			> .shops__card-img {
+				@media (max-width: 48em) {
+					width: 100%;
+					height: 48rem;
+					margin-bottom: 2.4rem;
+				}
+			}
+
+			> .shops__main {
+				@media (max-width: 48em) {
+					flex-direction: column;
+					gap: 4rem;
+					margin-bottom: 4rem;
+					align-items: center;
+					margin-right: auto;
+				}
+			}
+
+			> .shops__address {
+				@media (max-width: 48em) {
+					font-size: 3rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 140%;
+					margin-bottom: 4rem;
+				}
+			}
+
+			.shops__time {
+				@media (max-width: 48em) {
+					padding: 1.3rem 2rem;
+					gap: 2rem;
+				}
+			}
+
+			.shops__time-icon {
+				@media (max-width: 48em) {
+					width: 4rem;
+					height: 4rem;
+				}
+			}
+
+			.shops__time-work {
+				@media (max-width: 48em) {
+					font-size: 3.4rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 140%;
+				}
+			}
+
+			@media (max-width: 48em) {
+				.shops__weekend {
+					font-size: 3rem;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 140%;
+				}
+
+				.shops__name {
+					margin-right: auto;
+
+					&-title {
+						font-size: 3.6rem;
+						font-style: normal;
+						font-weight: 600;
+						line-height: normal;
+					}
+
+					&-chapter {
+						font-size: 3rem;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 140%;
+					}
+				}
+
+				.shops__phone {
+					display: flex;
+					flex-direction: row-reverse;
+					gap: 3.2rem;
+					align-items: center;
+
+					&-wrapper {
+						flex-direction: row;
+						gap: 2.4rem;
+					}
+
+					&-number {
+						font-size: 3.4rem;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 140%;
+					}
+
+					&-additional {
+						font-size: 3rem;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 140%;
+					}
+
+					&-icon {
+						width: 8rem;
+						height: 8rem;
+
+						svg {
+							width: 100%;
+							height: 100%;
+						}
+					}
 				}
 			}
 		}
