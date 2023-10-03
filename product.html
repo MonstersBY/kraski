@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="./css/roundslider.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="stylesheet" href="./assets/fonts/Euclid Circular A/stylesheet.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ffac2b37-9f44-43d8-8e3e-92f15073c2d1"
 		type="text/javascript"></script>
 </head>
@@ -1653,12 +1654,63 @@
 	</header>
 
 	<div class="bc">
-		<div class="container">
-			<a href="">Главная</a>
-			<a href="">Каталог</a>
-			<a href="">Краски для внутренних работ</a>
-			<span>Краски для потолка</span>
-		</div>
+		<ul class="container">
+			<li class="bc__link">
+				<a href="">Главная</a>
+			</li>
+			<li class="bc__link">
+				<a href="">Кaталог</a>
+			</li>
+			<li class="bc__link">
+				<a href="">Краски для внутренних работ</a>
+				<div class="bc-modal">
+					<ul class="bc-modal__inner">
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для стен</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для потолка</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для кухни и ванной</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для пола</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для радиаторов</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для мебели</p>
+							</label>
+						</li>
+				</div>
+			</li>
+			<li><span>Краски для потолка</span></li>
+		</ul>
 	</div>
 
 	<section id="product" class="product">
@@ -1709,10 +1761,11 @@
 								<img src="./assets/images/catalog/item2.png" alt="">
 							</div>
 						</div>
-						<div class="swiper-slide product_pictures-slide">
-							<div class="product_pictures-slide--img">
+						<div class="swiper-slide product_pictures-slide video">
+							<a class="product_pictures-slide--img" href="https://www.youtube.com/watch?v=5xG09d3WcGo"
+								data-fancybox>
 								<img src="./assets/images/catalog/item2.png" alt="">
-							</div>
+							</a>
 						</div>
 						<div class="swiper-slide product_pictures-slide">
 							<div class="product_pictures-slide--img">
@@ -1744,11 +1797,14 @@
 								<img src="./assets/images/catalog/item2.png" alt="">
 							</div>
 						</div>
-						<div class="swiper-slide product_pictures-bottom-slide">
-							<div class="product_pictures-bottom-slide--img">
+						<!-- Видео -->
+						<div class="swiper-slide product_pictures-bottom-slide video">
+							<a class="product_pictures-bottom-slide--img"
+								href="https://www.youtube.com/watch?v=5xG09d3WcGo" data-fancybox>
 								<img src="./assets/images/catalog/item2.png" alt="">
-							</div>
+							</a>
 						</div>
+						<!--  -->
 						<div class="swiper-slide product_pictures-bottom-slide">
 							<div class="product_pictures-bottom-slide--img">
 								<img src="./assets/images/catalog/item2.png" alt="">
@@ -4805,8 +4861,12 @@
 	<script src="./js/swiper.js"></script>>
 	<script src="./js/form.js"></script>
 	<script src="./js/main.js"></script>
+	<script>
+		Fancybox.bind("[data-fancybox]", {});
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 
 </html>

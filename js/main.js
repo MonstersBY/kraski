@@ -17,6 +17,12 @@ $(document).ready(function () {
 		$('.write-director-modal-container--second').css('display', 'none')
 	});
 
+	$('.btn-show-modal').on('click', function (e) {
+		e.preventDefault();
+		$('body').addClass('modalac');
+		$('.business-order').addClass('active');
+	});
+
 	$('.all-filter').on("click", function (e) {
 		e.preventDefault();
 		$('body').addClass('modalac')
@@ -610,7 +616,7 @@ $(document).ready(function () {
 	}
 	$('.add-like').on("click", function (e) {
 		e.preventDefault();
-		if(!$(this).hasClass('liked')) {
+		if (!$(this).hasClass('liked')) {
 			$('body').addClass('modalac')
 			$('.favorites-modal').addClass('active')
 		}

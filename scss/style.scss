@@ -683,11 +683,26 @@
 // }
 
 .bc {
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+
 	margin-bottom: 4.2rem;
-	a {
-		color: #9293b0;
-		padding-right: 2.4rem;
+
+	li {
+		display: inline-block;
+
+		span {
+			color: #3b3c40;
+		}
+	}
+
+	&__link {
+		cursor: pointer;
 		position: relative;
+		padding-right: 2.4rem;
+
 		&::after {
 			content: "";
 			display: block;
@@ -700,11 +715,67 @@
 			right: 0.5rem;
 			top: 50%;
 		}
+
+		&:hover {
+			.bc-modal {
+				display: flex;
+
+				@media (max-width: 48em) {
+					display: none;
+				}
+			}
+
+			a {
+				color: #e50e78;
+			}
+		}
+
+		a {
+			color: #9293b0;
+		}
 	}
-	font-size: 1.6rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 140%;
+
+	&-modal {
+		display: none;
+		align-items: flex-end;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 25;
+
+		width: 32rem;
+		height: 37.5rem;
+
+		&__inner {
+			background-color: #fff;
+			width: 100%;
+			height: 34.4rem;
+			border-radius: 3rem;
+			padding: 1rem;
+		}
+
+		&__item {
+			padding: 1.5rem;
+			width: 100%;
+			border-radius: 1rem;
+
+			&:hover {
+				background: #f3efff;
+			}
+		}
+
+		&__input {
+			gap: 1rem;
+			align-items: center;
+
+			p {
+				color: #3b3c40;
+				font-size: 1.8rem;
+				font-weight: 500;
+				line-height: 130%; /* 23.4px */
+			}
+		}
+	}
 }
 .switcher .switcher__container .switcher__content {
 	display: none;
@@ -1005,6 +1076,9 @@
 	}
 
 	.bc {
+		font-size: 2.8rem;
+		line-height: 130%;
+
 		margin-bottom: 6rem;
 		.container {
 			display: flex;
@@ -1012,7 +1086,7 @@
 			padding-bottom: 3rem;
 			margin-bottom: -3rem;
 		}
-		a {
+		&__link {
 			padding-right: 4.8rem;
 			flex: none;
 
@@ -1020,17 +1094,16 @@
 				content: "";
 				display: block;
 				position: absolute;
-				width: 3.6rem;
-				height: 0.1rem;
-				right: 0.5rem;
+				width: 2.8rem;
+				height: 0.2rem;
+				right: 1rem;
 				top: 50%;
 			}
 		}
-		span {
+		li span {
 			flex: none;
+			white-space: nowrap;
 		}
-		font-size: 2.8rem;
-		line-height: 130%;
 	}
 	.pagination {
 		gap: 4rem;
