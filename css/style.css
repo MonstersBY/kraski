@@ -2920,12 +2920,14 @@ section {
   }
   .header-bottom-fixed-item:hover .header-bottom-fixed-item--icon svg path {
     fill: #e50e78;
+    stroke-width: 1;
   }
   .header-bottom-fixed-item:hover .header-bottom-fixed-item--text {
     color: #e50e78;
   }
   .header-bottom-fixed-item.active .header-bottom-fixed-item--icon svg path {
     fill: #e50e78;
+    stroke-width: 0;
   }
   .header-bottom-fixed-item.active .header-bottom-fixed-item--text {
     color: #e50e78;
