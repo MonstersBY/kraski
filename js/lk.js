@@ -15,6 +15,24 @@ $(document).ready(function () {
     $('.order-modal').addClass('active')
   });
 
+//   убираем изменить при пустом input
+  let $input = $(".form__item-inner input");
+  let $button = $(".form__item-inner button");
+
+  // Проверяем, есть ли значение в input при загрузке страницы
+  if ($input.val() === "") {
+    $button.hide();
+  }
+
+  // Следим за изменениями значения в input
+  $input.on("input", function() {
+    if ($(this).val() === "") {
+      $button.hide();
+    } else {
+      $button.show();
+    }
+  });
+
 
   let lkSwiper = new Swiper('.lk-info__scrollable', {
 		slidesPerView: 'auto',
