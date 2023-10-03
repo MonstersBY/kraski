@@ -1653,12 +1653,63 @@
 	</header>
 
 	<div class="bc">
-		<div class="container">
-			<a href="">Главная</a>
-			<a href="">Каталог</a>
-			<a href="">Краски для внутренних работ</a>
-			<span>Краски для потолка</span>
-		</div>
+		<ul class="container">
+			<li class="bc__link">
+				<a href="">Главная</a>
+			</li>
+			<li class="bc__link">
+				<a href="">Кaталог</a>
+			</li>
+			<li class="bc__link">
+				<a href="">Краски для внутренних работ</a>
+				<div class="bc-modal">
+					<ul class="bc-modal__inner">
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для стен</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для потолка</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для кухни и ванной</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для пола</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для радиаторов</p>
+							</label>
+						</li>
+						<li class="bc-modal__item">
+							<label class="bc-modal__input label-radio">
+								<input type="radio" name="bc">
+								<span class="custom-radio"></span>
+								<p>Краски для мебели</p>
+							</label>
+						</li>
+				</div>
+			</li>
+			<li><span>Краски для потолка</span></li>
+		</ul>
 	</div>
 
 	<section id="product" class="product">
@@ -1796,8 +1847,17 @@
 				<div class="product_info-item">
 					<div class="product_info-item--title">Цвет</div>
 					<div class="product_info-item-btns product_info-item-btns--colors">
+						<div class="product_info-item-btn">
+							<div class="product_info-item-btn--colors"
+								style="background-color: #fff; border: 0.1rem solid #DFDFF0;"></div>
+							<span>FL 1347</span>
+						</div>
 						<div class="product_info-item-btn active">
 							<div class="product_info-item-btn--colors" style="background-color: #E6B8A2;"></div>
+							<span>FL 1347</span>
+						</div>
+						<div class="product_info-item-btn">
+							<div class="product_info-item-btn--colors" style="background-color: #DEAB90;"></div>
 							<span>FL 1347</span>
 						</div>
 						<div class="product_info-item-btn">
@@ -1805,7 +1865,7 @@
 							<span>FL 1347</span>
 						</div>
 						<div class="product_info-item-btn">
-							<div class="product_info-item-btn--colors" style="background-color: #DEAB90;"></div>
+							<div class="product_info-item-btn--colors" style="background-color: #CD9777;"></div>
 							<span>FL 1347</span>
 						</div>
 						<div div class="product_info-item-btns--colors--open open-colors-modal">еще 19</div>
@@ -2872,9 +2932,19 @@
 									<div class="product-calc-item-choice--title">Цвета:</div>
 									<div
 										class="product-calc-item-choice-container product-calc-item-choice-container--color">
+										<div class="product-calc-item-choice--box">
+											<div class="product-calc-item-choice--box--circle"
+												style="background: #E6B8A2;"></div>
+											<span>FL 1347</span>
+										</div>
 										<div class="product-calc-item-choice--box active">
 											<div class="product-calc-item-choice--box--circle"
 												style="background: #A96E60;"></div>
+											<span>FL 1347</span>
+										</div>
+										<div class="product-calc-item-choice--box">
+											<div class="product-calc-item-choice--box--circle"
+												style="background: #E6B8A2;"></div>
 											<span>FL 1347</span>
 										</div>
 										<div class="product-calc-item-choice--box">

@@ -5624,7 +5624,7 @@
 
 				</div>
 				<div id="map" class="shops__map"></div>
-				<div class="shops__card-modal active">
+				<div class="shops__card-modal">
 					<div class="shops__card-modal-screen"></div>
 					<div class="shops__card">
 						<div class="shop__card--exit">
@@ -6329,12 +6329,12 @@
 			for (let i = 0; i < mapInfo.length; i++) {
 				if ($(this).find('.categories-text').html() == mapInfo[i].name) {
 					mapInfo[i].active = true
-					$('.shops__card-modal').addClass('active');
 				} else {
 					mapInfo[i].active = false
 				}
 			}
 			createMap(mapInfo)
+			$('.shops__card-modal').addClass('active');
 		})
 
 	</script>
