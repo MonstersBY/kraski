@@ -1087,7 +1087,7 @@
 		img {
 			height: 100%;
 			object-fit: cover;
-			border-radius: 5rem 50rem 50rem 5rem;
+			border-radius: 5rem;
 		}
 	}
 	&__wrapper {
@@ -1096,7 +1096,7 @@
 	&__back {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -4.5rem;
 		width: 79.7rem;
 		height: 49.7rem;
 		z-index: 1;
@@ -1216,6 +1216,8 @@
 			width: 51.8rem;
 			height: 23.9rem;
 			margin-bottom: 2rem;
+			border-radius: 3rem;
+			overflow: hidden;
 			img {
 				height: 100%;
 				object-fit: cover;
@@ -2463,7 +2465,7 @@
 				-webkit-transform: translate(-50%, -50%);
 				transform: translate(-50%, -50%);
 				width: 71rem;
-				padding: 13.2rem 4rem 7rem;
+				padding: 13.2rem 4rem 6rem;
 			}
 
 			> .shop__card--exit {
@@ -2480,6 +2482,7 @@
 					width: 100%;
 					height: 48rem;
 					margin-bottom: 2.4rem;
+					border-radius: 4rem;
 				}
 			}
 

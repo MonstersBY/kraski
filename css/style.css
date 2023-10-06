@@ -5735,7 +5735,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5rem 50rem 50rem 5rem;
+  border-radius: 5rem;
 }
 .consultation__wrapper {
   margin-left: auto;
@@ -5743,7 +5743,7 @@ section {
 .consultation__back {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -4.5rem;
   width: 79.7rem;
   height: 49.7rem;
   z-index: 1;
@@ -5886,6 +5886,8 @@ section {
   width: 51.8rem;
   height: 23.9rem;
   margin-bottom: 2rem;
+  border-radius: 3rem;
+  overflow: hidden;
 }
 .shops__card-img img {
   height: 100%;
@@ -7159,7 +7161,7 @@ section {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 71rem;
-    padding: 13.2rem 4rem 7rem;
+    padding: 13.2rem 4rem 6rem;
   }
 }
 .shops__card-modal > .shops__card > .shop__card--exit {
@@ -7175,6 +7177,7 @@ section {
     width: 100%;
     height: 48rem;
     margin-bottom: 2.4rem;
+    border-radius: 4rem;
   }
 }
 @media (max-width: 48em) {
@@ -22596,7 +22599,7 @@ section {
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
-  color: #9293B0;
+  color: #9293b0;
   width: 56.8rem;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -22624,7 +22627,7 @@ section {
 }
 .place .shops__card-modal {
   position: absolute;
-  top: 5rem;
+  top: 3.5rem;
   right: 3rem;
   display: none;
 }
@@ -22633,10 +22636,92 @@ section {
 }
 .place .shops__card {
   height: auto;
-  background: #FFF;
+  background: #fff;
 }
 .place .shop__card--exit {
   display: none;
+}
+.place .shops__main {
+  margin-bottom: 1.5rem;
+}
+.place .shops__card-img {
+  height: 17.4rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.place .shops__address {
+  margin-bottom: 2.5rem;
+  color: #9293b0;
+}
+.place .shops__managers {
+  margin-bottom: 3rem;
+}
+.place .shops__managers-title {
+  color: #3b3c40;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+  margin-bottom: 1.5rem;
+}
+.place .shops__managers-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+.place .shops__managers-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+.place .shops__managers-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.place .shops__managers-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+.place .shops__managers-name {
+  color: #3b3c40;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.place .shops__managers-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4rem;
+  color: #5ccc52;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+}
+.place .shops__managers-status span {
+  display: inline-block;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #5ccc52;
+  border-radius: 50%;
 }
 
 @media (max-width: 48em) {
@@ -22664,6 +22749,42 @@ section {
     -webkit-box-flex: 0;
         -ms-flex: none;
             flex: none;
+  }
+  .place .shops__card-modal .shops__card-img {
+    width: 100%;
+    height: 27.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .place .shops__managers {
+    margin-bottom: 4rem;
+  }
+  .place .shops__managers-title {
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+  }
+  .place .shops__managers-content {
+    gap: 4rem;
+  }
+  .place .shops__managers-item {
+    gap: 2rem;
+    width: 26.8rem;
+  }
+  .place .shops__managers-img {
+    width: 9.4rem;
+    height: 9.4rem;
+  }
+  .place .shops__managers-name {
+    font-size: 3rem;
+    line-height: 140%; /* 23.4px */
+  }
+  .place .shops__managers-status {
+    font-size: 2.8rem;
+    line-height: 130%; /* 22.4px */
+    gap: 0.8rem;
+  }
+  .place .shops__managers-status span {
+    width: 1.2rem;
+    height: 1.2rem;
   }
   .place .shops__our-scrollable {
     height: -webkit-fit-content;
@@ -22705,7 +22826,7 @@ section {
   }
   .place .shops__card {
     height: auto;
-    background: #FFF;
+    background: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -22715,12 +22836,7 @@ section {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 71rem;
-    padding: 13.2rem 4rem 7rem;
-  }
-  .place .shops__card-img {
-    width: 100%;
-    height: 48rem;
-    margin-bottom: 2.4rem;
+    padding: 12.4rem 4rem 6rem;
   }
   .place .shops__card .shops__main {
     -webkit-box-orient: vertical;
@@ -22790,6 +22906,7 @@ section {
     line-height: 140%;
   }
   .place .shops__card .shops__address {
+    color: #3b3c40;
     font-size: 3rem;
     font-style: normal;
     font-weight: 500;
