@@ -996,6 +996,16 @@
   height: 0;
   width: 0;
 }
+.label-radio svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+.label-radio svg circle:nth-child(2) {
+  display: none;
+}
 .label-radio .custom-radio {
   width: 2.4rem;
   height: 2.4rem;
@@ -1029,6 +1039,9 @@
 .label-radio input:disabled ~ .custom-radio {
   background: #f4f6f8;
   border: 0.1rem solid #dfdff0;
+}
+.label-radio input:checked ~ svg circle:nth-child(2) {
+  display: block;
 }
 .label-radio p {
   color: #3b3c40;
@@ -1260,6 +1273,10 @@
   .label-checkbox p {
     font-size: 2.8rem;
     line-height: 130%;
+  }
+  .label-radio svg {
+    width: 4.8rem;
+    height: 4.8rem;
   }
   .label-radio .custom-radio {
     width: 4.8rem;
@@ -9056,7 +9073,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2.5rem;
-  width: 37.5rem;
+  width: 37.4rem;
   height: 42.2rem;
   position: relative;
   -webkit-filter: drop-shadow(0.5rem 1.5rem 7rem rgba(173, 178, 201, 0.35));

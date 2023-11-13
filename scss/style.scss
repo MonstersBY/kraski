@@ -893,6 +893,15 @@
 		height: 0;
 		width: 0;
 	}
+	svg {
+		width: 2.4rem;
+		height: 2.4rem;
+		flex: none;
+
+		circle:nth-child(2) {
+			display: none;
+		}
+	}
 	.custom-radio {
 		width: 2.4rem;
 		height: 2.4rem;
@@ -924,6 +933,9 @@
 	input:disabled ~ .custom-radio {
 		background: #f4f6f8;
 		border: 0.1rem solid #dfdff0;
+	}
+	input:checked ~ svg circle:nth-child(2) {
+		display: block;
 	}
 	p {
 		color: #3b3c40;
@@ -1155,6 +1167,10 @@
 		}
 	}
 	.label-radio {
+		svg {
+			width: 4.8rem;
+			height: 4.8rem;
+		}
 		.custom-radio {
 			width: 4.8rem;
 			height: 4.8rem;
