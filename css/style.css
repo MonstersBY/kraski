@@ -11336,11 +11336,15 @@ section {
 	background-color: #e50e78;
 }
 
-.product_pictures--like.liked svg {
+.product_pictures--like.liked svg path {
 	fill: #fff;
 }
-
 .product_pictures--like svg {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.product_pictures--like svg path {
 	-webkit-transition: fill 0.2s linear;
 	-o-transition: fill 0.2s linear;
 	transition: fill 0.2s linear;
@@ -11353,7 +11357,7 @@ section {
 	background-color: #e50e78;
 }
 
-.product_pictures--like:hover svg {
+.product_pictures--like:hover svg path {
 	-webkit-transition: fill 0.2s linear;
 	-o-transition: fill 0.2s linear;
 	transition: fill 0.2s linear;
