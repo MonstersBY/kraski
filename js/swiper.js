@@ -341,4 +341,37 @@ $(document).ready(function () {
 			}
 		}
 	}
+
+	const honorSwiper = new Swiper('.honors__content.desktop', {
+		direction: 'horizontal',
+		slidesPerView: 4,
+		spaceBetween: `${remToPx(2)}rem`,
+		speed: 1000,
+		enabled: false,
+		navigation: {
+			prevEl: '.honors__slider-prev',
+			nextEl: '.honors__slider-next'
+		},
+		breakpoints: {
+			768: {
+				enabled: true,
+			}
+		}
+	})
+
+	const honorSwiperMobile = new Swiper('.honors__content.mobile', {
+		direction: 'horizontal',
+		slidesPerView: 1,
+		spaceBetween: `${remToPx(1.8)}rem`,
+		speed: 1000,
+		enabled: true,
+		pagination: {
+			el: '.honors__slide-pagination'
+		},
+		breakpoints: {
+			768: {
+				enabled: false,
+			}
+		}
+	})
 })
