@@ -666,3 +666,24 @@ $(document).ready(function () {
 		})
 	})
 })
+
+$('.product-variation-item-btn--link.open-colors-modal').on("click", function (e) {
+	let item = $(this).parents('.product-variation-item')
+	let volume = $(item).find('.product-variation__packing .product-variation--box span').html().match(/[.\d+]/g).join('')
+	let volume_type = $(item).find('.product-variation__packing .product-variation--box span').html().replace(/[ .,]|[0-9]/g, '')
+	console.log(volume_type)
+	$.ajax({
+		url: '/ajax/setModal.php',
+		data: {
+			volume: volume,
+			volume_type: volume_type,
+		},
+		method: 'POST',
+		success: function (response) {
+			$('.product-colors-modal').html(response)
+		}
+	});
+	$('body').addClass('modalac')
+	$('.product-colors-modal').first().addClass('active')
+	setTimeout(() => { ChangeBulletColorsCol() }, 500)
+});
